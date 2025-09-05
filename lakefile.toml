@@ -5,9 +5,10 @@ defaultTargets = ["ConceptualMathematics"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
-autoImplicit = false
-relaxedAutoImplicit = false
+# autoImplicit = false
+# relaxedAutoImplicit = false
 weak.linter.mathlibStandardSet = true
+weak.linter.style.longLine = false
 maxSynthPendingDepth = 3
 
 [[require]]
