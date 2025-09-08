@@ -4,12 +4,14 @@ keywords = ["math"]
 defaultTargets = ["companion", "textbook"]
 
 [leanOptions]
-pp.unicode.fun = true # pretty-prints `fun a ↦ b`
-# autoImplicit = false
-# relaxedAutoImplicit = false
+weak.linter.hashCommand = false
 weak.linter.mathlibStandardSet = true
 weak.linter.style.longLine = false
+weak.linter.style.setOption = false
 maxSynthPendingDepth = 3
+pp.rawOnError = true
+pp.unicode.fun = true
+weak.verso.code.warnLineLength = 76
 
 [[require]]
 name = "mathlib"
