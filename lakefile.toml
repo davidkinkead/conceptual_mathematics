@@ -11,7 +11,7 @@ weak.linter.style.setOption = false
 maxSynthPendingDepth = 3
 pp.rawOnError = true
 pp.unicode.fun = true
-weak.verso.code.warnLineLength = 76
+weak.verso.code.warnLineLength = 72
 
 [[require]]
 name = "mathlib"
