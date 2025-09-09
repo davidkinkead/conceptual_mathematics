@@ -1,5 +1,6 @@
 import VersoManual
 import ConceptualMathematics.Meta.Lean
+import ConceptualMathematics.Article1
 import Mathlib
 
 open Verso.Genre Manual InlineLean
@@ -8,6 +9,7 @@ open CategoryTheory
 
 
 -- FIXME line break in title
+-- FIXME missing caption on nav arrow back to intro (title length? underscores in title?)
 #doc (Manual) "A Lean Companion to _Conceptual Mathematics_" =>
 
 %%%
@@ -35,3 +37,5 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 (This approach is suggested on the high-level overview page mentioned in the previous paragraph as well as elsewhere in the mathlib documentation.)
 
 All page references given in this _Companion_ are to Lawvere, F.W. and Schanuel, S.H. (2009) _Conceptual mathematics: a first introduction to categories_. 2nd edn. Cambridge: Cambridge University Press.
+
+{include 1 ConceptualMathematics.Article1}
