@@ -566,6 +566,50 @@ or coffee. -/
 end ExI_9
 ```
 
+*Definition.* CATEGORY (p. 21)
+
+A category consists of the DATA:
+
+1. OBJECTS
+2. MAPS
+3. For each map f, one object as DOMAIN of f and one object as CODOMAIN of f
+4. For each object A an IDENTITY MAP, which has domain A and codomain A
+5. For each pair of maps f : A ⟶ B and g : B ⟶ C, a COMPOSITE MAP map g ⊚ f : A ⟶ C
+
+satisfying the following RULES:
+
+1. IDENTITY LAWS: If f : A ⟶ B, then 𝟙 B ⊚ f = f and f ⊚ 𝟙 A = f
+2. ASSOCIATIVE LAW: If f : A ⟶ B, g : B ⟶ C, h : C ⟶ D, then (h ⊚ g) ⊚ f = h ⊚ (g ⊚ f)
+
+```lean
+#print Category
+```
+
+```
+class CategoryTheory.Category.{v, u} (obj : Type u) : Type (max u (v + 1))
+number of parameters: 1
+parents:
+  CategoryTheory.Category.toCategoryStruct : CategoryStruct.{v, u} obj
+fields:
+  Quiver.Hom : obj → obj → Type v
+  CategoryTheory.CategoryStruct.id : (X : obj) → X ⟶ X
+  CategoryTheory.CategoryStruct.comp : {X Y Z : obj} → (X ⟶ Y) → (Y ⟶ Z) → (X ⟶ Z)
+  CategoryTheory.Category.id_comp : ∀ {X Y : obj} (f : X ⟶ Y), f ⊚ 𝟙 X = f := by
+    cat_disch
+  CategoryTheory.Category.comp_id : ∀ {X Y : obj} (f : X ⟶ Y), 𝟙 Y ⊚ f = f := by
+    cat_disch
+  CategoryTheory.Category.assoc : ∀ {W X Y Z : obj} (f : W ⟶ X) (g : X ⟶ Y) (h : Y ⟶ Z), h ⊚ g ⊚ f = (h ⊚ g) ⊚ f := by
+    cat_disch
+constructor:
+  CategoryTheory.Category.mk.{v, u} {obj : Type u} [toCategoryStruct : CategoryStruct.{v, u} obj]
+    (id_comp : ∀ {X Y : obj} (f : X ⟶ Y), f ⊚ 𝟙 X = f := by cat_disch)
+    (comp_id : ∀ {X Y : obj} (f : X ⟶ Y), 𝟙 Y ⊚ f = f := by cat_disch)
+    (assoc : ∀ {W X Y Z : obj} (f : W ⟶ X) (g : X ⟶ Y) (h : Y ⟶ Z), h ⊚ g ⊚ f = (h ⊚ g) ⊚ f := by cat_disch) :
+    Category.{v, u} obj
+field notation resolution order:
+  CategoryTheory.Category, CategoryTheory.CategoryStruct, Quiver
+```
+
 ```savedLean (show := false)
 end CM
 ```
