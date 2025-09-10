@@ -27,13 +27,11 @@ _Category_ having been defined at the end of Article I, we now generally impleme
 
 A, B, and C are three different sets (or even three different objects in any category); f, g, h, and k are maps with domains and codomains as follows:
 
-f : A ⟶ B, g : B ⟶ A, h : A ⟶ C, k : C ⟶ B
+&ensp;&ensp;&ensp;&ensp;f : A ⟶ B,&emsp;g : B ⟶ A,&emsp;h : A ⟶ C,&emsp;k : C ⟶ B
 
 Two of the expressions below make sense. Find each of the two, and say what its domain and codomain are:
 
-(a) k ⊚ h ⊚ g ⊚ f
-(b) k ⊚ f ⊚ g
-(c) g ⊚ f ⊚ g ⊚ k ⊚ h
+&ensp;&ensp;&ensp;&ensp;(a) k ⊚ h ⊚ g ⊚ f&ensp;&ensp;&ensp;&ensp;(b) k ⊚ f ⊚ g&ensp;&ensp;&ensp;&ensp;(c) g ⊚ f ⊚ g ⊚ k ⊚ h
 
 ```savedComment
 Exercise 3.1 (p. 36)
