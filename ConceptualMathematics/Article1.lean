@@ -397,7 +397,7 @@ open CM_Finset
 
 *Exercise 8* (p. 20)
 
-Can you find a pair of maps A -f→ B -g→ A for which g ∘ f = 𝟙 A? If so, how many such pairs?
+Can you find a pair of maps f : A → B, g : B → A for which g ∘ f = 𝟙 A? If so, how many such pairs?
 
 ```savedComment
 Exercise I.8 (p. 20)
@@ -463,7 +463,7 @@ end ExI_8
 
 *Exercise 9* (p. 20)
 
-Can you find a pair of maps B -h→ A -k→ B for which k ∘ h = 𝟙 B? If so, how many such pairs?
+Can you find a pair of maps h : B → A, k : A → B for which k ∘ h = 𝟙 B? If so, how many such pairs?
 
 ```savedComment
 Exercise I.9 (p. 20)
