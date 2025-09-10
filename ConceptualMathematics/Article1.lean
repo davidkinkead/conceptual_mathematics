@@ -126,7 +126,7 @@ instance {α β : Type*} (X : Finset α) (Y : Finset β)
     : CoeFun (Map X Y) (fun _ ↦ α → β) where
   coe F := F.toFun
 
-abbrev Point {β : Type} (Y : Finset β) := Map One Y
+abbrev Point {β : Type*} (Y : Finset β) := Map One Y
 
 end CM_Finset
 ```
@@ -186,7 +186,7 @@ instance {α β : Type*} (X : Set α) (Y : Set β)
     : CoeFun (Map X Y) (fun _ ↦ α → β) where
   coe F := F.toFun
 
-abbrev Point {β : Type} (Y : Set β) := Map One Y
+abbrev Point {β : Type*} (Y : Set β) := Map One Y
 
 def A : Set String := { "John", "Mary", "Sam" }
 def B : Set String := { "eggs", "coffee" }
