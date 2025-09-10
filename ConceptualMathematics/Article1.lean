@@ -19,6 +19,7 @@ namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
+-- TODO distinguish between book excerpts and my commentary
 Until the introduction of the definition of _category_ at the end of Article I, we implement all _maps_ in the book as Lean _functions_.
 
 -- TODO use HTML details tag (closed by default) for exercises (cf. Lean Language Reference)
