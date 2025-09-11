@@ -23,8 +23,7 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 
 _Category_ having been defined at the end of Article I, we now generally implement _maps_ in the book as Lean _morphisms_.
 
-*Exercise 1* (p. 36)
-
+:::question (questionTitle := "Exercise 1") (questionPage := "36")
 A, B, and C are three different sets (or even three different objects in any category); f, g, h, and k are maps with domains and codomains as follows:
 
 &ensp;&ensp;&ensp;&ensp;f : A ⟶ B,&emsp;g : B ⟶ A,&emsp;h : A ⟶ C,&emsp;k : C ⟶ B
@@ -32,7 +31,9 @@ A, B, and C are three different sets (or even three different objects in any cat
 Two of the expressions below make sense. Find each of the two, and say what its domain and codomain are:
 
 &ensp;&ensp;&ensp;&ensp;(a) k ⊚ h ⊚ g ⊚ f&ensp;&ensp;&ensp;&ensp;(b) k ⊚ f ⊚ g&ensp;&ensp;&ensp;&ensp;(c) g ⊚ f ⊚ g ⊚ k ⊚ h
+:::
 
+:::solution (solutionTo := "Exercise 1")
 ```savedComment
 Exercise 3.1 (p. 36)
 ```
@@ -44,10 +45,9 @@ variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
          (f : A ⟶ B) (g : B ⟶ A) (h : A ⟶ C) (k : C ⟶ B)
 ```
 
-```savedLean (name := out3_1_a)
-#where -- FIXME initial comment suppressed unless preceeded by command
-/- (a) makes sense, with domain A and codomain B. -/
+(a) makes sense, with domain A and codomain B.
 
+```savedLean (name := out3_1_a)
 #check k ⊚ h ⊚ g ⊚ f
 ```
 
@@ -55,11 +55,9 @@ variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
 k ⊚ h ⊚ g ⊚ f : A ⟶ B
 ```
 
-```savedLean (name := out3_1_b)
-#where -- FIXME initial comment suppressed unless preceeded by command
-/- (b) does not make sense, since the codomain of f ⊚ g is B, but the
-domain of k is C. -/
+(b) does not make sense, since the codomain of f ⊚ g is B, but the domain of k is C.
 
+```savedLean (name := out3_1_b)
 #check f ⊚ g
 ```
 
@@ -67,10 +65,9 @@ domain of k is C. -/
 f ⊚ g : B ⟶ B
 ```
 
-```savedLean (name := out3_1_c)
-#where -- FIXME initial comment suppressed unless preceeded by command
-/- (c) makes sense, with domain A and codomain A. -/
+(c) makes sense, with domain A and codomain A.
 
+```savedLean (name := out3_1_c)
 #check g ⊚ f ⊚ g ⊚ k ⊚ h
 ```
 
@@ -81,6 +78,7 @@ g ⊚ f ⊚ g ⊚ k ⊚ h : A ⟶ A
 ```savedLean
 end Ex3_1
 ```
+:::
 
 ```savedLean (show := false)
 end CM
