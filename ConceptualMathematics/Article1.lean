@@ -19,7 +19,6 @@ namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
--- TODO distinguish between book excerpts and my commentary
 Until the introduction of the definition of _category_ at the end of Article I, we implement all _maps_ in the book as Lean _functions_.
 
 :::question (questionTitle := "Exercise 1") (questionPage := "19")
@@ -33,8 +32,6 @@ Exercise I.1 (p. 19)
 
 For simplicity, we use types here instead of sets. We number the elements in each set/type from top to bottom (top left to bottom right for D).
 
--- TODO hide namespace lines (cf. TPiL)
--- TODO allow copy to clipboard (cf. TPiL)
 ```savedLean
 namespace ExI_1
 
@@ -109,7 +106,6 @@ def One : Finset Unit := Finset.univ
 end CM_Finset
 ```
 
--- TODO use formatted boxes for definitions (cf. Lean Language Reference)
 *Definition.* A _point_ of a set X is a map 𝟭 → X. (p. 19)
 
 ```savedLean
