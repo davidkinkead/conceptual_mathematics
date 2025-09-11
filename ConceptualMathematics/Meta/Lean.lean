@@ -55,3 +55,118 @@ def savedComment : CodeBlockExpanderOf Unit
     let str := code.getString.trimRight
     let comment := s!"/-!\n{str}\n-/"
     ``(Block.other (Block.savedLean $(quote (← getFileName)) $(quote comment)) #[])
+
+
+
+/-
+Custom extensions
+-/
+
+/- HTML tag: div -/
+
+block_extension Block.htmlDiv («class» : String) where
+  data := .str «class»
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun _ goB _ data contents => do
+      let .str «class» := data
+        | HtmlT.logError "Expected JSON string" *> pure .empty
+      pure {{<div class={{«class»}}>{{← contents.mapM goB}}</div>}}
+
+structure ClassArgs where
+  «class» : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs ClassArgs m where
+  fromArgs := ClassArgs.mk <$> .named `«class» .string false
+end
+
+@[directive]
+def htmlDiv : DirectiveExpanderOf ClassArgs
+  | {«class»}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.htmlDiv $(quote «class»)) #[ $contents,* ])
+
+
+/- HTML tag: details -/
+
+block_extension Block.htmlDetails (classDetails : String) (classSummary : String) (summary : String) where
+  data := .arr #[.str classDetails, .str classSummary, .str summary]
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun _ goB _ data contents => do
+      let .arr #[.str classDetails, .str classSummary, .str summary] := data
+        | HtmlT.logError "Expected three-element JSON array of strings" *> pure .empty
+      pure {{<details class={{classDetails}}><summary class={{classSummary}}>{{summary}}</summary>{{← contents.mapM goB}}</details>}}
+
+structure DetailsArgs where
+  classDetails : String
+  classSummary : String
+  summary : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs DetailsArgs m where
+  fromArgs := DetailsArgs.mk <$> .named `classDetails .string false <*> .named `classSummary .string false <*> .named `summary .string false
+end
+
+@[directive]
+def htmlDetails : DirectiveExpanderOf DetailsArgs
+  | {classDetails, classSummary, summary}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.htmlDetails $(quote classDetails) $(quote classSummary) $(quote summary)) #[ $contents,* ])
+
+
+/- question -/
+
+block_extension Block.question (questionTitle : String) (questionPage : String) where
+  data := .arr #[.str questionTitle, .str questionPage]
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun _ goB _ data contents => do
+      let .arr #[.str questionTitle, .str questionPage] := data
+        | HtmlT.logError "Expected two-element JSON array of strings" *> pure .empty
+      pure {{<div class={{"question"}}><span class={{"questionTitle"}}>{{questionTitle}}</span><span class={{"questionPage"}}>{{"&emsp;(p. " ++ questionPage ++ ")"}}</span>{{← contents.mapM goB}}</div>}}
+
+structure QuestionArgs where
+  questionTitle : String
+  questionPage : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs QuestionArgs m where
+  fromArgs := QuestionArgs.mk <$> .named `questionTitle .string false <*> .named `questionPage .string false
+end
+
+@[directive]
+def question : DirectiveExpanderOf QuestionArgs
+  | {questionTitle, questionPage}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.question $(quote questionTitle) $(quote questionPage)) #[ $contents,* ])
+
+
+/- solution -/
+
+structure SolutionArgs where
+  solutionTo : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs SolutionArgs m where
+  fromArgs := SolutionArgs.mk <$> .named `solutionTo .string false
+end
+
+@[directive]
+def solution : DirectiveExpanderOf SolutionArgs
+  | {solutionTo}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.htmlDetails $(quote "solution") $(quote "solution") $(quote <| "Solution: " ++ solutionTo)) #[ $contents,* ])
+
+end ConceptualMathematics
