@@ -82,6 +82,7 @@ def config : Config where
   emitTeX := false
   emitHtmlSingle := false
   emitHtmlMulti := true
+  extraCssFiles := Html.cmCss
   htmlDepth := 2
 
 def main := manualMain (%doc ConceptualMathematics) (extraSteps := [buildExercises]) (config := config)
