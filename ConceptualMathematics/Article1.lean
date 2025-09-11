@@ -22,23 +22,21 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 -- TODO distinguish between book excerpts and my commentary
 Until the introduction of the definition of _category_ at the end of Article I, we implement all _maps_ in the book as Lean _functions_.
 
--- TODO use HTML details tag (closed by default) for exercises (cf. Lean Language Reference)
-*Exercise 1* (p. 19)
-
+:::question (questionTitle := "Exercise 1") (questionPage := "19")
 Check to be sure you understand how we got diagrams (ii) and (iii) from the given diagram (i). Then fill in (iv) and (v) yourself, starting over from (i). Then check to see that (v) and (iii) are the same.
+:::
 
+:::solution (solutionTo := "Exercise 1")
 ```savedComment
 Exercise I.1 (p. 19)
 ```
+
+For simplicity, we use types here instead of sets. We number the elements in each set/type from top to bottom (top left to bottom right for D).
 
 -- TODO hide namespace lines (cf. TPiL)
 -- TODO allow copy to clipboard (cf. TPiL)
 ```savedLean
 namespace ExI_1
-
-/- For simplicity, we use types here instead of sets. We number the
-elements in each set/type from top to bottom (top left to bottom right
-for D). -/
 
 inductive A where
   | a₁ | a₂ | a₃
@@ -69,9 +67,11 @@ def h : C → D
   | C.c₃ => D.d₃
   | C.c₄ => D.d₃
   | C.c₅ => D.d₅
+```
 
-/- For diagram (iv), we have f as above and h ∘ g as follows. -/
+For diagram (iv), we have f as above and h ∘ g as follows.
 
+```savedLean
 def hg : B → D
   | B.b₁ => D.d₁
   | B.b₂ => D.d₁
@@ -81,10 +81,11 @@ def hg : B → D
 example : hg = h ∘ g := by
   funext x
   cases x <;> dsimp [g, h, hg]
+```
 
-/- For diagram (v), we have (h ∘ g) ∘ f as follows, which is indeed the
-same as h ∘ (g ∘ f) in diagram (iii). -/
+For diagram (v), we have (h ∘ g) ∘ f as follows, which is indeed the same as h ∘ (g ∘ f) in diagram (iii).
 
+```savedLean
 def hgf : A → D
   | A.a₁ => D.d₁
   | A.a₂ => D.d₁
@@ -96,6 +97,7 @@ example : hgf = (h ∘ g) ∘ f := by
 
 end ExI_1
 ```
+:::
 
 One very useful sort of set is a 'singleton' set, a set with exactly one element.... Call this set '𝟭'. (p. 19)
 
@@ -268,18 +270,19 @@ def Alysia's_formula (α β : Type*) [Fintype α] [Fintype β] : ℕ :=
   Fintype.card β ^ Fintype.card α
 ```
 
-*Exercise 2* (p. 20)
-
+:::question (questionTitle := "Exercise 2") (questionPage := "20")
 How many different maps f are there with domain A and codomain B?
+:::
 
+:::solution (solutionTo := "Exercise 2")
 ```savedComment
 Exercise I.2 (p. 20)
 ```
 
+By Alysia's formula, we have #B ^ #A = 2 ^ 3 = 8 different maps.
+
 ```savedLean (name := outI_2)
 open CM_Finset
-
-/- By Alysia's formula, we have #B ^ #A = 2 ^ 3 = 8 different maps. -/
 
 #eval Alysia's_formula A B
 ```
@@ -287,19 +290,21 @@ open CM_Finset
 ```leanOutput outI_2
 8
 ```
+:::
 
-*Exercise 3* (p. 20)
-
+:::question (questionTitle := "Exercise 3") (questionPage := "20")
 Same, but for maps f : A → A?
+:::
 
+:::solution (solutionTo := "Exercise 3")
 ```savedComment
 Exercise I.3 (p. 20)
 ```
 
+By Alysia's formula, we have #A ^ #A = 3 ^ 3 = 27 different maps.
+
 ```savedLean (name := outI_3)
 open CM_Finset
-
-/- By Alysia's formula, we have #A ^ #A = 3 ^ 3 = 27 different maps. -/
 
 #eval Alysia's_formula A A
 ```
@@ -307,19 +312,21 @@ open CM_Finset
 ```leanOutput outI_3
 27
 ```
+:::
 
-*Exercise 4* (p. 20)
-
+:::question (questionTitle := "Exercise 4") (questionPage := "20")
 Same, but for maps f : B → A?
+:::
 
+:::solution (solutionTo := "Exercise 4")
 ```savedComment
 Exercise I.4 (p. 20)
 ```
 
+By Alysia's formula, we have #A ^ #B = 3 ^ 2 = 9 different maps.
+
 ```savedLean (name := outI_4)
 open CM_Finset
-
-/- By Alysia's formula, we have #A ^ #B = 3 ^ 2 = 9 different maps. -/
 
 #eval Alysia's_formula B A
 ```
@@ -327,19 +334,21 @@ open CM_Finset
 ```leanOutput outI_4
 9
 ```
+:::
 
-*Exercise 5* (p. 20)
-
+:::question (questionTitle := "Exercise 5") (questionPage := "20")
 Same, but for maps f : B → B?
+:::
 
+:::solution (solutionTo := "Exercise 5")
 ```savedComment
 Exercise I.5 (p. 20)
 ```
 
+By Alysia's formula, we have #B ^ #B = 2 ^ 2 = 4 different maps.
+
 ```savedLean (name := outI_5)
 open CM_Finset
-
-/- By Alysia's formula, we have #B ^ #B = 2 ^ 2 = 4 different maps. -/
 
 #eval Alysia's_formula B B
 ```
@@ -347,6 +356,7 @@ open CM_Finset
 ```leanOutput outI_5
 4
 ```
+:::
 
 Exercises 6 and 7 concern idempotence, which the book formally introduces on p. 54. For the purpose of these two exercises (and again aiming to avoid exhaustive lists of maps), we introduce a formula for the total number of possible idempotents on a finite set. (See the Wikipedia article on [idempotence](https://en.wikipedia.org/wiki/Idempotence#Idempotent_functions) for additional information.)
 
@@ -356,18 +366,19 @@ def idempotent_map_count (α : Type) [Fintype α] : ℕ :=
   ∑ k ∈ Finset.range (n + 1), (n.choose k) * k ^ (n - k)
 ```
 
-*Exercise 6* (p. 20)
-
+:::question (questionTitle := "Exercise 6") (questionPage := "20")
 How many maps f : A → A satisfy f ∘ f = f?
+:::
 
+:::solution (solutionTo := "Exercise 6")
 ```savedComment
 Exercise I.6 (p. 20)
 ```
 
+By the formula above, we have 10 different maps.
+
 ```savedLean (name := outI_6)
 open CM_Finset
-
-/- By the formula above, we have 10 different maps. -/
 
 #eval idempotent_map_count A
 ```
@@ -375,19 +386,21 @@ open CM_Finset
 ```leanOutput outI_6
 10
 ```
+:::
 
-*Exercise 7* (p. 20)
-
+:::question (questionTitle := "Exercise 7") (questionPage := "20")
 How many maps g : B → B satisfy g ∘ g = g?
+:::
 
+:::solution (solutionTo := "Exercise 7")
 ```savedComment
 Exercise I.7 (p. 20)
 ```
 
+By the formula above, we have 3 different maps.
+
 ```savedLean (name := outI_7)
 open CM_Finset
-
-/- By the formula above, we have 3 different maps. -/
 
 #eval idempotent_map_count B
 ```
@@ -395,28 +408,28 @@ open CM_Finset
 ```leanOutput outI_7
 3
 ```
+:::
 
-*Exercise 8* (p. 20)
-
+:::question (questionTitle := "Exercise 8") (questionPage := "20")
 Can you find a pair of maps f : A → B, g : B → A for which g ∘ f = 𝟙 A? If so, how many such pairs?
+:::
 
+:::solution (solutionTo := "Exercise 8")
 ```savedComment
 Exercise I.8 (p. 20)
 ```
 
+No such pair exists, since the image of 𝟙 A has 3 elements, but the image of g ∘ f has only 2 elements.
+
 ```savedLean
 namespace ExI_8
 
-/- No such pair exists, since the image of 𝟙 A has 3 elements, but the
-image of g ∘ f has only 2 elements. -/
-
 open CM_Finset
+```
 
-/- We will begin using the Lean notation 𝟙 X, for the identity morphism
-on X, after we finish Article I and start working with morphisms and
-categories; for now, though, since we are still operating with functions
-and sets, we must define the identity map on A explicitly. -/
+We will begin using the Lean notation 𝟙 X, for the identity morphism on X, after we finish Article I and start working with morphisms and categories; for now, though, since we are still operating with functions and sets, we must define the identity map on A explicitly.
 
+```savedLean
 def idA : Map A A := {
   toFun := id,
   maps_to_codomain := by
@@ -461,19 +474,21 @@ example : ¬(∃ f : Map A B, ∃ g : Map B A, g ∘ f = idA) := by
 
 end ExI_8
 ```
+:::
 
-*Exercise 9* (p. 20)
-
+:::question (questionTitle := "Exercise 9") (questionPage := "20")
 Can you find a pair of maps h : B → A, k : A → B for which k ∘ h = 𝟙 B? If so, how many such pairs?
+:::
 
+:::solution (solutionTo := "Exercise 9")
 ```savedComment
 Exercise I.9 (p. 20)
 ```
 
+We define one pair h, k.
+
 ```savedLean
 namespace ExI_9
-
-/- We define one pair h, k. -/
 
 open CM_Finset
 
@@ -508,10 +523,11 @@ def k : Map A B := {
       first | exact Or.inl rfl | exact Or.inr rfl
     )
 }
+```
 
-/- We define the identity map on B explicitly (see comment under
-Exercise 8 above). -/
+We define the identity map on B explicitly (see comment under Exercise 8 above).
 
+```savedLean
 def idB : Map B B := {
   toFun
     | "eggs" => "eggs"
@@ -526,11 +542,11 @@ def idB : Map B B := {
       first | exact Or.inl rfl | exact Or.inr rfl
     )
 }
+```
 
-/- A proof that k ∘ h = 𝟙 B holds for our pair h, k is given below. (We
-define a macro for a repeated sequence of tactics to keep the proof
-concise.) -/
+A proof that k ∘ h = 𝟙 B holds for our pair h, k is given below. (We define a macro for a repeated sequence of tactics to keep the proof concise.)
 
+```savedLean
 syntax "eval_map" Lean.Parser.Tactic.rwRule : tactic
 
 macro_rules
@@ -558,14 +574,11 @@ example : k ∘ h = idB := by
     have idB_eval : idB x = "coffee" := by eval_map idB
     rw [h_eval, k_eval, idB_eval]
 
-/- There are 12 such pairs: h(eggs) can take any one of three distinct
-values in A, leaving h(coffee) to take one of the two remaining values,
-which together gives 3 * 2 = 6 combinations; and for each combination,
-k can map the element in A that is not in the image of h to either eggs
-or coffee. -/
-
 end ExI_9
 ```
+
+There are 12 such pairs: h(eggs) can take any one of three distinct values in A, leaving h(coffee) to take one of the two remaining values, which together gives 3 \* 2 = 6 combinations; and for each combination, k can map the element in A that is not in the image of h to either eggs or coffee.
+:::
 
 *Definition.* CATEGORY (p. 21)
 
