@@ -96,7 +96,9 @@ end ExI_1
 ```
 :::
 
-One very useful sort of set is a 'singleton' set, a set with exactly one element.... Call this set '𝟭'. (p. 19)
+:::excerpt (excerptPage := "19")
+One very useful sort of set is a 'singleton' set, a set with exactly one element.... Call this set '𝟭'.
+:::
 
 ```savedLean
 namespace CM_Finset
@@ -132,7 +134,9 @@ abbrev Point {β : Type*} (Y : Finset β) := Map One Y
 end CM_Finset
 ```
 
-Since a point is a map, we can compose it with another map, and get a point again. Here is an example: (p. 19)
+:::excerpt (excerptPage := "19")
+Since a point is a map, we can compose it with another map, and get a point again.
+:::
 
 ```savedLean
 namespace CM_Finset

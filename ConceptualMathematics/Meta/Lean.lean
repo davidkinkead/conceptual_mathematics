@@ -152,6 +152,35 @@ def definition : DirectiveExpanderOf DefinitionArgs
     ``(Block.other (Block.definition $(quote definitionTerm) $(quote definitionPage)) #[ $contents,* ])
 
 
+/- excerpt -/
+
+block_extension Block.excerpt (excerptPage : String) where
+  data := .str excerptPage
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun _ goB _ data contents => do
+      let .str excerptPage := data
+        | HtmlT.logError "Expected JSON string" *> pure .empty
+      pure {{<div class={{"excerpt"}}><span class={{"excerptTitle"}}>{{"Excerpt"}}</span><span class={{"excerptPage"}}>{{"&emsp;(p. " ++ excerptPage ++ ")"}}</span>{{← contents.mapM goB}}</div>}}
+
+structure ExcerptArgs where
+  excerptPage : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs ExcerptArgs m where
+  fromArgs := ExcerptArgs.mk <$> .named `excerptPage .string false
+end
+
+@[directive]
+def excerpt : DirectiveExpanderOf ExcerptArgs
+  | {excerptPage}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.excerpt $(quote excerptPage)) #[ $contents,* ])
+
+
 /- question -/
 
 block_extension Block.question (questionTitle : String) (questionPage : String) where
