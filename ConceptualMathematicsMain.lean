@@ -85,4 +85,6 @@ def config : Config where
   extraCssFiles := Html.cmCss
   htmlDepth := 2
 
-def main := manualMain (%doc ConceptualMathematics) (extraSteps := [buildExercises]) (config := config)
+def config' : Config := Config.addKaTeX config
+
+def main := manualMain (%doc ConceptualMathematics) (extraSteps := [buildExercises]) (config := config')
