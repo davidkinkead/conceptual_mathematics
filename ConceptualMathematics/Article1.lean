@@ -68,7 +68,7 @@ def h : C → D
   | C.c₅ => D.d₅
 ```
 
-For diagram (iv), we have $`f` as above and $`h \circ g` as follows.
+For diagram (iv), we have $`f` as above and $`h \circ g` as follows:
 
 ```savedLean
 def hg : B → D
@@ -82,7 +82,7 @@ example : hg = h ∘ g := by
   cases x <;> dsimp [g, h, hg]
 ```
 
-For diagram (v), we have $`(h \circ g) \circ f` as follows, which is indeed the same as $`h \circ (g \circ f)` in diagram (iii).
+For diagram (v), we have $`(h \circ g) \circ f` as follows, which is indeed the same as $`h \circ (g \circ f)` in diagram (iii):
 
 ```savedLean
 def hgf : A → D
@@ -104,6 +104,12 @@ end ExI_1
 One very useful sort of set is a 'singleton' set, a set with exactly one element.... Call this set '$`\mathbf{1}`'.
 :::
 
+We define $`\mathbf{1}` in Lean as the finite set containing the single element of type `Unit`.
+
+```savedComment
+CM_Finset.One
+```
+
 ```savedLean
 namespace CM_Finset
 
@@ -116,18 +122,18 @@ end CM_Finset
 A _point_ of a set $`X` is a map $`\mathbf{1} \rightarrow X`.
 :::
 
+We define `Point` in Lean as a `Map` between `Finset`s. (The coercion allows a term inhabiting `Map` to be used directly as a function, so we can write `f`, `John`, and `eggs` below rather than `f.toFun`, `John.toFun`, and `eggs.toFun`.)
+
+```savedComment
+CM_Finset.Map, CM_Finset.Point
+```
+
 ```savedLean
 namespace CM_Finset
-
-/- Define a map between Finsets -/
 
 structure Map {α β : Type*} (X : Finset α) (Y : Finset β) where
   toFun : α → β
   maps_to_codomain : ∀ a : α, a ∈ X → toFun a ∈ Y
-
-/- Allow a term inhabiting Map to be used directly as a function (so we
-can write f, John, and eggs below rather than f.toFun, John.toFun, and
-eggs.toFun). -/
 
 instance {α β : Type*} (X : Finset α) (Y : Finset β)
     : CoeFun (Map X Y) (fun _ ↦ α → β) where
@@ -141,6 +147,8 @@ end CM_Finset
 :::excerpt (excerptPage := "19")
 Since a point is a map, we can compose it with another map, and get a point again.
 :::
+
+We provide a Lean implementation below of the example given in the book on p. 19.
 
 ```savedLean
 namespace CM_Finset
@@ -180,7 +188,10 @@ example : f ∘ John = eggs := rfl
 end CM_Finset
 ```
 
-Replacing Finset with Set broadens the application to any set, not just finite sets.
+:::htmlDetails (classDetails := "") (classSummary := "") (summary := "Replacing Finset with Set broadens the application to any set, not just finite sets.")
+```savedComment
+CM_Set.One, CM_Set.Map, CM_Set.Point
+```
 
 ```savedLean
 namespace CM_Set
@@ -231,8 +242,12 @@ example : f ∘ John = eggs := rfl
 
 end CM_Set
 ```
+:::
 
-Using types instead of sets is cleaner and further broadens the application to any type, not just sets.
+:::htmlDetails (classDetails := "") (classSummary := "") (summary := "Using types instead of sets is cleaner and further broadens the application to any type, not just sets.")
+```savedComment
+One, CM_Type.Point
+```
 
 ```savedLean
 def One := Unit
@@ -258,20 +273,25 @@ example : f ∘ John = eggs := rfl
 
 end CM_Type
 ```
+:::
 
-We lift our definition for the _function_ Point between types to the _morphism_ Point in the category Type for later use. Note the application of `⟶` (`\hom`) for the morphism type instead of `→` (`\r`) for the function arrow.
+We lift our definition for the _function_ `Point` between types to the _morphism_ `Point` in the `category Type` for later use. Note the application of `⟶` (`\hom`) for the morphism type instead of `→` (`\r`) for the function arrow.
+
+```savedComment
+Point
+```
 
 ```savedLean
 def Point (Y : Type) := One ⟶ Y
 ```
 
-For Exercises 2–5 which follow, rather than providing exhaustive lists of maps, it seems more useful at this stage to introduce what the book calls _Alysia's formula_, even though that formula doesn't appear until slightly later (on pp. 33–34). The formula states that the number of different maps between two finite sets is equal to the number of elements in the codomain raised to the power of the number of elements in the domain.
+For Exercises 2–5 which follow, rather than providing exhaustive lists of maps, it seems more useful at this stage to introduce what the book calls _Alysia's formula_, even though that formula doesn't appear until slightly later (on pp. 33–34). The formula states that the number of different maps between two finite sets is equal to the number of elements in the codomain raised to the power of the number of elements in the domain — that is, the number of maps is $`(\#\beta)^{(\#\alpha)}`, where $`\#\alpha` is the size of the domain $`\alpha` and $`\#\beta` is the size of the codomain $`\beta`.
+
+```savedComment
+Alysia's formula
+```
 
 ```savedLean
-#where -- FIXME initial comment suppressed unless preceeded by command
-/- Alysia's formula gives the number of maps as #β ^ #α, where #α is the
-size of the domain α and #β is the size of the codomain β. -/
-
 def Alysia's_formula (α β : Type*) [Fintype α] [Fintype β] : ℕ :=
   Fintype.card β ^ Fintype.card α
 ```
@@ -285,7 +305,7 @@ How many different maps $`f` are there with domain $`A` and codomain $`B`?
 Exercise I.2 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#B) ^ {(\#A)} = 2 ^ 3 = 8` different maps.
+By Alysia's formula, we have $`(\#B)^{(\#A)} = 2^3 = 8` different maps.
 
 ```savedLean (name := outI_2)
 open CM_Finset
@@ -307,7 +327,7 @@ Same, but for maps $`A \xrightarrow{f} A`?
 Exercise I.3 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#A) ^ {(\#A)} = 3 ^ 3 = 27` different maps.
+By Alysia's formula, we have $`(\#A)^{(\#A)} = 3^3 = 27` different maps.
 
 ```savedLean (name := outI_3)
 open CM_Finset
@@ -329,7 +349,7 @@ Same, but for maps $`B \xrightarrow{f} A`?
 Exercise I.4 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#A) ^ {(\#B)} = 3 ^ 2 = 9` different maps.
+By Alysia's formula, we have $`(\#A)^{(\#B)} = 3^2 = 9` different maps.
 
 ```savedLean (name := outI_4)
 open CM_Finset
@@ -351,7 +371,7 @@ Same, but for maps $`B \xrightarrow{f} B`?
 Exercise I.5 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#B) ^ {(\#B)} = 2 ^ 2 = 4` different maps.
+By Alysia's formula, we have $`(\#B)^{(\#B)} = 2^2 = 4` different maps.
 
 ```savedLean (name := outI_5)
 open CM_Finset
@@ -364,7 +384,11 @@ open CM_Finset
 ```
 :::
 
-Exercises 6 and 7 concern idempotence, which the book formally introduces on p. 54. For the purpose of these two exercises (and again aiming to avoid exhaustive lists of maps), we introduce a formula for the total number of possible idempotents on a finite set. (See the Wikipedia article on [idempotence](https://en.wikipedia.org/wiki/Idempotence#Idempotent_functions) for additional information.)
+Exercises 6 and 7 concern idempotence, which the book formally introduces later on p. 54. For the purpose of these two exercises (and again aiming to avoid exhaustive lists of maps), we introduce the formula $$`\sum_{k=0}^{n} {n \choose k} k^{n-k}` for the total number of possible idempotents on a finite set. (See the Wikipedia article on [idempotence](https://en.wikipedia.org/wiki/Idempotence#Idempotent_functions) for additional information.)
+
+```savedComment
+idempotent_map_count
+```
 
 ```savedLean
 def idempotent_map_count (α : Type) [Fintype α] : ℕ :=
@@ -435,7 +459,7 @@ namespace ExI_8
 open CM_Finset
 ```
 
-We will begin using the Lean notation 𝟙 X, for the identity morphism on $`X`, after we finish Article I and start working with morphisms and categories; for now, though, since we are still operating with functions and sets, we must define the identity map on $`A` explicitly.
+We will begin using the Lean notation `𝟙 X`, for the identity morphism on $`X`, after we finish Article I and start working with morphisms and categories; for now, though, since we are still operating with functions and sets, we must define the identity map on $`A` explicitly.
 
 ```savedLean
 def idA : Map A A := {
@@ -537,7 +561,7 @@ def k : Map A B := {
 }
 ```
 
-We define the identity map on $`B` explicitly (see comment under Exercise 8 above).
+We define the identity map on $`B` explicitly (see the earlier comment under Exercise 8).
 
 ```savedLean
 def idB : Map B B := {
@@ -608,6 +632,8 @@ satisfying the following RULES:
 1. IDENTITY LAWS: If $`A \xrightarrow{f} B`, then $`1_B \circ f = f` and $`f \circ 1_A = f`
 2. ASSOCIATIVE LAW: If $`A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D`, then $`(h \circ g) \circ f = h \circ (g \circ f)`
 :::
+
+We print the mathlib definition of `Category` below for reference.
 
 ```lean
 #print Category
