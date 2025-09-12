@@ -106,7 +106,9 @@ def One : Finset Unit := Finset.univ
 end CM_Finset
 ```
 
-*Definition.* A _point_ of a set X is a map 𝟭 → X. (p. 19)
+:::definition (definitionTerm := "Point") (definitionPage := "19")
+A _point_ of a set X is a map 𝟭 → X.
+:::
 
 ```savedLean
 namespace CM_Finset
@@ -576,9 +578,8 @@ end ExI_9
 There are 12 such pairs: h(eggs) can take any one of three distinct values in A, leaving h(coffee) to take one of the two remaining values, which together gives 3 \* 2 = 6 combinations; and for each combination, k can map the element in A that is not in the image of h to either eggs or coffee.
 :::
 
-*Definition.* CATEGORY (p. 21)
-
-A category consists of the DATA:
+:::definition (definitionTerm := "Category") (definitionPage := "21")
+A _category_ consists of the DATA:
 
 1. OBJECTS
 2. MAPS
@@ -590,6 +591,7 @@ satisfying the following RULES:
 
 1. IDENTITY LAWS: If f : A ⟶ B, then 𝟙 B ⊚ f = f and f ⊚ 𝟙 A = f
 2. ASSOCIATIVE LAW: If f : A ⟶ B, g : B ⟶ C, h : C ⟶ D, then (h ⊚ g) ⊚ f = h ⊚ (g ⊚ f)
+:::
 
 ```lean
 #print Category

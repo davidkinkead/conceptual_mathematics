@@ -122,6 +122,36 @@ def htmlDetails : DirectiveExpanderOf DetailsArgs
     ``(Block.other (Block.htmlDetails $(quote classDetails) $(quote classSummary) $(quote summary)) #[ $contents,* ])
 
 
+/- definition -/
+
+block_extension Block.definition (definitionTerm : String) (definitionPage : String) where
+  data := .arr #[.str definitionTerm, .str definitionPage]
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun _ goB _ data contents => do
+      let .arr #[.str definitionTerm, .str definitionPage] := data
+        | HtmlT.logError "Expected two-element JSON array of strings" *> pure .empty
+      pure {{<div class={{"definition"}}><span class={{"definitionTerm"}}>{{"Definition: " ++ definitionTerm}}</span><span class={{"definitionPage"}}>{{"&emsp;(p. " ++ definitionPage ++ ")"}}</span>{{← contents.mapM goB}}</div>}}
+
+structure DefinitionArgs where
+  definitionTerm : String
+  definitionPage : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs DefinitionArgs m where
+  fromArgs := DefinitionArgs.mk <$> .named `definitionTerm .string false <*> .named `definitionPage .string false
+end
+
+@[directive]
+def definition : DirectiveExpanderOf DefinitionArgs
+  | {definitionTerm, definitionPage}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.definition $(quote definitionTerm) $(quote definitionPage)) #[ $contents,* ])
+
+
 /- question -/
 
 block_extension Block.question (questionTitle : String) (questionPage : String) where
