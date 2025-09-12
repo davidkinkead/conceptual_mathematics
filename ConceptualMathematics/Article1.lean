@@ -32,9 +32,11 @@ Exercise I.1 (p. 19)
 
 For simplicity, we use types here instead of sets. We number the elements in each set/type from top to bottom (top left to bottom right for $`D`).
 
-```savedLean
+```savedLean (show := false)
 namespace ExI_1
+```
 
+```savedLean
 inductive A where
   | a₁ | a₂ | a₃
 
@@ -91,7 +93,9 @@ def hgf : A → D
 example : hgf = (h ∘ g) ∘ f := by
   funext x
   cases x <;> dsimp [f, g, h, hgf]
+```
 
+```savedLean (show := false)
 end ExI_1
 ```
 :::
@@ -423,9 +427,11 @@ Exercise I.8 (p. 20)
 
 No such pair exists, since the image of $`1_A` has 3 elements, but the image of $`g \circ f` has only 2 elements.
 
-```savedLean
+```savedLean (show := false)
 namespace ExI_8
+```
 
+```savedLean
 open CM_Finset
 ```
 
@@ -473,7 +479,9 @@ example : ¬(∃ f : Map A B, ∃ g : Map B A, g ∘ f = idA) := by
   -- So we have a contradiction.
   rw [h_img_eq, h_card_idA] at h_card_gfA
   contradiction
+```
 
+```savedLean (show := false)
 end ExI_8
 ```
 :::
@@ -489,9 +497,11 @@ Exercise I.9 (p. 20)
 
 We define one pair $`h`, $`k`.
 
-```savedLean
+```savedLean (show := false)
 namespace ExI_9
+```
 
+```savedLean
 open CM_Finset
 
 def h : Map B A := {
@@ -575,7 +585,9 @@ example : k ∘ h = idB := by
     have k_eval : k "Mary" = "coffee" := by eval_map k
     have idB_eval : idB x = "coffee" := by eval_map idB
     rw [h_eval, k_eval, idB_eval]
+```
 
+```savedLean (show := false)
 end ExI_9
 ```
 

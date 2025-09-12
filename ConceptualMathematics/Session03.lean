@@ -35,9 +35,11 @@ $$`\text{(a)}\; k \circ h \circ g \circ f, \quad\text{(b)}\; k \circ f \circ g, 
 Exercise 3.1 (p. 36)
 ```
 
-```savedLean
+```savedLean (show := false)
 namespace Ex3_1
+```
 
+```savedLean
 variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
          (f : A ⟶ B) (g : B ⟶ A) (h : A ⟶ C) (k : C ⟶ B)
 ```
@@ -72,7 +74,7 @@ f ⊚ g : B ⟶ B
 g ⊚ f ⊚ g ⊚ k ⊚ h : A ⟶ A
 ```
 
-```savedLean
+```savedLean (show := false)
 end Ex3_1
 ```
 :::
