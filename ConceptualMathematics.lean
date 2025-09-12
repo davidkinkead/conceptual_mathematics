@@ -30,7 +30,7 @@ To learn more about Lean and mathlib, please visit the wonderful [Lean community
 
 Of particular relevance to this _Companion_ is the high-level overview of [category theory in mathlib](https://leanprover-community.github.io/theories/category_theory.html) hosted on the community site, which provides a helpful jumping-off point and also covers some of the key notation.
 
-Regarding notation, it is worth mentioning that composition of morphisms in mathlib uses the notation `≫` (`\gg`), as in `f ≫ g`, which means "`f` _followed by_ `g`". To align with the book and to follow the usual convention, however, we introduce the notation `⊚` (`\oo`), as in `f ⊚ g`, which means "`f` _following_ `g`":
+Regarding notation, it is worth mentioning that composition of morphisms in mathlib uses the notation `≫` (`\gg`), as in `f ≫ g`, which means "$`f` _followed by_ $`g`". To align with the book and to follow the usual convention, however, we introduce the notation `⊚` (`\oo`), as in `f ⊚ g`, which means "$`f` _following_ $`g`":
 
 ```lean
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g

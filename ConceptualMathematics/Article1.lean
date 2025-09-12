@@ -30,7 +30,7 @@ Check to be sure you understand how we got diagrams (ii) and (iii) from the give
 Exercise I.1 (p. 19)
 ```
 
-For simplicity, we use types here instead of sets. We number the elements in each set/type from top to bottom (top left to bottom right for D).
+For simplicity, we use types here instead of sets. We number the elements in each set/type from top to bottom (top left to bottom right for $`D`).
 
 ```savedLean
 namespace ExI_1
@@ -66,7 +66,7 @@ def h : C → D
   | C.c₅ => D.d₅
 ```
 
-For diagram (iv), we have f as above and h ∘ g as follows.
+For diagram (iv), we have $`f` as above and $`h \circ g` as follows.
 
 ```savedLean
 def hg : B → D
@@ -80,7 +80,7 @@ example : hg = h ∘ g := by
   cases x <;> dsimp [g, h, hg]
 ```
 
-For diagram (v), we have (h ∘ g) ∘ f as follows, which is indeed the same as h ∘ (g ∘ f) in diagram (iii).
+For diagram (v), we have $`(h \circ g) \circ f` as follows, which is indeed the same as $`h \circ (g \circ f)` in diagram (iii).
 
 ```savedLean
 def hgf : A → D
@@ -97,7 +97,7 @@ end ExI_1
 :::
 
 :::excerpt (excerptPage := "19")
-One very useful sort of set is a 'singleton' set, a set with exactly one element.... Call this set '𝟭'.
+One very useful sort of set is a 'singleton' set, a set with exactly one element.... Call this set '$`\mathbf{1}`'.
 :::
 
 ```savedLean
@@ -109,7 +109,7 @@ end CM_Finset
 ```
 
 :::definition (definitionTerm := "Point") (definitionPage := "19")
-A _point_ of a set X is a map 𝟭 → X.
+A _point_ of a set $`X` is a map $`\mathbf{1} \rightarrow X`.
 :::
 
 ```savedLean
@@ -273,7 +273,7 @@ def Alysia's_formula (α β : Type*) [Fintype α] [Fintype β] : ℕ :=
 ```
 
 :::question (questionTitle := "Exercise 2") (questionPage := "20")
-How many different maps f are there with domain A and codomain B?
+How many different maps $`f` are there with domain $`A` and codomain $`B`?
 :::
 
 :::solution (solutionTo := "Exercise 2")
@@ -281,7 +281,7 @@ How many different maps f are there with domain A and codomain B?
 Exercise I.2 (p. 20)
 ```
 
-By Alysia's formula, we have #B ^ #A = 2 ^ 3 = 8 different maps.
+By Alysia's formula, we have $`(\#B) ^ {(\#A)} = 2 ^ 3 = 8` different maps.
 
 ```savedLean (name := outI_2)
 open CM_Finset
@@ -295,7 +295,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 3") (questionPage := "20")
-Same, but for maps f : A → A?
+Same, but for maps $`A \xrightarrow{f} A`?
 :::
 
 :::solution (solutionTo := "Exercise 3")
@@ -303,7 +303,7 @@ Same, but for maps f : A → A?
 Exercise I.3 (p. 20)
 ```
 
-By Alysia's formula, we have #A ^ #A = 3 ^ 3 = 27 different maps.
+By Alysia's formula, we have $`(\#A) ^ {(\#A)} = 3 ^ 3 = 27` different maps.
 
 ```savedLean (name := outI_3)
 open CM_Finset
@@ -317,7 +317,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 4") (questionPage := "20")
-Same, but for maps f : B → A?
+Same, but for maps $`B \xrightarrow{f} A`?
 :::
 
 :::solution (solutionTo := "Exercise 4")
@@ -325,7 +325,7 @@ Same, but for maps f : B → A?
 Exercise I.4 (p. 20)
 ```
 
-By Alysia's formula, we have #A ^ #B = 3 ^ 2 = 9 different maps.
+By Alysia's formula, we have $`(\#A) ^ {(\#B)} = 3 ^ 2 = 9` different maps.
 
 ```savedLean (name := outI_4)
 open CM_Finset
@@ -339,7 +339,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 5") (questionPage := "20")
-Same, but for maps f : B → B?
+Same, but for maps $`B \xrightarrow{f} B`?
 :::
 
 :::solution (solutionTo := "Exercise 5")
@@ -347,7 +347,7 @@ Same, but for maps f : B → B?
 Exercise I.5 (p. 20)
 ```
 
-By Alysia's formula, we have #B ^ #B = 2 ^ 2 = 4 different maps.
+By Alysia's formula, we have $`(\#B) ^ {(\#B)} = 2 ^ 2 = 4` different maps.
 
 ```savedLean (name := outI_5)
 open CM_Finset
@@ -369,7 +369,7 @@ def idempotent_map_count (α : Type) [Fintype α] : ℕ :=
 ```
 
 :::question (questionTitle := "Exercise 6") (questionPage := "20")
-How many maps f : A → A satisfy f ∘ f = f?
+How many maps $`A \xrightarrow{f} A` satisfy $`f \circ f = f`?
 :::
 
 :::solution (solutionTo := "Exercise 6")
@@ -391,7 +391,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 7") (questionPage := "20")
-How many maps g : B → B satisfy g ∘ g = g?
+How many maps $`B \xrightarrow{g} B` satisfy $`g \circ g = g`?
 :::
 
 :::solution (solutionTo := "Exercise 7")
@@ -413,7 +413,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 8") (questionPage := "20")
-Can you find a pair of maps f : A → B, g : B → A for which g ∘ f = 𝟙 A? If so, how many such pairs?
+Can you find a pair of maps $`A \xrightarrow{f} B \xrightarrow{g} A` for which $`g \circ f = 1_A`? If so, how many such pairs?
 :::
 
 :::solution (solutionTo := "Exercise 8")
@@ -421,7 +421,7 @@ Can you find a pair of maps f : A → B, g : B → A for which g ∘ f = 𝟙 A?
 Exercise I.8 (p. 20)
 ```
 
-No such pair exists, since the image of 𝟙 A has 3 elements, but the image of g ∘ f has only 2 elements.
+No such pair exists, since the image of $`1_A` has 3 elements, but the image of $`g \circ f` has only 2 elements.
 
 ```savedLean
 namespace ExI_8
@@ -429,7 +429,7 @@ namespace ExI_8
 open CM_Finset
 ```
 
-We will begin using the Lean notation 𝟙 X, for the identity morphism on X, after we finish Article I and start working with morphisms and categories; for now, though, since we are still operating with functions and sets, we must define the identity map on A explicitly.
+We will begin using the Lean notation 𝟙 X, for the identity morphism on $`X`, after we finish Article I and start working with morphisms and categories; for now, though, since we are still operating with functions and sets, we must define the identity map on $`A` explicitly.
 
 ```savedLean
 def idA : Map A A := {
@@ -479,7 +479,7 @@ end ExI_8
 :::
 
 :::question (questionTitle := "Exercise 9") (questionPage := "20")
-Can you find a pair of maps h : B → A, k : A → B for which k ∘ h = 𝟙 B? If so, how many such pairs?
+Can you find a pair of maps $`B \xrightarrow{h} A \xrightarrow{k} B` for which $`k \circ h = 1_B`? If so, how many such pairs?
 :::
 
 :::solution (solutionTo := "Exercise 9")
@@ -487,7 +487,7 @@ Can you find a pair of maps h : B → A, k : A → B for which k ∘ h = 𝟙 B?
 Exercise I.9 (p. 20)
 ```
 
-We define one pair h, k.
+We define one pair $`h`, $`k`.
 
 ```savedLean
 namespace ExI_9
@@ -527,7 +527,7 @@ def k : Map A B := {
 }
 ```
 
-We define the identity map on B explicitly (see comment under Exercise 8 above).
+We define the identity map on $`B` explicitly (see comment under Exercise 8 above).
 
 ```savedLean
 def idB : Map B B := {
@@ -546,7 +546,7 @@ def idB : Map B B := {
 }
 ```
 
-A proof that k ∘ h = 𝟙 B holds for our pair h, k is given below. (We define a macro for a repeated sequence of tactics to keep the proof concise.)
+A proof that $`k ∘ h = 1_B` holds for our pair $`h`, $`k` is given below. (We define a macro for a repeated sequence of tactics to keep the proof concise.)
 
 ```savedLean
 syntax "eval_map" Lean.Parser.Tactic.rwRule : tactic
@@ -579,7 +579,7 @@ example : k ∘ h = idB := by
 end ExI_9
 ```
 
-There are 12 such pairs: h(eggs) can take any one of three distinct values in A, leaving h(coffee) to take one of the two remaining values, which together gives 3 \* 2 = 6 combinations; and for each combination, k can map the element in A that is not in the image of h to either eggs or coffee.
+There are 12 such pairs: $`h(\mathit{eggs})` can take any one of three distinct values in $`A`, leaving $`h(\mathit{coffee})` to take one of the two remaining values, which together gives $`3 \times 2 = 6` combinations; and for each combination, $`k` can map the element in $`A` that is not in the image of $`h` to either $`\mathit{eggs}` or $`\mathit{coffee}`.
 :::
 
 :::definition (definitionTerm := "Category") (definitionPage := "21")
@@ -587,14 +587,14 @@ A _category_ consists of the DATA:
 
 1. OBJECTS
 2. MAPS
-3. For each map f, one object as DOMAIN of f and one object as CODOMAIN of f
-4. For each object A an IDENTITY MAP, which has domain A and codomain A
-5. For each pair of maps f : A ⟶ B and g : B ⟶ C, a COMPOSITE MAP map g ⊚ f : A ⟶ C
+3. For each map $`f`, one object as DOMAIN of $`f` and one object as CODOMAIN of $`f`
+4. For each object $`A` an IDENTITY MAP, which has domain $`A` and codomain $`A`
+5. For each pair of maps $`A \xrightarrow{f} B \xrightarrow{g} C`, a COMPOSITE MAP map $`A \xrightarrow{g \;\mathrm{following}\; f} C`
 
 satisfying the following RULES:
 
-1. IDENTITY LAWS: If f : A ⟶ B, then 𝟙 B ⊚ f = f and f ⊚ 𝟙 A = f
-2. ASSOCIATIVE LAW: If f : A ⟶ B, g : B ⟶ C, h : C ⟶ D, then (h ⊚ g) ⊚ f = h ⊚ (g ⊚ f)
+1. IDENTITY LAWS: If $`A \xrightarrow{f} B`, then $`1_B \circ f = f` and $`f \circ 1_A = f`
+2. ASSOCIATIVE LAW: If $`A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D`, then $`(h \circ g) \circ f = h \circ (g \circ f)`
 :::
 
 ```lean
