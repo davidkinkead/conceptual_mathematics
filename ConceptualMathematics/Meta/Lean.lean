@@ -228,4 +228,52 @@ def solution : DirectiveExpanderOf SolutionArgs
     let contents ← stxs.mapM elabBlock
     ``(Block.other (Block.htmlDetails $(quote "solution") $(quote "solution") $(quote <| "Solution: " ++ solutionTo)) #[ $contents,* ])
 
+
+/- theorem -/
+
+structure TheoremArgs where
+  theoremTitle : String
+  theoremPage : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs TheoremArgs m where
+  fromArgs := TheoremArgs.mk <$> .named `theoremTitle .string false <*> .named `theoremPage .string false
+end
+
+@[directive]
+def theoremDirective : DirectiveExpanderOf TheoremArgs
+  | {theoremTitle, theoremPage}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.question $(quote theoremTitle) $(quote theoremPage)) #[ $contents,* ])
+
+
+/- proof -/
+
+block_extension Block.proof (proofPage : String) where
+  data := .str proofPage
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun _ goB _ data contents => do
+      let .str proofPage := data
+        | HtmlT.logError "Expected JSON string" *> pure .empty
+      pure {{<div class={{"proof"}}><span class={{"proofTitle"}}>{{"Proof"}}</span><span class={{"proofPage"}}>{{"&emsp;(p. " ++ proofPage ++ ")"}}</span>{{← contents.mapM goB}}</div>}}
+
+structure ProofArgs where
+  proofPage : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs ProofArgs m where
+  fromArgs := ProofArgs.mk <$> .named `proofPage .string false
+end
+
+@[directive]
+def proof : DirectiveExpanderOf ProofArgs
+  | {proofPage}, stxs => do
+    let contents ← stxs.mapM elabBlock
+    ``(Block.other (Block.proof $(quote proofPage)) #[ $contents,* ])
+
 end ConceptualMathematics
