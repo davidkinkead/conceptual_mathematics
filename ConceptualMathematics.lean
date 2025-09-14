@@ -6,6 +6,7 @@ import ConceptualMathematics.Session03
 import ConceptualMathematics.Article2
 import ConceptualMathematics.Session04
 import ConceptualMathematics.Session05
+import ConceptualMathematics.Session09
 import Mathlib
 
 open Verso.Genre Manual InlineLean
@@ -52,3 +53,5 @@ All page references given in this _Companion_ are to Lawvere, F.W. and Schanuel,
 {include 1 ConceptualMathematics.Session04}
 
 {include 1 ConceptualMathematics.Session05}
+
+{include 1 ConceptualMathematics.Session09}
