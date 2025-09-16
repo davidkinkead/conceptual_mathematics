@@ -695,17 +695,6 @@ constructor:
     (right_cancellation : ∀ {Z : C} (g h : Z ⟶ X), f ⊚ g = f ⊚ h → g = h) : Mono f
 ```
 
-The mathlib theorem `mono_iff_injective` is also relevant here.
-
-```savedComment
-mono_iff_injective
-```
-
-```savedLean
-example : ∀ {X Y : Type u} (f : X ⟶ Y),
-    Mono f ↔ Function.Injective f := mono_iff_injective
-```
-
 :::question (questionTitle := "Exercise 7") (questionPage := "53")
 Suppose the map $`A \xrightarrow{f} B` has a section. Then for any set $`T` and any pair $`B \xrightarrow{t_1} T`, $`B \xrightarrow{t_2} T` of maps from $`B` to $`T`, if $`t_1 \circ f = t_2 \circ f` then $`t_1 = t_2`. (This is Proposition 2\*.)
 :::
@@ -747,17 +736,6 @@ fields:
 constructor:
   CategoryTheory.Epi.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} {f : X ⟶ Y}
     (left_cancellation : ∀ {Z : C} (g h : Y ⟶ Z), g ⊚ f = h ⊚ f → g = h) : Epi f
-```
-
-The mathlib theorem `epi_iff_surjective` is also relevant here.
-
-```savedComment
-epi_iff_surjective
-```
-
-```savedLean
-example : ∀ {X Y : Type u} (f : X ⟶ Y),
-    Epi f ↔ Function.Surjective f := epi_iff_surjective
 ```
 
 :::excerpt (excerptPage := "53")

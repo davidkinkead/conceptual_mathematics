@@ -119,6 +119,10 @@ example (hpj : p ⊚ j = 𝟙 A) : Function.Surjective p := by
 
 The mathlib theorem `epi_iff_surjective` is also relevant here.
 
+```savedComment
+epi_iff_surjective
+```
+
 ```savedLean
 example {X Y : Type u} (f : X ⟶ Y) : Epi f ↔ Function.Surjective f :=
   epi_iff_surjective f
@@ -172,6 +176,10 @@ example (hpj : p ⊚ j = 𝟙 A) : Function.Injective j := by
 ```
 
 The mathlib theorem `mono_iff_injective` is also relevant here.
+
+```savedComment
+mono_iff_injective
+```
 
 ```savedLean
 example {X Y : Type u} (f : X ⟶ Y) : Mono f ↔ Function.Injective f :=
