@@ -24,11 +24,11 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
 :::definition (definitionTerm := "Isomorphism") (definitionPage := "40")
-A map $`A \xrightarrow{f} B` is called an _isomorphism_, or _invertible map_, if there is a map $`B \xrightarrow{g} A` for which $`g \circ f = 1_A` and $`f \circ g = 1_B`.
+A map $`{A \xrightarrow{f} B}` is called an _isomorphism_, or _invertible map_, if there is a map $`{B \xrightarrow{g} A}` for which $`{g \circ f = 1_A}` and $`{f \circ g = 1_B}`.
 
 A map $`g` related to $`f` by satisfying these equations is called an _inverse for_ $`f`.
 
-Two objects $`A` and $`B` are said to be _isomorphic_ if there is at least one isomorphism $`A \xrightarrow{f} B`.
+Two objects $`A` and $`B` are said to be _isomorphic_ if there is at least one isomorphism $`{A \xrightarrow{f} B}`.
 :::
 
 The corresponding mathlib definition is `Iso` (and `IsIso`), which we print below for reference.
@@ -107,11 +107,11 @@ fun {C} [Category.{v, u} C] {X Y Z} α β ↦
 ```
 
 :::question (questionTitle := "Exercise 1") (questionPage := "41")
-(R) Show that $`A \xrightarrow{1_A} A` is an isomorphism. (Hint: find an inverse for $`1_A`.)
+(R) Show that $`{A \xrightarrow{1_A} A}` is an isomorphism. (Hint: find an inverse for $`1_A`.)
 
-(S) Show that if $`A \xrightarrow{f} B` is an isomorphism, and $`B \xrightarrow{g} A` is an inverse for $`f`; then $`g` is also an isomorphism. (Hint: find an inverse for $`g`.)
+(S) Show that if $`{A \xrightarrow{f} B}` is an isomorphism, and $`{B \xrightarrow{g} A}` is an inverse for $`f`; then $`g` is also an isomorphism. (Hint: find an inverse for $`g`.)
 
-(T) Show that if $`A \xrightarrow{f} B` and $`B \xrightarrow{k} C` are isomorphisms, $`A \xrightarrow{k \circ f} C` is also an isomorphism.
+(T) Show that if $`{A \xrightarrow{f} B}` and $`{B \xrightarrow{k} C}` are isomorphisms, $`{A \xrightarrow{k \circ f} C}` is also an isomorphism.
 :::
 
 :::solution (solutionTo := "Exercise 1")
@@ -145,7 +145,7 @@ example (f : A ⟶ B) (_ : IsIso f)
   exact ⟨hg.2, hg.1⟩
 ```
 
-(T) Composition of isomorphisms is transitive, so $`k \circ f` is an isomorphism.
+(T) Composition of isomorphisms is transitive, so $`{k \circ f}` is an isomorphism.
 
 ```savedLean
 example (f : A ⟶ B) (hf : IsIso f) (k : B ⟶ C) (hk : IsIso k)
@@ -166,7 +166,7 @@ end ExII_1
 :::
 
 :::question (questionTitle := "Exercise 2") (questionPage := "42")
-Suppose $`B \xrightarrow{g} A` and $`B \xrightarrow{k} A` are _both_ inverses for $`A \xrightarrow{f} B`. Show that $`g = k`.
+Suppose $`{B \xrightarrow{g} A}` and $`{B \xrightarrow{k} A}` are _both_ inverses for $`{A \xrightarrow{f} B}`. Show that $`{g = k}`.
 :::
 
 :::solution (solutionTo := "Exercise 2")
@@ -193,13 +193,13 @@ example {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B)
 :::question (questionTitle := "Exercise 3") (questionPage := "43")
 _If $`f` has an inverse_, then $`f` satisfies the two cancellation laws:
 
-(a) If $`f \circ h = f \circ k`, then $`h = k`.
+(a) If $`{f \circ h = f \circ k}`, then $`{h = k}`.
 
-(b) If $`h \circ f = k \circ f`, then $`h = k`.
+(b) If $`{h \circ f = k \circ f}`, then $`{h = k}`.
 
 _Warning_: The following 'cancellation law' is _not_ correct, even if $`f` has an inverse.
 
-(c) (wrong): If $`h \circ f = f \circ k`, then $`h = k`.
+(c) (wrong): If $`{h \circ f = f \circ k}`, then $`{h = k}`.
 :::
 
 :::solution (solutionTo := "Exercise 3")
@@ -304,7 +304,7 @@ Exercise II.4 (p. 44)
 
 Since all five maps have their domain and codomain as the real numbers (or a subset of the real numbers), we implement them as functions in Lean.
 
-$`f` is invertible, with inverse $`f^{-1}(x) = \dfrac{x - 7}{3}`.
+$`f` is invertible, with inverse $`{f^{-1}(x) = \dfrac{x - 7}{3}}`.
 
 ```savedLean
 example (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = 3 * x + 7)
@@ -319,7 +319,7 @@ example (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = 3 * x + 7)
     ring
 ```
 
-$`g` is invertible, with inverse $`g^{-1}(x) = \sqrt{x}`.
+$`g` is invertible, with inverse $`{g^{-1}(x) = \sqrt{x}}`.
 
 ```savedLean
 open NNReal in
@@ -335,7 +335,7 @@ example (g : ℝ≥0 → ℝ≥0) (hg : ∀ x : ℝ≥0, g x = x * x)
     exact mul_self_sqrt x
 ```
 
-$`h` is not invertible, since $`h(1) = h(-1) = 1`.
+$`h` is not invertible, since $`{h(1) = h(-1) = 1}`.
 
 ```savedLean
 example (h : ℝ → ℝ) (hh : ∀ x : ℝ, h x = x * x)
@@ -358,7 +358,7 @@ example (h : ℝ → ℝ) (hh : ∀ x : ℝ, h x = x * x)
   linarith
 ```
 
-$`k` is not invertible, since $`k(1) = k(-1) = 1`.
+$`k` is not invertible, since $`{k(1) = k(-1) = 1}`.
 
 ```savedLean
 open NNReal in
@@ -382,14 +382,16 @@ example (k : ℝ → ℝ≥0) (hk : ∀ x : ℝ, k x = x * x)
   linarith
 ```
 
-$`l` is invertible, with inverse $`l^{-1}(x) = \dfrac{1}{x} - 1`, provided that we restrict the codomain of $`l` to the interval $`(0,1]`.
+$`l` is invertible, with inverse $`{l^{-1}(x) = \dfrac{1}{x} - 1}`, provided that we restrict the codomain of $`l` to the interval $`{(0,1]}`.
 
 TODO Exercise II.4.5
 :::
 
 Exercise 5 concerns counting the number of _sections_ and _retractions_ for a map (though those terms aren't formally defined until a short while later on p. 49). Rather than providing an exhaustive list of maps, we introduce here two formulas — what the book later calls _Chad's formula_ and _Danilo's formula_ (p. 117).
 
-The former states that the number of sections for a map $`p` is given by $$`\prod_{\mathbf{1} \xrightarrow{a} A} \#(p^{-1}a),` where $`A` is the codomain of $`p`.
+The former states that the number of sections for a map $`p` is given by
+$$`\prod_{\mathbf{1} \xrightarrow{a} A} \#(p^{-1}a),`
+where $`A` is the codomain of $`p`.
 
 ```savedComment
 Chad's formula
@@ -405,7 +407,9 @@ where
   pinvCount (a : α) : ℕ := X.filter (fun x ↦ p x = a) |>.card
 ```
 
-The latter states that the number of retractions for a map $`j`, assuming $`j` is injective, is given by $$`(\#A)^{(\#X - \#A)},` where $`A` is the domain of $`j` and $`X` is the codomain of $`j`.
+The latter states that the number of retractions for a map $`j`, assuming $`j` is injective, is given by
+$$`(\#A)^{(\#X - \#A)},`
+where $`A` is the domain of $`j` and $`X` is the codomain of $`j`.
 
 ```savedComment
 Danilo's formula
@@ -430,7 +434,7 @@ $`\{b, p, q, r, s\} \xrightarrow{g} \{0, 1\}\\\
 \qquad r \mapsto 1\\\
 \qquad s \mapsto 1,`
 
-how many maps $`f` are there with $`g \circ f = 1_{\{0, 1\}}`?
+how many maps $`f` are there with $`{g \circ f = 1_{\{0, 1\}}}`?
 
 Choosing a particular such $`f`, how many maps $`g` (including the given one) satisfy the same equation?
 :::
@@ -461,7 +465,7 @@ def g : XElems → Fin 2
   | s => 1
 ```
 
-By Chad's formula, we have 6 different maps $`f` with $`g \circ f = 1_{\{0, 1\}}`.
+By Chad's formula, we have 6 different maps $`f` with $`{g \circ f = 1_{\{0, 1\}}}`.
 
 ```savedLean (name := outII_5_1)
 #eval Chad's_formula X A g
@@ -480,7 +484,7 @@ def f : Fin 2 → XElems
   | 1 => r
 ```
 
-Then, by Danilo's formula, we have $`(\#A)^{(\#X - \#A)} = 2^3 = 8` different maps $`g`.
+Then, by Danilo's formula, we have $`{(\#A)^{(\#X - \#A)} = 2^3 = 8}` different maps $`g`.
 
 ```savedLean (name := outII_5_2)
 #eval Danilo's_formula A X f g
@@ -499,11 +503,11 @@ end ExII_5
 :::
 
 :::definition (definitionTerm := "Retraction, Section") (definitionPage := "49")
-If $`A \xrightarrow{f} B`:
+If $`{A \xrightarrow{f} B}`:
 
-a _retraction for_ $`f` is a map $`B \xrightarrow{r} A` for which $`r \circ f = 1_A`;
+a _retraction for_ $`f` is a map $`{B \xrightarrow{r} A}` for which $`{r \circ f = 1_A}`;
 
-a _section for_ $`f` is a map $`B \xrightarrow{s} A` for which $`f \circ s = 1_B`.
+a _section for_ $`f` is a map $`{B \xrightarrow{s} A}` for which $`{f \circ s = 1_B}`.
 :::
 
 The mathlib definition corresponding to _retraction_ is `SplitMono` (and `IsSplitMono`), which we print below for reference.
@@ -597,11 +601,15 @@ abbrev IsSection {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) :=
 ```
 
 :::theoremDirective (theoremTitle := "Proposition 1") (theoremPage := "51")
-If a map $`A \xrightarrow{f} B` has a section, then for any $`T` and for any map $`T \xrightarrow{y} B` there exists a map $`T \xrightarrow{x} A` for which $`f \circ x = y`.
+If a map $`{A \xrightarrow{f} B}` has a section, then for any $`T` and for any map $`{T \xrightarrow{y} B}` there exists a map $`{T \xrightarrow{x} A}` for which $`{f \circ x = y}`.
 :::
 
 :::proof (proofPage := "51")
-The assumption means that we have a map $`s` for which $`f \circ s = 1_B`. Thus for any given map $`T \xrightarrow{y} B` we see that we could define a map $`x` with at least the correct domain and codomain by taking the composite $`s` following $`y` $$`x = s \circ y` Does this map $`x` actually satisfy the required equation? Calculating $$`f \circ x = f \circ (s \circ y) = (f \circ s) \circ y = 1_B \circ y = y` we see that it does.
+The assumption means that we have a map $`s` for which $`{f \circ s = 1_B}`. Thus for any given map $`{T \xrightarrow{y} B}` we see that we could define a map $`x` with at least the correct domain and codomain by taking the composite $`s` following $`y`
+$$`x = s \circ y.`
+Does this map $`x` actually satisfy the required equation? Calculating
+$$`f \circ x = f \circ (s \circ y) = (f \circ s) \circ y = 1_B \circ y = y`
+we see that it does.
 :::
 
 Our implementation in Lean faithfully follows the argument of the book proof given above.
@@ -623,7 +631,7 @@ theorem prop1 {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
 ```
 
 :::question (questionTitle := "Exercise 6") (questionPage := "52")
-If the map $`A \xrightarrow{f} B` has a retraction, then for any map $`A \xrightarrow{g} T`, there is a map $`B \xrightarrow{t} T` for which $`t \circ f = g`. (This is Proposition 1\*.)
+If the map $`{A \xrightarrow{f} B}` has a retraction, then for any map $`{A \xrightarrow{g} T}`, there is a map $`{B \xrightarrow{t} T}` for which $`{t \circ f = g}`. (This is Proposition 1\*.)
 :::
 
 :::solution (solutionTo := "Exercise 6")
@@ -631,7 +639,7 @@ If the map $`A \xrightarrow{f} B` has a retraction, then for any map $`A \xright
 Exercise II.6 (Proposition 1*) (p. 52)
 ```
 
-Put $`t = g \circ r`.
+Put $`{t = g \circ r}`.
 
 ```savedLean
 theorem «prop1*» {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
@@ -645,11 +653,13 @@ theorem «prop1*» {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
 :::
 
 :::theoremDirective (theoremTitle := "Proposition 2") (theoremPage := "52")
-Suppose a map $`A \xrightarrow{f} B` has a retraction. Then for any set $`T` and for any pair of maps $`T \xrightarrow{x_1} A`, $`T \xrightarrow{x_2} A` from any set $`T` to $`A` $$`\text{if}\; f \circ x_1 = f \circ x_2 \;\text{then}\; x_1 = x_2.`
+Suppose a map $`{A \xrightarrow{f} B}` has a retraction. Then for any set $`T` and for any pair of maps $`{T \xrightarrow{x_1} A}`, $`{T \xrightarrow{x_2} A}` from any set $`T` to $`A`
+$$`\text{if}\; f \circ x_1 = f \circ x_2 \;\text{then}\; x_1 = x_2.`
 :::
 
 :::proof (proofPage := "52")
-Looking back at the definition, we see that the assumption means that we have a map $`r` for which $`r \circ f = 1_A`. Using the assumption that $`x_1` and $`x_2` are such that $`f` composes with them to get the same $`T \rightarrow B`, we can compose further with $`r` as follows: $$`x_1 = 1_A \circ x_1 = (r \circ f) \circ x_1 = r \circ (f \circ x_1) = r \circ (f \circ x_2) = (r \circ f) \circ x_2 = 1_A \circ x_2 = x_2`
+Looking back at the definition, we see that the assumption means that we have a map $`r` for which $`{r \circ f = 1_A}`. Using the assumption that $`x_1` and $`x_2` are such that $`f` composes with them to get the same $`{T \rightarrow B}`, we can compose further with $`r` as follows:
+$$`x_1 = 1_A \circ x_1 = (r \circ f) \circ x_1 = r \circ (f \circ x_1) = r \circ (f \circ x_2) = (r \circ f) \circ x_2 = 1_A \circ x_2 = x_2.`
 :::
 
 Our implementation in Lean generalises the proposition from sets to any categorical object but otherwise faithfully follows the argument of the book proof given above.
@@ -674,7 +684,7 @@ theorem prop2 {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
 ```
 
 :::definition (definitionTerm := "Injective, Monomorphism") (definitionPage := "52")
-A map $`f` satisfying the conclusion of Proposition 2 (for any pair of maps $`T \xrightarrow{x_1} A` and $`T \xrightarrow{x_2} A`, if $`f \circ x_1 = f \circ x_2` then $`x_1 = x_2`) is said to be _injective for maps from_ $`T`.
+A map $`f` satisfying the conclusion of Proposition 2 (for any pair of maps $`{T \xrightarrow{x_1} A}` and $`{T \xrightarrow{x_2} A}`, if $`{f \circ x_1 = f \circ x_2}` then $`{x_1 = x_2}`) is said to be _injective for maps from_ $`T`.
 
 If $`f` is injective for maps from $`T` for every $`T`, one says that $`f` is _injective_, or is a _monomorphism_.
 :::
@@ -696,7 +706,7 @@ constructor:
 ```
 
 :::question (questionTitle := "Exercise 7") (questionPage := "53")
-Suppose the map $`A \xrightarrow{f} B` has a section. Then for any set $`T` and any pair $`B \xrightarrow{t_1} T`, $`B \xrightarrow{t_2} T` of maps from $`B` to $`T`, if $`t_1 \circ f = t_2 \circ f` then $`t_1 = t_2`. (This is Proposition 2\*.)
+Suppose the map $`{A \xrightarrow{f} B}` has a section. Then for any set $`T` and any pair $`{B \xrightarrow{t_1} T}`, $`{B \xrightarrow{t_2} T}` of maps from $`B` to $`T`, if $`{t_1 \circ f = t_2 \circ f}` then $`{t_1 = t_2}`. (This is Proposition 2\*.)
 :::
 
 :::solution (solutionTo := "Exercise 7")
@@ -719,7 +729,7 @@ theorem «prop2*» {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
 :::
 
 :::definition (definitionTerm := "Surjective, Epimorphism") (definitionPage := "53")
-A map $`f` with this cancellation property (if $`t_1 \circ f = t_2 \circ f` then $`t_1 = t_2`) for every $`T` is called an _epimorphism_.
+A map $`f` with this cancellation property (if $`{t_1 \circ f = t_2 \circ f}` then $`{t_1 = t_2}`) for every $`T` is called an _epimorphism_.
 :::
 
 The corresponding mathlib definition is `Epi`, which we print below for reference.
@@ -759,11 +769,13 @@ example {𝒞 : Type*} [Category 𝒞] {X Y Z : 𝒞}
 ```
 
 :::theoremDirective (theoremTitle := "Proposition 3") (theoremPage := "53")
-If $`A \xrightarrow{f} B` has a retraction and if $`B \xrightarrow{g} C` has a retraction, then $`A \xrightarrow{g \circ f} C` has a retraction.
+If $`{A \xrightarrow{f} B}` has a retraction and if $`{B \xrightarrow{g} C}` has a retraction, then $`{A \xrightarrow{g \circ f} C}` has a retraction.
 :::
 
 :::proof (proofPage := "53")
-Let $`r_1 \circ f = 1_A` and $`r_2 \circ g = 1_B`. Then a good guess for a retraction of the composite would be the composite of the retractions _in the opposite order_ (which is anyway the only order in which they can be composed). Does it in fact work? $$`r \circ (g \circ f) = (r_1 \circ r_2) \circ (g \circ f) = r_1 \circ (r_2 \circ g) \circ f = r_1 \circ 1_B \circ f = r_1 \circ f = 1_A` proves that $`r` is a retraction for $`g \circ f`.
+Let $`{r_1 \circ f = 1_A}` and $`{r_2 \circ g = 1_B}`. Then a good guess for a retraction of the composite would be the composite of the retractions _in the opposite order_ (which is anyway the only order in which they can be composed). Does it in fact work?
+$$`r \circ (g \circ f) = (r_1 \circ r_2) \circ (g \circ f) = r_1 \circ (r_2 \circ g) \circ f = r_1 \circ 1_B \circ f = r_1 \circ f = 1_A`
+proves that $`r` is a retraction for $`{g \circ f}`.
 :::
 
 Our implementation in Lean faithfully follows the argument of the book proof given above.
@@ -837,10 +849,10 @@ example {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
 ```
 
 :::definition (definitionTerm := "Idempotent") (definitionPage := "54")
-An endomap $`e` is called _idempotent_ if $`e \circ e = e`.
+An endomap $`e` is called _idempotent_ if $`{e \circ e = e}`.
 :::
 
-We implement `Idempotent` and `IsIdempotent` in mathlib as follows:
+We implement `Idempotent` and `IsIdempotent` in Lean as follows:
 
 ```savedComment
 Idempotent, IsIdempotent
@@ -856,7 +868,7 @@ class IsIdempotent {𝒞 : Type*} [Category 𝒞] {A : 𝒞} (e : A ⟶ A) where
 ```
 
 :::question (questionTitle := "Exercise 9") (questionPage := "54")
-Suppose $`r` is a retraction of $`f` (equivalently $`f` is a section of $`r`) and let $`e = f \circ r`. Show that $`e` is an idempotent.... Show that if $`f` is an isomorphism, then $`e` is the identity.
+Suppose $`r` is a retraction of $`f` (equivalently $`f` is a section of $`r`) and let $`{e = f \circ r}`. Show that $`e` is an idempotent.... Show that if $`f` is an isomorphism, then $`e` is the identity.
 :::
 
 :::solution (solutionTo := "Exercise 9")
@@ -900,11 +912,14 @@ end ExII_9
 :::
 
 :::theoremDirective (theoremTitle := "Theorem (uniqueness of inverses)") (theoremPage := "54")
-If $`f` has both a retraction $`r` and a section $`s` then $`r = s`.
+If $`f` has both a retraction $`r` and a section $`s` then $`{r = s}`.
 :::
 
 :::proof (proofPage := "54")
-From the definition we have, if $`A \xrightarrow{f} B`, both of the equations $$`r \circ f = 1_A \quad\text{and}\quad f \circ s = 1_B.` Then by the identity laws and the associative law $$`r = r \circ 1_B = r \circ (f \circ s) = (r \circ f) \circ s = 1_A \circ s = s.`
+From the definition we have, if $`{A \xrightarrow{f} B}`, both of the equations
+$$`r \circ f = 1_A \quad\text{and}\quad f \circ s = 1_B.`
+Then by the identity laws and the associative law
+$$`r = r \circ 1_B = r \circ (f \circ s) = (r \circ f) \circ s = 1_A \circ s = s.`
 :::
 
 Our implementation in Lean faithfully follows the argument of the book proof given above.
@@ -929,7 +944,7 @@ theorem uniqueness_of_inverses {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
 ```
 
 :::definition (definitionTerm := "Isomorphism") (definitionPage := "54")
-A map $`A \xrightarrow{f} B` is called an _isomorphism_ if there exists another map $`B \xrightarrow{f^{-1}} A` which is both a retraction and a section for $`f`:
+A map $`{A \xrightarrow{f} B}` is called an _isomorphism_ if there exists another map $`{B \xrightarrow{f^{-1}} A}` which is both a retraction and a section for $`f`:
 $$`f \circ f⁻¹ = 1_B,\\\
 f⁻¹ \circ f = 1_A.`
 Such a map $`f^{-1}` is called _the inverse map for_ $`f`; since both of the two equations are required, the theorem of uniqueness of inverses shows that there is only one inverse.
@@ -980,7 +995,7 @@ fun {C} [Category.{v, u} C] {X Y} f [IsIso f] ↦ Classical.choose ⋯
 ```
 
 :::question (questionTitle := "Exercise 10") (questionPage := "55")
-If $`A \xrightarrow{f} B \xrightarrow{g} C` are both isomorphisms, then $`g \circ f` is an isomorphism too, and $`{(g \circ f)^{-1} = f^{-1} \circ g^{-1}}`.
+If $`{A \xrightarrow{f} B \xrightarrow{g} C}` are both isomorphisms, then $`{g \circ f}` is an isomorphism too, and $`{(g \circ f)^{-1} = f^{-1} \circ g^{-1}}`.
 :::
 
 :::solution (solutionTo := "Exercise 10")
@@ -1016,7 +1031,7 @@ example {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
 :::
 
 :::question (questionTitle := "Exercise 11") (questionPage := "55")
-If $`A = \{\mathit{Fatima}, \mathit{Omer}, \mathit{Alysia}\}` and $`B = \{\mathit{coffee}, \mathit{tea}, \mathit{cocoa}\}`, find an example of an isomorphism $`A \xrightarrow{f} B`. If $`C = \{\mathit{true}, \mathit{false}\}`, can you find any isomorphism $`A \rightarrow C`?
+If $`{A = \{\mathit{Fatima}, \mathit{Omer}, \mathit{Alysia}\}}` and $`{B = \{\mathit{coffee}, \mathit{tea}, \mathit{cocoa}\}}`, find an example of an isomorphism $`{A \xrightarrow{f} B}`. If $`{C = \{\mathit{true}, \mathit{false}\}}`, can you find any isomorphism $`{A \rightarrow C}`?
 :::
 
 :::solution (solutionTo := "Exercise 11")
@@ -1066,7 +1081,7 @@ example : IsIso f := {
 end ExII_11
 ```
 
-Since $`\#A > \#C`, there can be no pair $`A \xrightarrow{j} C`, $`C \xrightarrow{p} A` such that $`p \circ j = 1_A`; hence there is no isomorphism $`A \rightarrow C`.
+Since $`{\#A > \#C}`, there can be no pair $`{A \xrightarrow{j} C}`, $`{C \xrightarrow{p} A}` such that $`{p \circ j = 1_A}`; hence there is no isomorphism $`{A \rightarrow C}`.
 :::
 
 :::excerpt (excerptPage := "55")
@@ -1096,7 +1111,7 @@ fun {C} [CategoryStruct.{v, u} C] X ↦ X ⟶ X
 ```
 
 :::question (questionTitle := "Exercise 12") (questionPage := "56")
-How many isomorphisms are there from $`A = \{\mathit{Fatima}, \mathit{Omer}, \mathit{Alysia}\}` to $`B = \{\mathit{coffee}, \mathit{tea}, \mathit{cocoa}\}`? How many automorphisms of $`A` are there? The answers should be less than 27 — why?
+How many isomorphisms are there from $`{A = \{\mathit{Fatima}, \mathit{Omer}, \mathit{Alysia}\}}` to $`{B = \{\mathit{coffee}, \mathit{tea}, \mathit{cocoa}\}}`? How many automorphisms of $`A` are there? The answers should be less than 27 — why?
 :::
 
 :::solution (solutionTo := "Exercise 12")
@@ -1142,7 +1157,7 @@ open ExII_11
 6
 ```
 
-By Alysia's formula, $`3^3 = 27` is the number of distinct maps $`A \rightarrow B` (or $`A \rightarrow A`), so the number of isomorphisms between $`A` and $`B` (or automorphisms of $`A`) must be less than 27.
+By Alysia's formula, $`{3^3 = 27}` is the number of distinct maps $`{A \rightarrow B}` (or $`{A \rightarrow A}`), so the number of isomorphisms between $`A` and $`B` (or automorphisms of $`A`) must be less than 27.
 :::
 
 :::excerpt (excerptPage := "57")

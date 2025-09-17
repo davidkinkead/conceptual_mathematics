@@ -26,7 +26,7 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
 :::definition (definitionTerm := "Isomorphism") (definitionPage := "61")
-If $`A \xrightarrow{f} B`, an _inverse for_ $`f` is a map $`B \xrightarrow{g} A` satisfying both
+If $`{A \xrightarrow{f} B}`, an _inverse for_ $`f` is a map $`{B \xrightarrow{g} A}` satisfying both
 $$`g \circ f = 1_A \quad\text{and}\quad f \circ g = 1_B.`
 If $`f` has an inverse, we say that $`f` is an _isomorphism_ or _invertible map_.
 :::
@@ -38,8 +38,8 @@ Any map $`f` has at most one inverse.
 :::
 
 :::proof (proofPage := "61")
-Say $`A \xrightarrow{f} B`, and suppose that both $`B \xrightarrow{g} A` and $`B \xrightarrow{h} A` are inverses for $`f`; so
-$$`g \circ f = 1_A \quad\text{and}\quad f \circ g = 1_B\\\
+Say $`{A \xrightarrow{f} B}`, and suppose that both $`{B \xrightarrow{g} A}` and $`{B \xrightarrow{h} A}` are inverses for $`f`; so
+$$`g \circ f = 1_A \quad\text{and}\quad f \circ g = 1_B,\\\
 h \circ f = 1_A \quad\text{and}\quad f \circ h = 1_B.`
 We only need two of these equations to prove that $`g` and $`h` are the same:
 $$`g = 1_A \circ g = (h \circ f) \circ g = h \circ (f \circ g) = h \circ 1_B = h.`
@@ -50,7 +50,7 @@ See the Lean implementation `uniqueness_of_inverses` under the original presenta
 In some of the Exercises that follow, we start to make use of mathlib's implementation of the `Category` class (see the definition of category at the end of Article I) ahead of our more extensive reliance on it in later Articles and Sessions.
 
 :::question (questionTitle := "Exercise 1") (questionPage := "66")
-Finish checking that $`d` is an isomorphism in our category by showing that $`h \circ d` and $`d \circ h` are indeed identity maps.
+Finish checking that $`d` is an isomorphism in our category by showing that $`{h \circ d}` and $`{d \circ h}` are indeed identity maps.
 :::
 
 :::solution (solutionTo := "Exercise 1")
@@ -178,7 +178,7 @@ end Ex4_1
 :::question (questionTitle := "Exercise 2") (questionPage := "66")
 Find an isomorphism
 $$`(\{\textit{odd}, \textit{even}\}, +) \xrightarrow{f} (\{\textit{positive}, \textit{negative}\}, \times).`
-Hint: There are only two invertible maps of sets from $`\{\textit{odd}, \textit{even}\}` to $`\{\textit{pos.}, \textit{neg.}\}`. One of them 'respects the combining rules', but the other doesn't.
+Hint: There are only two invertible maps of sets from $`{\{\textit{odd}, \textit{even}\}}` to $`{\{\textit{pos.}, \textit{neg.}\}}`. One of them 'respects the combining rules', but the other doesn't.
 :::
 
 :::solution (solutionTo := "Exercise 2")
@@ -298,17 +298,17 @@ end Ex4_2
 :::question (questionTitle := "Exercise 3") (questionPage := "66")
 An unscrupulous importer has sold to the algebraic category section of our zoo some creatures which are _not_ isomorphisms. Unmask the impostors.
 
-(a) $`(\mathbb{R}, +) \xrightarrow{p} (\mathbb{R}, +)` by 'plus 1': $`p\:x = x + 1`.
+(a) $`{(\mathbb{R}, +) \xrightarrow{p} (\mathbb{R}, +)}` by 'plus 1': $`{p\:x = x + 1}`.
 
-(b) $`(\mathbb{R}, \times) \xrightarrow{\mathit{sq}} (\mathbb{R}, \times)` by 'squaring': $`\mathit{sq}\:x = x^2`.
+(b) $`{(\mathbb{R}, \times) \xrightarrow{\mathit{sq}} (\mathbb{R}, \times)}` by 'squaring': $`{\mathit{sq}\:x = x^2}`.
 
-(c) $`(\mathbb{R}, \times) \xrightarrow{\mathit{sq}} (\mathbb{R}_{\ge 0}, \times)` by 'squaring': $`\mathit{sq}\:x = x^2`.
+(c) $`{(\mathbb{R}, \times) \xrightarrow{\mathit{sq}} (\mathbb{R}_{\ge 0}, \times)}` by 'squaring': $`{\mathit{sq}\:x = x^2}`.
 
-(d) $`(\mathbb{R}, +) \xrightarrow{m} (\mathbb{R}, +)` by 'minus': $`m\:x = -x`.
+(d) $`{(\mathbb{R}, +) \xrightarrow{m} (\mathbb{R}, +)}` by 'minus': $`{m\:x = -x}`.
 
-(e) $`(\mathbb{R}, \times) \xrightarrow{m} (\mathbb{R}, \times)` by 'minus': $`m\:x = -x`.
+(e) $`{(\mathbb{R}, \times) \xrightarrow{m} (\mathbb{R}, \times)}` by 'minus': $`{m\:x = -x}`.
 
-(f) $`(\mathbb{R}, \times) \xrightarrow{c} (\mathbb{R}_{>0}, \times)` by 'cubing': $`c\:x = x^3`.
+(f) $`{(\mathbb{R}, \times) \xrightarrow{c} (\mathbb{R}_{>0}, \times)}` by 'cubing': $`{c\:x = x^3}`.
 
 Hints: Exactly one is genuine. Some of the cruder impostors fail to be maps in our category, i.e. don't respect the combining-rules. The crudest is not even a map of _sets_ with the indicated domain and codomain.
 :::

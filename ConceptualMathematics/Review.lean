@@ -36,10 +36,10 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 This section of the book is primarily a review of material covered in previous Articles and Sessions, but it includes one new definition.
 
 :::definition (definitionTerm := "Involution") (definitionPage := "118")
-If $`f \circ f = 1_A`, we say $`f` is an _involution_.
+If $`{f \circ f = 1_A}`, we say $`f` is an _involution_.
 :::
 
-We implement `Involution` and `IsInvolution` in mathlib as follows:
+We implement `Involution` and `IsInvolution` in Lean as follows:
 
 ```savedComment
 Involution, IsInvolution

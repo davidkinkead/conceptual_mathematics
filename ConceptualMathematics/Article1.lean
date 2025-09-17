@@ -68,7 +68,7 @@ def h : C → D
   | C.c₅ => D.d₅
 ```
 
-For diagram (iv), we have $`f` as above and $`h \circ g` as follows:
+For diagram (iv), we have $`f` as above and $`{h \circ g}` as follows:
 
 ```savedLean
 def hg : B → D
@@ -82,7 +82,7 @@ example : hg = h ∘ g := by
   cases x <;> dsimp [g, h, hg]
 ```
 
-For diagram (v), we have $`(h \circ g) \circ f` as follows, which is indeed the same as $`h \circ (g \circ f)` in diagram (iii):
+For diagram (v), we have $`{(h \circ g) \circ f}` as follows, which is indeed the same as $`{h \circ (g \circ f)}` in diagram (iii):
 
 ```savedLean
 def hgf : A → D
@@ -119,7 +119,7 @@ end CM_Finset
 ```
 
 :::definition (definitionTerm := "Point") (definitionPage := "19")
-A _point_ of a set $`X` is a map $`\mathbf{1} \rightarrow X`.
+A _point_ of a set $`X` is a map $`{\mathbf{1} \rightarrow X}`.
 :::
 
 We define `Point` in Lean as a `Map` between `Finset`s. (The coercion allows a term inhabiting `Map` to be used directly as a function, so we can write `f`, `John`, and `eggs` below rather than `f.toFun`, `John.toFun`, and `eggs.toFun`.)
@@ -275,7 +275,7 @@ end CM_Type
 ```
 :::
 
-We lift our definition for the _function_ `Point` between types to the _morphism_ `Point` in the `category Type` for later use. Note the application of `⟶` (`\hom`) for the morphism type instead of `→` (`\r`) for the function arrow.
+We lift our definition for the _function_ `Point` between types to the _morphism_ `Point` in the category `Type` for later use. Note the application of `⟶` (`\hom`) for the morphism type instead of `→` (`\r`) for the function arrow.
 
 ```savedComment
 Point
@@ -285,7 +285,7 @@ Point
 def Point (Y : Type) := One ⟶ Y
 ```
 
-For Exercises 2–5 which follow, rather than providing exhaustive lists of maps, it seems more useful at this stage to introduce what the book calls _Alysia's formula_, even though that formula doesn't appear until slightly later (on pp. 33–34). The formula states that the number of different maps between two finite sets is equal to the number of elements in the codomain raised to the power of the number of elements in the domain — that is, the number of maps is $`(\#\beta)^{(\#\alpha)}`, where $`\#\alpha` is the size of the domain $`\alpha` and $`\#\beta` is the size of the codomain $`\beta`.
+For Exercises 2–5 which follow, rather than providing exhaustive lists of maps, it seems more useful at this stage to introduce what the book calls _Alysia's formula_, even though that formula doesn't appear until slightly later (on pp. 33–34). The formula states that the number of different maps between two finite sets is equal to the number of elements in the codomain raised to the power of the number of elements in the domain — that is, the number of maps is $`{(\#\beta)^{(\#\alpha)}}`, where $`{\#\alpha}` is the size of the domain $`\alpha` and $`{\#\beta}` is the size of the codomain $`\beta`.
 
 ```savedComment
 Alysia's formula
@@ -305,7 +305,7 @@ How many different maps $`f` are there with domain $`A` and codomain $`B`?
 Exercise I.2 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#B)^{(\#A)} = 2^3 = 8` different maps.
+By Alysia's formula, we have $`{(\#B)^{(\#A)} = 2^3 = 8}` different maps.
 
 ```savedLean (name := outI_2)
 open CM_Finset
@@ -319,7 +319,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 3") (questionPage := "20")
-Same, but for maps $`A \xrightarrow{f} A`?
+Same, but for maps $`{A \xrightarrow{f} A}`?
 :::
 
 :::solution (solutionTo := "Exercise 3")
@@ -327,7 +327,7 @@ Same, but for maps $`A \xrightarrow{f} A`?
 Exercise I.3 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#A)^{(\#A)} = 3^3 = 27` different maps.
+By Alysia's formula, we have $`{(\#A)^{(\#A)} = 3^3 = 27}` different maps.
 
 ```savedLean (name := outI_3)
 open CM_Finset
@@ -341,7 +341,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 4") (questionPage := "20")
-Same, but for maps $`B \xrightarrow{f} A`?
+Same, but for maps $`{B \xrightarrow{f} A}`?
 :::
 
 :::solution (solutionTo := "Exercise 4")
@@ -349,7 +349,7 @@ Same, but for maps $`B \xrightarrow{f} A`?
 Exercise I.4 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#A)^{(\#B)} = 3^2 = 9` different maps.
+By Alysia's formula, we have $`{(\#A)^{(\#B)} = 3^2 = 9}` different maps.
 
 ```savedLean (name := outI_4)
 open CM_Finset
@@ -363,7 +363,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 5") (questionPage := "20")
-Same, but for maps $`B \xrightarrow{f} B`?
+Same, but for maps $`{B \xrightarrow{f} B}`?
 :::
 
 :::solution (solutionTo := "Exercise 5")
@@ -371,7 +371,7 @@ Same, but for maps $`B \xrightarrow{f} B`?
 Exercise I.5 (p. 20)
 ```
 
-By Alysia's formula, we have $`(\#B)^{(\#B)} = 2^2 = 4` different maps.
+By Alysia's formula, we have $`{(\#B)^{(\#B)} = 2^2 = 4}` different maps.
 
 ```savedLean (name := outI_5)
 open CM_Finset
@@ -384,20 +384,22 @@ open CM_Finset
 ```
 :::
 
-Exercises 6 and 7 concern idempotence, which the book formally introduces later on p. 54. For the purpose of these two exercises (and again aiming to avoid exhaustive lists of maps), we introduce the formula $$`\sum_{k=0}^{n} {n \choose k} k^{n-k}` for the total number of possible idempotents on a finite set. (See the Wikipedia article on [idempotence](https://en.wikipedia.org/wiki/Idempotence#Idempotent_functions) for additional information.)
+Exercises 6 and 7 concern idempotence, which the book formally introduces later on p. 54. For the purpose of these two exercises (and again aiming to avoid exhaustive lists of maps), we introduce the formula
+$$`\sum_{k=0}^{n} {n \choose k} k^{n-k}`
+for the total number of possible idempotents on a finite set. (See the Wikipedia article on [idempotence](https://en.wikipedia.org/wiki/Idempotence#Idempotent_functions) for additional information.)
 
 ```savedComment
-idempotent_map_count
+idempotentCount
 ```
 
 ```savedLean
-def idempotent_map_count (α : Type) [Fintype α] : ℕ :=
+def idempotentCount (α : Type) [Fintype α] : ℕ :=
   let n := Fintype.card α
   ∑ k ∈ Finset.range (n + 1), (n.choose k) * k ^ (n - k)
 ```
 
 :::question (questionTitle := "Exercise 6") (questionPage := "20")
-How many maps $`A \xrightarrow{f} A` satisfy $`f \circ f = f`?
+How many maps $`{A \xrightarrow{f} A}` satisfy $`{f \circ f = f}`?
 :::
 
 :::solution (solutionTo := "Exercise 6")
@@ -410,7 +412,7 @@ By the formula above, we have 10 different maps.
 ```savedLean (name := outI_6)
 open CM_Finset
 
-#eval idempotent_map_count A
+#eval idempotentCount A
 ```
 
 ```leanOutput outI_6
@@ -419,7 +421,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 7") (questionPage := "20")
-How many maps $`B \xrightarrow{g} B` satisfy $`g \circ g = g`?
+How many maps $`{B \xrightarrow{g} B}` satisfy $`{g \circ g = g}`?
 :::
 
 :::solution (solutionTo := "Exercise 7")
@@ -432,7 +434,7 @@ By the formula above, we have 3 different maps.
 ```savedLean (name := outI_7)
 open CM_Finset
 
-#eval idempotent_map_count B
+#eval idempotentCount B
 ```
 
 ```leanOutput outI_7
@@ -441,7 +443,7 @@ open CM_Finset
 :::
 
 :::question (questionTitle := "Exercise 8") (questionPage := "20")
-Can you find a pair of maps $`A \xrightarrow{f} B \xrightarrow{g} A` for which $`g \circ f = 1_A`? If so, how many such pairs?
+Can you find a pair of maps $`{A \xrightarrow{f} B \xrightarrow{g} A}` for which $`{g \circ f = 1_A}`? If so, how many such pairs?
 :::
 
 :::solution (solutionTo := "Exercise 8")
@@ -449,7 +451,7 @@ Can you find a pair of maps $`A \xrightarrow{f} B \xrightarrow{g} A` for which $
 Exercise I.8 (p. 20)
 ```
 
-No such pair exists, since the image of $`1_A` has 3 elements, but the image of $`g \circ f` has only 2 elements.
+No such pair exists, since the image of $`1_A` has 3 elements, but the image of $`{g \circ f}` has only 2 elements.
 
 ```savedLean (show := false)
 namespace ExI_8
@@ -511,7 +513,7 @@ end ExI_8
 :::
 
 :::question (questionTitle := "Exercise 9") (questionPage := "20")
-Can you find a pair of maps $`B \xrightarrow{h} A \xrightarrow{k} B` for which $`k \circ h = 1_B`? If so, how many such pairs?
+Can you find a pair of maps $`{B \xrightarrow{h} A \xrightarrow{k} B}` for which $`{k \circ h = 1_B}`? If so, how many such pairs?
 :::
 
 :::solution (solutionTo := "Exercise 9")
@@ -580,7 +582,7 @@ def idB : Map B B := {
 }
 ```
 
-A proof that $`k ∘ h = 1_B` holds for our pair $`h`, $`k` is given below. (We define a macro for a repeated sequence of tactics to keep the proof concise.)
+A proof that $`{k ∘ h = 1_B}` holds for our pair $`h`, $`k` is given below. (We define a macro for a repeated sequence of tactics to keep the proof concise.)
 
 ```savedLean
 syntax "eval_map" Lean.Parser.Tactic.rwRule : tactic
@@ -615,7 +617,7 @@ example : k ∘ h = idB := by
 end ExI_9
 ```
 
-There are 12 such pairs: $`h(\mathit{eggs})` can take any one of three distinct values in $`A`, leaving $`h(\mathit{coffee})` to take one of the two remaining values, which together gives $`3 \times 2 = 6` combinations; and for each combination, $`k` can map the element in $`A` that is not in the image of $`h` to either $`\mathit{eggs}` or $`\mathit{coffee}`.
+There are 12 such pairs: $`h(\mathit{eggs})` can take any one of three distinct values in $`A`, leaving $`h(\mathit{coffee})` to take one of the two remaining values, which together gives $`{3 \times 2 = 6}` combinations; and for each combination, $`k` can map the element in $`A` that is not in the image of $`h` to either $`\mathit{eggs}` or $`\mathit{coffee}`.
 :::
 
 :::definition (definitionTerm := "Category") (definitionPage := "21")
@@ -625,12 +627,12 @@ A _category_ consists of the DATA:
 2. MAPS
 3. For each map $`f`, one object as DOMAIN of $`f` and one object as CODOMAIN of $`f`
 4. For each object $`A` an IDENTITY MAP, which has domain $`A` and codomain $`A`
-5. For each pair of maps $`A \xrightarrow{f} B \xrightarrow{g} C`, a COMPOSITE MAP map $`A \xrightarrow{g \;\mathrm{following}\; f} C`
+5. For each pair of maps $`{A \xrightarrow{f} B \xrightarrow{g} C}`, a COMPOSITE MAP map $`{A \xrightarrow{g \;\mathrm{following}\; f} C}`
 
 satisfying the following RULES:
 
-1. IDENTITY LAWS: If $`A \xrightarrow{f} B`, then $`1_B \circ f = f` and $`f \circ 1_A = f`
-2. ASSOCIATIVE LAW: If $`A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D`, then $`(h \circ g) \circ f = h \circ (g \circ f)`
+1. IDENTITY LAWS: If $`{A \xrightarrow{f} B}`, then $`{1_B \circ f = f}` and $`{f \circ 1_A = f}`
+2. ASSOCIATIVE LAW: If $`{A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D}`, then $`{(h \circ g) \circ f = h \circ (g \circ f)}`
 :::
 
 We print the mathlib definition of `Category` below for reference.

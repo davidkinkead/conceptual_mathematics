@@ -52,13 +52,13 @@ inductive A where
   deriving Fintype
 ```
 
-(a) Find an _invertible_ map $`A \xrightarrow{f} A`, different from the identity map $`1_A`.
+(a) Find an _invertible_ map $`{A \xrightarrow{f} A}`, different from the identity map $`1_A`.
 
-(b) Find an _idempotent_ map $`A \xrightarrow{e} A`, different from the identity map $`1_A`.
+(b) Find an _idempotent_ map $`{A \xrightarrow{e} A}`, different from the identity map $`1_A`.
 
 (c) Find another set $`B` and two maps
 $$`B \xrightarrow{s} A \xrightarrow{r} B`
-for which $`r \circ s = 1_B` and $`s \circ r = e`. (In this part, $`e` is still the map you chose in part (b).)
+for which $`{r \circ s = 1_B}` and $`{s \circ r = e}`. (In this part, $`e` is still the map you chose in part (b).)
 :::
 
 :::solution (solutionTo := "Problem 1")
@@ -131,11 +131,11 @@ end Test1_1
 :::
 
 :::question (questionTitle := "Problem 2") (questionPage := "119")
-$`\mathbb{R}` is the set of all real numbers, and $`\mathbb{R} \xrightarrow{f} \mathbb{R}` is the map given by the explicit formula $`{f(x) = 4x — 7}` for each input $`x`. Show that $`f` has an inverse map. To do this, give an explicit formula for the inverse map $`g`, and then show that
+$`\mathbb{R}` is the set of all real numbers, and $`{\mathbb{R} \xrightarrow{f} \mathbb{R}}` is the map given by the explicit formula $`{f(x) = 4x — 7}` for each input $`x`. Show that $`f` has an inverse map. To do this, give an explicit formula for the inverse map $`g`, and then show that
 
-(a) $`(g \circ f)(x) = x` for each real number $`x`, and that
+(a) $`{(g \circ f)(x) = x}` for each real number $`x`, and that
 
-(b) $`(f \circ g)(x) = x` for each real number $`x`.
+(b) $`{(f \circ g)(x) = x}` for each real number $`x`.
 :::
 
 :::solution (solutionTo := "Problem 2")
@@ -143,7 +143,7 @@ $`\mathbb{R}` is the set of all real numbers, and $`\mathbb{R} \xrightarrow{f} \
 Problem Test 1.2 (p. 119)
 ```
 
-Put $`g(x) = \dfrac{x + 7}{4}`; then we have
+Put $`{g(x) = \dfrac{x + 7}{4}}`; then we have
 
 ```savedLean
 example (f : ℝ ⟶ ℝ) (hf : ∀ x : ℝ, f x = 4 * x - 7)

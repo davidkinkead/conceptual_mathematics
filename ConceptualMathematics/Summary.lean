@@ -32,7 +32,7 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
 :::excerpt (excerptPage := "117")
-If maps $`A \xrightarrow{j} X \xrightarrow{p} A` satisfy $`p \circ j = 1_A`, several _consequences_ follow:
+If maps $`{A \xrightarrow{j} X \xrightarrow{p} A}` satisfy $`{p \circ j = 1_A}`, several _consequences_ follow:
 :::
 
 :::excerpt (excerptPage := "117")
@@ -48,7 +48,7 @@ variable {𝒞 : Type*} [Category 𝒞] {A X : 𝒞} {j : A ⟶ X} {p : X ⟶ A}
 ```
 
 :::excerpt (excerptPage := "117")
-The endomap $`X \xrightarrow{j \circ p} X` (call it '$`\alpha`' for short) satisfies $`\alpha \circ \alpha = \alpha`; we say $`\alpha` is _idempotent_. Written out in full, this is $`(j \circ p) \circ (j \circ p) = (j \circ p)`.
+The endomap $`{X \xrightarrow{j \circ p} X}` (call it '$`\alpha`' for short) satisfies $`{\alpha \circ \alpha = \alpha}`; we say $`\alpha` is _idempotent_. Written out in full, this is $`{(j \circ p) \circ (j \circ p) = (j \circ p)}`.
 :::
 
 ```savedComment
@@ -71,7 +71,7 @@ In the category of _finite sets_
 :::
 
 ```savedLean (show := false)
-namespace FiniteSets
+namespace CM_Fintype
 ```
 
 We use `Fintype`s instead of finite sets.
@@ -81,7 +81,7 @@ variable {A X : Type u} [Fintype A] [Fintype X] {j : A ⟶ X} {p : X ⟶ A}
 ```
 
 :::excerpt (excerptPage := "117")
-(1) $`p` satisfies: for each member $`a` of $`A`, there is at least one member $`x` of $`X` for which $`p(x) = a`; (We say $`p` is _surjective_.)
+(1) $`p` satisfies: for each member $`a` of $`A`, there is at least one member $`x` of $`X` for which $`{p(x) = a}`; (We say $`p` is _surjective_.)
 :::
 
 ```savedComment
@@ -129,7 +129,7 @@ example {X Y : Type u} (f : X ⟶ Y) : Epi f ↔ Function.Surjective f :=
 ```
 
 :::excerpt (excerptPage := "117")
-(2) $`j` satisfies: if $`j(a_1) = j(a_2)`, then $`a_1 = a_2`; (We say j is _injective_.)
+(2) $`j` satisfies: if $`{j(a_1) = j(a_2)}`, then $`{a_1 = a_2}`; (We say j is _injective_.)
 :::
 
 ```savedComment
@@ -187,10 +187,10 @@ example {X Y : Type u} (f : X ⟶ Y) : Mono f ↔ Function.Injective f :=
 ```
 
 :::excerpt (excerptPage := "117")
-(3) $`\#A \le \#X`, and if $`\#A = 0`, then $`\#X = 0` too!
+(3) $`{\#A \le \#X}`, and if $`{\#A = 0}`, then $`{\#X = 0}` too!
 :::
 
-The key step in our proof below that $`\#A \le \#X` is provided by the mathlib theorem `Cardinal.mk_le_of_surjective`, which states that the number of elements of the codomain of a surjective function is less than or equal to the number of elements of its domain, as follows:
+The key step in our proof below that $`{\#A \le \#X}` is provided by the mathlib theorem `Cardinal.mk_le_of_surjective`, which states that the number of elements of the codomain of a surjective function is less than or equal to the number of elements of its domain, as follows:
 
 ```savedComment
 Cardinal.mk_le_of_surjective, Cardinal.mk_le_of_injective
@@ -224,7 +224,7 @@ example (hpj : p ⊚ j = 𝟙 A) : #A ≤ #X := by
   exact mk_le_of_injective hj₃
 ```
 
-For the second part of (3) — that is, if $`\#A = 0`, then $`\#X = 0` — we first define the following lemma:
+For the second part of (3) — that is, if $`{\#A = 0}`, then $`{\#X = 0}` — we first define the following lemma:
 
 ```savedComment
 h_cardinal_zero_eq_zero_iff
@@ -239,7 +239,7 @@ theorem h_cardinal_zero_eq_zero_iff {α : Type u} [Fintype α]
   exact Fintype.card_eq_zero_iff
 ```
 
-We can then proceed as below. (Note that the primary assumption $`p \circ j = 1_A` is not required here, since any $`p` that maps to an empty codomain must have an empty domain.)
+We can then proceed as below. (Note that the primary assumption $`{p \circ j = 1_A}` is not required here, since any $`p` that maps to an empty codomain must have an empty domain.)
 
 ```savedLean
 open Cardinal in
@@ -252,7 +252,7 @@ example (_ : p ⊚ j = 𝟙 A) : #A = 0 → #X = 0 := by
 ```
 
 ```savedLean (show := false)
-end FiniteSets
+end CM_Fintype
 ```
 
 ```savedLean (show := false)

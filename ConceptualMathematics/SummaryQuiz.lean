@@ -20,7 +20,7 @@ Fill in the blanks; when *vs*? occurs, cross out the false alternative.
 :::
 
 :::solution (solutionTo := "Problem 2")
-$`1_A`; endomap; idempotent; $`(f \circ g) \circ (f \circ g) = (f \circ g)`
+$`1_A`; endomap; idempotent; $`{(f \circ g) \circ (f \circ g) = (f \circ g)}`
 :::
 
 :::question (questionTitle := "Problem 3") (questionPage := "116")

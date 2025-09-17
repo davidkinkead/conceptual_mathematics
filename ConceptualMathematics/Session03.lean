@@ -25,9 +25,9 @@ _Category_ having been defined at the end of Article I, we now generally impleme
 
 :::question (questionTitle := "Exercise 1") (questionPage := "36")
 $`A`, $`B`, and $`C` are three different sets (or even three different objects in any category); $`f`, $`g`, $`h`, and $`k` are maps with domains and codomains as follows:
-$$`A \xrightarrow{f} B, \quad B \xrightarrow{g} A, \quad A \xrightarrow{h} C, \quad C \xrightarrow{k} B`
+$$`A \xrightarrow{f} B, \quad B \xrightarrow{g} A, \quad A \xrightarrow{h} C, \quad C \xrightarrow{k} B.`
 Two of the expressions below make sense. Find each of the two, and say what its domain and codomain are:
-$$`\text{(a)}\; k \circ h \circ g \circ f, \quad\text{(b)}\; k \circ f \circ g, \quad\text{(c)}\; g \circ f \circ g \circ k \circ h`
+$$`\text{(a)}\; k \circ h \circ g \circ f, \quad\text{(b)}\; k \circ f \circ g, \quad\text{(c)}\; g \circ f \circ g \circ k \circ h.`
 :::
 
 :::solution (solutionTo := "Exercise 1")
@@ -54,7 +54,7 @@ variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
 k ⊚ h ⊚ g ⊚ f : A ⟶ B
 ```
 
-(b) does not make sense, since the codomain of $`f \circ g` is $`B`, but the domain of $`k` is $`C`.
+(b) does not make sense, since the codomain of $`{f \circ g}` is $`B`, but the domain of $`k` is $`C`.
 
 ```savedLean (name := out3_1_b)
 #check f ⊚ g

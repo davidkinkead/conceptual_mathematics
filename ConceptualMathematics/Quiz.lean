@@ -32,7 +32,7 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
 :::question (questionTitle := "Problem 1") (questionPage := "108")
-Give an example of two explicit sets $`A` and $`B` and an explicit map $`A \xrightarrow{f} B` satisfying _both_:
+Give an example of two explicit sets $`A` and $`B` and an explicit map $`{A \xrightarrow{f} B}` satisfying _both_:
 
 (a) there is a retraction for $`f`, _and_
 
@@ -102,11 +102,11 @@ end Quiz_1
 :::
 
 :::question (questionTitle := "Problem 2") (questionPage := "108")
-If $`C \xrightarrow{p} D \xrightarrow{q} C` satisfy $`p \circ q \circ p = p`, can you conclude that
+If $`{C \xrightarrow{p} D \xrightarrow{q} C}` satisfy $`{p \circ q \circ p = p}`, can you conclude that
 
-(a) $`p \circ q` is idempotent? If so, how?
+(a) $`{p \circ q}` is idempotent? If so, how?
 
-(b) $`q \circ p` is idempotent? If so, how?
+(b) $`{q \circ p}` is idempotent? If so, how?
 :::
 
 :::solution (solutionTo := "Problem 2")
@@ -123,7 +123,7 @@ variable {𝒞 : Type*} [Category 𝒞] {C D : 𝒞}
          (p : C ⟶ D) (q : D ⟶ C) (hpq : p ⊚ q ⊚ p = p)
 ```
 
-We show that $`p \circ q` is idempotent.
+We show that $`{p \circ q}` is idempotent.
 
 ```savedLean
 example : IsIdempotent (p ⊚ q) := {
@@ -135,7 +135,7 @@ example : IsIdempotent (p ⊚ q) := {
 }
 ```
 
-We show that $`q \circ p` is idempotent.
+We show that $`{q \circ p}` is idempotent.
 
 ```savedLean
 example : IsIdempotent (q ⊚ p) := {
@@ -152,7 +152,7 @@ end Quiz_2
 :::
 
 :::question (questionTitle := "Problem 2*") (questionPage := "108")
-If $`C \xrightarrow{p} D \xrightarrow{q} C` satisfy $`p \circ q \circ p = p`, use the given maps $`p` and $`q` to devise a map $`q'` satisfying _both_:
+If $`{C \xrightarrow{p} D \xrightarrow{q} C}` satisfy $`{p \circ q \circ p = p}`, use the given maps $`p` and $`q` to devise a map $`q'` satisfying _both_:
 $$`p \circ q' \circ p = p`
 _and_
 $$`q' \circ p \circ q' = q'`
@@ -173,7 +173,7 @@ variable {𝒞 : Type*} [Category 𝒞] {C D : 𝒞}
          (p : C ⟶ D) (q : D ⟶ C) (hpq : p ⊚ q ⊚ p = p)
 ```
 
-We show that $`q' = q \circ p \circ q` has the required properties.
+We show that $`{q' = q \circ p \circ q}` has the required properties.
 
 ```savedLean
 example : ∃ q', p ⊚ q' ⊚ p = p ∧ q' ⊚ p ⊚ q' = q' := by

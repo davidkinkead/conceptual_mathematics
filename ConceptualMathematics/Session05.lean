@@ -28,11 +28,11 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
 :::question (questionTitle := "Exercise 1") (questionPage := "70")
-(a) Show that if there is a map $`g` for which $`h = g \circ f`, then for any pair $`a₁`, $`a₂` of points $`\mathbf{1} \rightarrow A` of the domain $`A` of $`f` (and of $`h`) we have:
-$$`\text{if}\; fa₁ = fa₂ \;\text{then}\; ha₁ = ha₂.`
-(So, if for some pair of points one has $`fa₁ = fa₂` but $`ha₁ \ne ha₂`, then $`h` is not determined by $`f`.)
+(a) Show that if there is a map $`g` for which $`{h = g \circ f}`, then for any pair $`a_1`, $`a_2` of points $`{\mathbf{1} \rightarrow A}` of the domain $`A` of $`f` (and of $`h`) we have:
+$$`\text{if}\; fa_1 = fa_2 \;\text{then}\; ha_1 = ha_2.`
+(So, if for some pair of points one has $`{f a_1 = f a_2}` but $`{h a_1 \ne h a_2}`, then $`h` is not determined by $`f`.)
 
-(b) Does the converse hold? That is, if maps (of sets) $`f` and $`h` satisfy the conditions above ('for any pair ... then $`ha₁ = ha₂`'), must there be a map $`B \xrightarrow{g} C` with $`h = g \circ f`?
+(b) Does the converse hold? That is, if maps (of sets) $`f` and $`h` satisfy the conditions above ('for any pair ... then $`{h a_1 = h a_2}`'), must there be a map $`{B \xrightarrow{g} C}` with $`{h = g \circ f}`?
 :::
 
 :::solution (solutionTo := "Exercise 1")
@@ -122,9 +122,9 @@ def IsConstantMap {A C : Type} (h : A ⟶ C) :=
 ```
 
 :::question (questionTitle := "Exercise 2") (questionPage := "71")
-(a) Show that if there is an $`f` with $`g \circ f = h`, then $`h` and $`g` satisfy: For any $`a` in $`A` there is at least one $`b` in $`B` for which $`h(a) = g(b)`.
+(a) Show that if there is an $`f` with $`{g \circ f = h}`, then $`h` and $`g` satisfy: For any $`a` in $`A` there is at least one $`b` in $`B` for which $`{h(a) = g(b)}`.
 
-(b) Does the converse hold? That is, if $`h` and $`g` satisfy the condition above, must there be a map $`f` with $`h = g \circ f`?
+(b) Does the converse hold? That is, if $`h` and $`g` satisfy the condition above, must there be a map $`f` with $`{h = g \circ f}`?
 :::
 
 :::solution (solutionTo := "Exercise 2")
@@ -159,7 +159,7 @@ example {A B C : Type} {g : B ⟶ C} {h : A ⟶ C}
 :::
 
 :::definition (definitionTerm := "Section") (definitionPage := "72")
-$`A \xrightarrow{f} B` is a _section of_ $`B \xrightarrow{g} A` if $`g \circ f = 1_A`.
+$`{A \xrightarrow{f} B}` is a _section of_ $`{B \xrightarrow{g} A}` if $`{g \circ f = 1_A}`.
 :::
 
 See the original presentation of this definition of section in Article II.
@@ -177,7 +177,7 @@ Exercise 5.3 (p. 75)
 namespace Ex5_3
 ```
 
-We label the elements in the first column of $`A` as $`a₁₁`, $`a₁₂`, $`a₁₃`, $`a₁₄` and the elements in the second column of $`A` as $`a₂₁`, $`a₂₂`; we label the element in the first column of $`B` as $`b₁` and the element in the second column of $`B` as $`b₂`.
+We label the elements in the first column of $`A` as $`a_{11}`, $`a_{12}`, $`a_{13}`, $`a_{14}` and the elements in the second column of $`A` as $`a_{21}`, $`a_{22}`; we label the element in the first column of $`B` as $`b_1` and the element in the second column of $`B` as $`b_2`.
 
 ```savedLean
 inductive A where
