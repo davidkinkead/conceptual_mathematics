@@ -2,6 +2,7 @@ import VersoManual
 import ConceptualMathematics.Meta.Lean
 import ConceptualMathematics.Html.Css
 import ConceptualMathematics.Article1
+import ConceptualMathematics.Session02
 import ConceptualMathematics.Session03
 import ConceptualMathematics.Article2
 import ConceptualMathematics.Session04
@@ -51,6 +52,8 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 All page references given in this _Companion_ are to Lawvere, F.W. and Schanuel, S.H. (2009) _Conceptual mathematics: a first introduction to categories_. 2nd edn. Cambridge: Cambridge University Press.
 
 {include 1 ConceptualMathematics.Article1}
+
+{include 1 ConceptualMathematics.Session02}
 
 {include 1 ConceptualMathematics.Session03}
 

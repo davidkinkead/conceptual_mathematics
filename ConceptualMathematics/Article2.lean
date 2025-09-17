@@ -1,6 +1,7 @@
 import VersoManual
 import ConceptualMathematics.Meta.Lean
 import ConceptualMathematics.Article1
+import ConceptualMathematics.Session02
 import ConceptualMathematics.Session03
 import Mathlib
 
@@ -13,6 +14,7 @@ open CategoryTheory
 
 ```savedImport
 import ConceptualMathematics.Article1
+import ConceptualMathematics.Session02
 import ConceptualMathematics.Session03
 import Mathlib
 open CategoryTheory
