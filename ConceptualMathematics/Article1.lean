@@ -637,6 +637,7 @@ satisfying the following RULES:
 
 We print the mathlib definition of `Category` below for reference.
 
+:::htmlDiv («class» := "print")
 ```lean
 #print Category
 ```
@@ -665,6 +666,7 @@ constructor:
 field notation resolution order:
   CategoryTheory.Category, CategoryTheory.CategoryStruct, Quiver
 ```
+:::
 
 ```savedLean (show := false)
 end CM

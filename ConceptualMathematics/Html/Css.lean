@@ -8,6 +8,10 @@ div.definition, div.excerpt, div.question, div.proof {
   padding: 1rem;
 }
 
+div.print {
+  color: blue;
+}
+
 span.definitionTerm, span.excerptTitle, span.questionTitle, span.proofTitle {
   font-family: sans-serif;
   font-size: larger;

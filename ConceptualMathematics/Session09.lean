@@ -54,6 +54,7 @@ $`A` is a _retract of_ $`B` means that there are maps $`{A \xrightarrow{s} B \xr
 
 The corresponding mathlib definition is `Retract`, which we print below for reference.
 
+:::htmlDiv («class» := "print")
 ```lean
 #print Retract
 ```
@@ -70,6 +71,7 @@ constructor:
   CategoryTheory.Retract.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (i : X ⟶ Y) (r : Y ⟶ X)
     (retract : r ⊚ i = 𝟙 X := by cat_disch) : Retract X Y
 ```
+:::
 
 :::question (questionTitle := "Exercise 2") (questionPage := "100")
 (In any category) Show that
