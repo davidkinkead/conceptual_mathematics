@@ -115,12 +115,10 @@ Lastly we define the concrete algebraic object of real numbers with addition as 
 
 ```savedLean
 def RealAdd : AlgebraicObj := {
-  t := ℝ,
-  carrier := Set.univ,
-  oper := (· + ·),
-  oper_mem := by
-    intros
-    exact Set.mem_univ _
+  t := ℝ
+  carrier := Set.univ
+  oper := (· + ·)
+  oper_mem := fun _ _ ↦ Set.mem_univ _
 }
 ```
 
@@ -224,21 +222,17 @@ Create algebraic objects for parity with addition and sign with multiplication.
 
 ```savedLean
 def parityAdd : AlgebraicObj := {
-  t := Parity,
-  carrier := Set.univ,
-  oper := (· + ·),
-  oper_mem := by
-    intros
-    exact Set.mem_univ _
+  t := Parity
+  carrier := Set.univ
+  oper := (· + ·)
+  oper_mem := fun _ _ ↦ Set.mem_univ _
 }
 
 def signMul : AlgebraicObj := {
-  t := Sign,
-  carrier := Set.univ,
-  oper := (· * ·),
-  oper_mem := by
-    intros
-    exact Set.mem_univ _
+  t := Sign
+  carrier := Set.univ
+  oper := (· * ·)
+  oper_mem := fun _ _ ↦ Set.mem_univ _
 }
 ```
 

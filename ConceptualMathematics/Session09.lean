@@ -96,7 +96,7 @@ We show that (R) holds.
 
 ```savedLean
 example : Retract A A := {
-  i := 𝟙 A,
+  i := 𝟙 A
   r := 𝟙 A
 }
 ```
@@ -105,7 +105,7 @@ We show that (T) holds (cf. Proposition 3 in Article II).
 
 ```savedLean
 example (h₁ : Retract A B) (h₂ : Retract B C) : Retract A C := {
-  i := h₂.i ⊚ h₁.i,
+  i := h₂.i ⊚ h₁.i
   r := h₁.r ⊚ h₂.r
 }
 ```
@@ -151,8 +151,8 @@ example {𝒞 : Type*} [Category 𝒞] {B : 𝒞}
     {e : B ⟶ B} [IsIdempotent e]
     (hsr : Splitting e) (hsr' : Splitting e)
     : Iso hsr.A hsr'.A := {
-  hom := hsr'.r ⊚ hsr.s,
-  inv := hsr.r ⊚ hsr'.s,
+  hom := hsr'.r ⊚ hsr.s
+  inv := hsr.r ⊚ hsr'.s
   hom_inv_id := by
     rw [Category.assoc, ← Category.assoc hsr'.r, hsr'.sr]
     -- rw [← hsr.sr] needs a bit of hand-holding here
@@ -162,7 +162,7 @@ example {𝒞 : Type*} [Category 𝒞] {B : 𝒞}
       arg 1
       rw [← hsr.sr]
     rw [Category.assoc, hsr.rs]
-    rw [← Category.assoc, hsr.rs, Category.id_comp],
+    rw [← Category.assoc, hsr.rs, Category.id_comp]
   inv_hom_id := by
     rw [Category.assoc, ← Category.assoc hsr.r, hsr.sr]
     -- rw [← hsr'.sr] likewise needs a bit of hand-holding here

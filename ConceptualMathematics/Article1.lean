@@ -157,7 +157,7 @@ def A : Finset String := { "John", "Mary", "Sam" }
 def B : Finset String := { "eggs", "coffee" }
 
 def John : Point A := {
-  toFun := fun _ ↦ "John",
+  toFun := fun _ ↦ "John"
   maps_to_codomain := by simp [A]
 }
 
@@ -165,7 +165,7 @@ def f : Map A B := {
   toFun
     | "John" => "eggs"
     | "Mary" => "eggs"
-    | _ => "coffee",
+    | _ => "coffee"
   maps_to_codomain := by
     intro _ ha
     dsimp [A, B] at *
@@ -179,7 +179,7 @@ def f : Map A B := {
 }
 
 def eggs : Point B := {
-  toFun := fun _ ↦ "eggs",
+  toFun := fun _ ↦ "eggs"
   maps_to_codomain := by simp [B]
 }
 
@@ -212,7 +212,7 @@ def A : Set String := { "John", "Mary", "Sam" }
 def B : Set String := { "eggs", "coffee" }
 
 def John : Point A := {
-  toFun := fun _ ↦ "John",
+  toFun := fun _ ↦ "John"
   maps_to_codomain := by simp [A]
 }
 
@@ -220,7 +220,7 @@ def f : Map A B := {
   toFun
     | "John" => "eggs"
     | "Mary" => "eggs"
-    | _ => "coffee",
+    | _ => "coffee"
   maps_to_codomain := by
     intro _ ha
     dsimp [A, B] at *
@@ -234,7 +234,7 @@ def f : Map A B := {
 }
 
 def eggs : Point B := {
-  toFun := fun _ ↦ "eggs",
+  toFun := fun _ ↦ "eggs"
   maps_to_codomain := by simp [B]
 }
 
@@ -465,7 +465,7 @@ We will begin using the Lean notation `𝟙 X`, for the identity morphism on $`X
 
 ```savedLean
 def idA : Map A A := {
-  toFun := id,
+  toFun := id
   maps_to_codomain := by
     intro _ ha
     dsimp [A] at *
@@ -533,7 +533,7 @@ open CM_Finset
 def h : Map B A := {
   toFun
     | "eggs" => "John"
-    | _ => "Mary",
+    | _ => "Mary"
   maps_to_codomain := by
     intro _ hb
     dsimp [A, B] at *
@@ -549,7 +549,7 @@ def h : Map B A := {
 def k : Map A B := {
   toFun
     | "John" => "eggs"
-    | _ => "coffee",
+    | _ => "coffee"
   maps_to_codomain := by
     intro _ ha
     dsimp [A, B] at *
@@ -569,7 +569,7 @@ We define the identity map on $`B` explicitly (see the earlier comment under Exe
 def idB : Map B B := {
   toFun
     | "eggs" => "eggs"
-    | _ => "coffee",
+    | _ => "coffee"
   maps_to_codomain := by
     intro _ hb
     dsimp [B] at *
