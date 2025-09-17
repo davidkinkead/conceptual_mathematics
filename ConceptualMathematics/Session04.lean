@@ -25,13 +25,13 @@ namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
-:::definition (definitionTerm := "Isomorphism") (definitionPage := "61")
+:::definition (definitionTerm := "Inverse, Isomorphism") (definitionPage := "61")
 If $`{A \xrightarrow{f} B}`, an _inverse for_ $`f` is a map $`{B \xrightarrow{g} A}` satisfying both
 $$`g \circ f = 1_A \quad\text{and}\quad f \circ g = 1_B.`
 If $`f` has an inverse, we say that $`f` is an _isomorphism_ or _invertible map_.
 :::
 
-See the original presentation of this definition of isomorphism at the beginning of Article II.
+See the original presentation of these definitions at the beginning of Article II.
 
 :::theoremDirective (theoremTitle := "Theorem (uniqueness of inverses)") (theoremPage := "61")
 Any map $`f` has at most one inverse.

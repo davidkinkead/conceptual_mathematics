@@ -23,7 +23,7 @@ namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
 
-:::definition (definitionTerm := "Isomorphism") (definitionPage := "40")
+:::definition (definitionTerm := "Isomorphism, Inverse") (definitionPage := "40")
 A map $`{A \xrightarrow{f} B}` is called an _isomorphism_, or _invertible map_, if there is a map $`{B \xrightarrow{g} A}` for which $`{g \circ f = 1_A}` and $`{f \circ g = 1_B}`.
 
 A map $`g` related to $`f` by satisfying these equations is called an _inverse for_ $`f`.
@@ -31,7 +31,7 @@ A map $`g` related to $`f` by satisfying these equations is called an _inverse f
 Two objects $`A` and $`B` are said to be _isomorphic_ if there is at least one isomorphism $`{A \xrightarrow{f} B}`.
 :::
 
-The corresponding mathlib definition is `Iso` (and `IsIso`), which we print below for reference.
+The corresponding mathlib definition for isomorphism is `Iso` (and `IsIso`), which we print below for reference.
 
 ```lean
 #print Iso
@@ -943,14 +943,14 @@ theorem uniqueness_of_inverses {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
     _ = s := Category.comp_id s
 ```
 
-:::definition (definitionTerm := "Isomorphism") (definitionPage := "54")
+:::definition (definitionTerm := "Isomorphism, Inverse") (definitionPage := "54")
 A map $`{A \xrightarrow{f} B}` is called an _isomorphism_ if there exists another map $`{B \xrightarrow{f^{-1}} A}` which is both a retraction and a section for $`f`:
 $$`f \circ f⁻¹ = 1_B,\\\
 f⁻¹ \circ f = 1_A.`
 Such a map $`f^{-1}` is called _the inverse map for_ $`f`; since both of the two equations are required, the theorem of uniqueness of inverses shows that there is only one inverse.
 :::
 
-We compare this definition of _isomorphism_ with the earlier definition on p. 40. A proof that the two definitions are equivalent is given below.
+We compare these definitions of _isomorphism_ and _inverse_ with the earlier definitions on p. 40. A proof that the two definitions of isomorphism are equivalent is given below.
 
 ```savedComment
 Equivalency of two definitions of isomorphism (pp. 54 & 40)
