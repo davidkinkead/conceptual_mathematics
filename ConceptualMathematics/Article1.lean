@@ -623,16 +623,21 @@ There are 12 such pairs: $`h(\mathit{eggs})` can take any one of three distinct 
 :::definition (definitionTerm := "Category") (definitionPage := "21")
 A _category_ consists of the DATA:
 
-1. OBJECTS
-2. MAPS
-3. For each map $`f`, one object as DOMAIN of $`f` and one object as CODOMAIN of $`f`
-4. For each object $`A` an IDENTITY MAP, which has domain $`A` and codomain $`A`
-5. For each pair of maps $`{A \xrightarrow{f} B \xrightarrow{g} C}`, a COMPOSITE MAP map $`{A \xrightarrow{g \;\mathrm{following}\; f} C}`
+\(1\) OBJECTS
+
+\(2\) MAPS
+
+\(3\) For each map $`f`, one object as DOMAIN of $`f` and one object as CODOMAIN of $`f`
+
+\(4\) For each object $`A` an IDENTITY MAP, which has domain $`A` and codomain $`A`
+
+\(5\) For each pair of maps $`{A \xrightarrow{f} B \xrightarrow{g} C}`, a COMPOSITE MAP map $`{A \xrightarrow{g \;\mathrm{following}\; f} C}`
 
 satisfying the following RULES:
 
-1. IDENTITY LAWS: If $`{A \xrightarrow{f} B}`, then $`{1_B \circ f = f}` and $`{f \circ 1_A = f}`
-2. ASSOCIATIVE LAW: If $`{A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D}`, then $`{(h \circ g) \circ f = h \circ (g \circ f)}`
+\(i\) IDENTITY LAWS: If $`{A \xrightarrow{f} B}`, then $`{1_B \circ f = f}` and $`{f \circ 1_A = f}`
+
+\(ii\) ASSOCIATIVE LAW: If $`{A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D}`, then $`{(h \circ g) \circ f = h \circ (g \circ f)}`
 :::
 
 We print the mathlib definition of `Category` below for reference.
