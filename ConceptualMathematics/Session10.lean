@@ -16,7 +16,7 @@ open ConceptualMathematics
 open CategoryTheory
 
 
-#doc (Manual) "Brouwer's theorems" =>
+#doc (Manual) "Session 10: Brouwer's theorems" =>
 
 ```savedImport
 import ConceptualMathematics.Article1
