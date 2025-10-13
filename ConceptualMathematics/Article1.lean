@@ -14,7 +14,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -32,7 +32,7 @@ Exercise I.1 (p. 19)
 
 For simplicity, we use types here instead of sets. We number the elements in each set/type from top to bottom (top left to bottom right for $`D`).
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExI_1
 ```
 
@@ -95,7 +95,7 @@ example : hgf = (h ∘ g) ∘ f := by
   cases x <;> dsimp [f, g, h, hgf]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExI_1
 ```
 :::
@@ -453,7 +453,7 @@ Exercise I.8 (p. 20)
 
 No such pair exists, since the image of $`1_A` has 3 elements, but the image of $`{g \circ f}` has only 2 elements.
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExI_8
 ```
 
@@ -507,7 +507,7 @@ example : ¬(∃ f : Map A B, ∃ g : Map B A, g ∘ f = idA) := by
   contradiction
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExI_8
 ```
 :::
@@ -523,7 +523,7 @@ Exercise I.9 (p. 20)
 
 We define one pair $`h`, $`k`.
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExI_9
 ```
 
@@ -613,7 +613,7 @@ example : k ∘ h = idB := by
     rw [h_eval, k_eval, idB_eval]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExI_9
 ```
 
@@ -673,6 +673,6 @@ field notation resolution order:
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

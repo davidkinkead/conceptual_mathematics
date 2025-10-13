@@ -16,7 +16,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -40,6 +40,6 @@ example {A B : Type} {f g : A ⟶ B}
   exact congrFun (h (fun _ => a')) ()
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

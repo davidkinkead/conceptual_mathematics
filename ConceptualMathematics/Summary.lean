@@ -28,7 +28,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -41,7 +41,7 @@ If maps $`{A \xrightarrow{j} X \xrightarrow{p} A}` satisfy $`{p \circ j = 1_A}`,
 In _any_ category
 :::
 
-```savedLean (show := false)
+```savedLean -show
 namespace AnyCategory
 ```
 
@@ -64,7 +64,7 @@ example (hpj : p ⊚ j = 𝟙 A) : (j ⊚ p) ⊚ (j ⊚ p) = (j ⊚ p) := by
   rw [Category.assoc, ← Category.assoc j, hpj, Category.id_comp]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end AnyCategory
 ```
 
@@ -72,7 +72,7 @@ end AnyCategory
 In the category of _finite sets_
 :::
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM_Fintype
 ```
 
@@ -257,10 +257,10 @@ example (_ : p ⊚ j = 𝟙 A) : #A = 0 → #X = 0 := by
   exact hA.false (p x)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end CM_Fintype
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

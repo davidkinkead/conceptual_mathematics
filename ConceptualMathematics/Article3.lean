@@ -36,7 +36,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -426,7 +426,7 @@ If $`{\alpha(x) = -x}` is considered as an endomap of $`\mathbb{Z}`, is $`\alpha
 Exercise III.4 (p. 140)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_4
 ```
 
@@ -488,7 +488,7 @@ We can then use this new lemma to simplify the proof in the previous example.
 example {x : ℤ} : Function.IsFixedPt α x ↔ x = 0 := eq_zero_iff_neg_eq
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_4
 ```
 :::
@@ -502,7 +502,7 @@ Same questions as above, if instead $`{\alpha(x) = |x|}`, the absolute value.
 Exercise III.5 (p. 140)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_5
 ```
 
@@ -564,7 +564,7 @@ We can then use this new lemma to simplify the proof in the previous example.
 example {x : ℤ} : Function.IsFixedPt α x ↔ 0 ≤ x := abs_iff_nonneg.symm
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_5
 ```
 :::
@@ -578,7 +578,7 @@ If $`\alpha` is the endomap of $`\mathbb{Z}`, defined by the formula $`{\alpha(x
 Exercise III.6 (p. 140)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_6
 ```
 
@@ -605,7 +605,7 @@ example : IsIso α := by
   }
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_6
 ```
 :::
@@ -619,7 +619,7 @@ Same questions for $`{\alpha(x) = 5x}`.
 Exercise III.7 (p. 140)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_7
 ```
 
@@ -642,7 +642,7 @@ example : ¬(IsIso α) := by
   norm_num at h_contra₂
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_7
 ```
 :::
@@ -694,7 +694,7 @@ example {𝒞 : Type*} [Category 𝒞] {A : 𝒞}
 Exercise III.9 (p. 141)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_9
 ```
 
@@ -743,7 +743,7 @@ example : ¬(IsInvolution α) := by
   contradiction
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_9
 ```
 :::
@@ -759,7 +759,7 @@ which express the source and target relations of the \[given graph\]. Is there a
 Exercise III.10 (p. 141)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_10
 ```
 
@@ -802,7 +802,7 @@ example : ¬(∃ x : X, t x = P.k) := by
   cases x <;> simp [t]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_10
 ```
 :::
@@ -871,7 +871,7 @@ is another map of graphs, show that the pair $`{g_A \circ f_A,\; g_D \circ f_D}`
 Exercise III.11 (p. 142)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_11
 ```
 
@@ -911,7 +911,7 @@ example (f : graph X P s t ⟶ graph Y Q s' t')
     : graph X P s t ⟶ graph Z R s'' t'' := g ⊚ f
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_11
 ```
 :::
@@ -971,7 +971,7 @@ between the special graphs that come via $`I` from endomaps of sets, then it fol
 Exercise III.13 (p. 144)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_13
 ```
 
@@ -1026,7 +1026,7 @@ example : fA₂ = fD₂ := by
   exact hfSrc_comm.symm
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_13
 ```
 :::
@@ -1120,7 +1120,7 @@ which satisfy the equation $`{f_D \circ \alpha = \beta \circ f_A}`, but for whic
 Exercise III.14 (p. 144)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_14
 ```
 
@@ -1163,7 +1163,7 @@ example : fD ⊚ α = β ⊚ fA ∧ fA ≠ fD := by
     contradiction
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_14
 ```
 :::
@@ -1230,7 +1230,7 @@ $$`e_k e_j = e_j \quad\text{for}\quad k, j = 0, 1.`
 Exercise III.15 (p. 145)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_15
 ```
 
@@ -1280,7 +1280,7 @@ example : e₁ ⊚ e₁ = e₁ := by
       X.section_src, Category.id_comp]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_15
 ```
 :::
@@ -1294,7 +1294,7 @@ Show that if $`f_A`, $`f_D` in 𝑺 constitute a map of reflexive graphs, then $
 Exercise III.16 (p. 145)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_16
 ```
 
@@ -1337,7 +1337,7 @@ example : fD = t' ⊚ fA ⊚ i := by
   exact f.property.2.2.2.1
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_16
 ```
 :::
@@ -1353,7 +1353,7 @@ $$`{M \xrightarrow{\varphi} M},\; {F \xrightarrow{\varphi'} M},\; {F \xrightarro
 Exercise III.17 (p. 145)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_17
 ```
 
@@ -1426,7 +1426,7 @@ instance : Category ParentLike where
     ⟩
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_17
 ```
 :::
@@ -1466,7 +1466,7 @@ example {𝒞 : Type*} [Category 𝒞] {X Y T : 𝒞}
 
 Exercises 19–24 that follow relate to the sets $`X` and $`Y`, the endomaps $`\alpha` and $`\beta`, and the map $`a` as defined below. (Note that we in fact define $`X` and $`Y` as finite types rather than finite sets.)
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_19_24
 ```
 
@@ -1860,7 +1860,7 @@ example : ¬(∃ p : Yβ ⟶ Xα, J p ⊚ J a' = J (𝟙 Xα)) := by
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_19_24
 ```
 
@@ -1875,7 +1875,7 @@ the equation $`{f_D \circ s = f_D \circ t}` can only be true when $`f_A` maps ev
 Exercise III.25 (p. 148)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_25
 ```
 
@@ -1927,7 +1927,7 @@ example : (fD ⊚ s = fD ⊚ t) ↔ (∀ x, s' (fA x) = t' (fA x)) := by
     exact h x
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_25
 ```
 :::
@@ -1947,7 +1947,7 @@ Find the $`f` and prove the three statements.
 Exercise III.26 (p. 148)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_26
 ```
 
@@ -2021,7 +2021,7 @@ example : ∀ {T : Type} (x₁ x₂ : T ⟶ ℤ),
     _ = x₂ := by rw [Category.comp_id]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_26
 ```
 :::
@@ -2031,7 +2031,7 @@ end ExIII_26
 Exercise III.27 (p. 148)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExIII_27
 ```
 
@@ -2081,7 +2081,7 @@ example (Yβ : SetWithInvEndomap)
   rwa [hβ_inv] at h_cancel
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExIII_27
 ```
 :::
@@ -2145,6 +2145,6 @@ Exercise III.30 (p. 151)
 TODO Exercise III.30
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

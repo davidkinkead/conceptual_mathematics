@@ -28,7 +28,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -50,7 +50,7 @@ Problem Quiz.1 (p. 108)
 
 We use `Fintype`s here instead of sets.
 
-```savedLean (show := false)
+```savedLean -show
 namespace Quiz_1
 ```
 
@@ -98,7 +98,7 @@ example : ¬(IsSection f) := by
   cases h_false
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Quiz_1
 ```
 :::
@@ -116,7 +116,7 @@ If $`{C \xrightarrow{p} D \xrightarrow{q} C}` satisfy $`{p \circ q \circ p = p}`
 Problem Quiz.2 (p. 108)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace Quiz_2
 ```
 
@@ -148,7 +148,7 @@ example : IsIdempotent (q ⊚ p) := {
 }
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Quiz_2
 ```
 :::
@@ -166,7 +166,7 @@ $$`q' \circ p \circ q' = q'`
 Problem Quiz_2* (p. 108)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace «Quiz_2*»
 ```
 
@@ -189,7 +189,7 @@ example : ∃ q', p ⊚ q' ⊚ p = p ∧ q' ⊚ p ⊚ q' = q' := by
     rw [← Category.assoc (q ⊚ p), hpq]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end «Quiz_2*»
 ```
 :::
@@ -205,7 +205,7 @@ Problem Quiz_1* (p. 108)
 
 We use (non-finite) types here instead of infinite sets.
 
-```savedLean (show := false)
+```savedLean -show
 namespace «Quiz_1*»
 ```
 
@@ -262,11 +262,11 @@ example : ¬(IsSection f) := by
       linarith
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end «Quiz_1*»
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

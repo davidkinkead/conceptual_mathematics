@@ -24,7 +24,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -175,7 +175,7 @@ Draw the internal diagrams of all the sections of $`f`.
 Exercise 5.3 (p. 75)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex5_3
 ```
 
@@ -252,10 +252,10 @@ example : f ⊚ s₈ = 𝟙 B := by funext x; fin_cases x <;> rfl
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end Ex5_3
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

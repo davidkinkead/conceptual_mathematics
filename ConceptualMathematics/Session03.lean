@@ -18,7 +18,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -37,7 +37,7 @@ $$`\text{(a)}\; k \circ h \circ g \circ f, \quad\text{(b)}\; k \circ f \circ g, 
 Exercise 3.1 (p. 36)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex3_1
 ```
 
@@ -76,11 +76,11 @@ f ⊚ g : B ⟶ B
 g ⊚ f ⊚ g ⊚ k ⊚ h : A ⟶ A
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Ex3_1
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

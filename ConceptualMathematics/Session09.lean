@@ -26,7 +26,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -88,7 +88,7 @@ Hint: You already proved (T) when you proved that if a composable pair of maps e
 Exercise 9.2 (p. 100)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex9_2
 ```
 
@@ -114,7 +114,7 @@ example (h₁ : Retract A B) (h₂ : Retract B C) : Retract A C := {
 }
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Ex9_2
 ```
 :::
@@ -181,6 +181,6 @@ example {𝒞 : Type*} [Category 𝒞] {B : 𝒞}
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

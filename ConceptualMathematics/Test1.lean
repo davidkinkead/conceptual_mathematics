@@ -32,7 +32,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -42,7 +42,7 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 Problem Test 1.1 (p. 119)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace Test1_1
 ```
 
@@ -127,7 +127,7 @@ example : r ⊚ s = 𝟙 B ∧ s ⊚ r = e := by
     fin_cases x <;> rfl
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Test1_1
 ```
 :::
@@ -163,6 +163,6 @@ example (f : ℝ ⟶ ℝ) (hf : ∀ x : ℝ, f x = 4 * x - 7)
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

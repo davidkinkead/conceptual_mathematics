@@ -22,7 +22,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -126,7 +126,7 @@ def RealAdd : AlgebraicObj := {
 
 We are now ready to complete the Exercise by defining $`d` and $`h` as morphisms in our category and showing that they are inverses.
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex4_1
 ```
 
@@ -170,7 +170,7 @@ example : IsIso d := {
 }
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Ex4_1
 ```
 :::
@@ -188,7 +188,7 @@ Exercise 4.2 (p. 66)
 
 For this Exercise, we continue to use the category of algebraic objects we defined in Exercise 1.
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex4_2
 ```
 
@@ -286,7 +286,7 @@ example : IsIso f := {
 }
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Ex4_2
 ```
 :::
@@ -358,7 +358,7 @@ example {sq : ℝ ⟶ ℝ≥0} (hsq : ∀ x : ℝ, sq x = x ^ 2)
 
 (d) is genuine.
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex4_3_d
 ```
 
@@ -392,7 +392,7 @@ example : IsIso m := {
 }
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Ex4_3_d
 ```
 
@@ -409,7 +409,7 @@ example {m : ℝ ⟶ ℝ} (hm : ∀ x : ℝ, m x = -x)
 
 (f) $`c` has an invalid codomain.
 
-```savedLean (show := false)
+```savedLean -show
 namespace Ex4_3_f
 ```
 
@@ -426,11 +426,11 @@ example {c : ℝ → ℝpos} (hc : ∀ x : ℝ, c x = x ^ 3)
   linarith
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end Ex4_3_f
 ```
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

@@ -30,7 +30,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -56,6 +56,6 @@ class IsInvolution {𝒞 : Type*} [Category 𝒞] {A : 𝒞} (f : A ⟶ A) where
   invol : f ⊚ f = 𝟙 A
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

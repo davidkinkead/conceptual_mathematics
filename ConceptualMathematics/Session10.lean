@@ -32,7 +32,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -198,6 +198,6 @@ Exercise 10.4 (p. 132)
 TODO Exercise 10.4
 :::
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```

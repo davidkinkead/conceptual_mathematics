@@ -20,7 +20,7 @@ import Mathlib
 open CategoryTheory
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
@@ -130,7 +130,7 @@ fun {C} [Category.{v, u} C] {X Y Z} α β ↦
 Exercise II.1 (p. 41)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExII_1
 ```
 
@@ -171,7 +171,7 @@ example (f : A ⟶ B) (hf : IsIso f) (k : B ⟶ C) (hk : IsIso k)
     rw [hfinv.2, Category.id_comp, hkinv.2]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExII_1
 ```
 :::
@@ -218,7 +218,7 @@ _Warning_: The following 'cancellation law' is _not_ correct, even if $`f` has a
 Exercise II.3 (p. 43)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExII_3
 ```
 
@@ -293,7 +293,7 @@ example : ¬(h ⊚ f = f ⊚ k → h = k) := by
     norm_num at h₂
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExII_3
 ```
 :::
@@ -455,7 +455,7 @@ Choosing a particular such $`f`, how many maps $`g` (including the given one) sa
 Exercise II.5 (p. 47)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExII_5
 ```
 
@@ -508,7 +508,7 @@ Then, by Danilo's formula, we have $`{(\#A)^{(\#X - \#A)} = 2^3 = 8}` different 
 8
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExII_5
 ```
 :::
@@ -899,7 +899,7 @@ Suppose $`r` is a retraction of $`f` (equivalently $`f` is a section of $`r`) an
 Exercise II.9 (p. 54)
 ```
 
-```savedLean (show := false)
+```savedLean -show
 namespace ExII_9
 ```
 
@@ -929,7 +929,7 @@ example [hf : IsIso f]
   rwa [hfinv.2, Category.id_comp]
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end ExII_9
 ```
 :::
@@ -1217,6 +1217,6 @@ open ExII_11
 6
 ```
 
-```savedLean (show := false)
+```savedLean -show
 end CM
 ```
