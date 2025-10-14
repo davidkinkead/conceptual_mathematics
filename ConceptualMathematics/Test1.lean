@@ -159,10 +159,10 @@ example (f : ℝ ⟶ ℝ) (hf : ∀ x : ℝ, f x = 4 * x - 7)
   intro x
   dsimp [CategoryStruct.comp]
   constructor
-  · -- proof of part (a)
+  · -- Proof of part (a)
     rw [hf x]
     ring
-  · -- proof of part (b)
+  · -- Proof of part (b)
     rw [hf ((x + 7) / 4)]
     ring
 ```

@@ -488,11 +488,11 @@ def idA : Map A A := {
 
 open Finset in
 example : ¬(∃ f : Map A B, ∃ g : Map B A, g ∘ f = idA) := by
-  -- Convert to the equivalent statement ∀ f g, g ∘ f ≠ idA.
+  -- Convert to the equivalent statement ∀ f g, g ∘ f ≠ idA
   push_neg
-  -- Assume that g ∘ f = idA for some f, g, and derive a contradiction.
+  -- Assume that g ∘ f = idA for some f, g, and derive a contradiction
   intro f g h_eq
-  -- Since the functions g ∘ f and idA are equal, so are their images.
+  -- Since the functions g ∘ f and idA are equal, so are their images
   have h_img_eq : (image g (image f A)).card = (image idA A).card := by
     rw [image_image, h_eq]
   -- But the image of g(f(A)) has at most 2 elements,
@@ -505,9 +505,9 @@ example : ¬(∃ f : Map A B, ∃ g : Map B A, g ∘ f = idA) := by
       rw [mem_image] at hfa
       obtain ⟨a, ha, rfl⟩ := hfa
       exact f.maps_to_codomain a ha
-  -- while the image of idA(A) has 3 elements.
+  -- while the image of idA(A) has 3 elements
   have h_card_idA : (image idA A).card = 3 := rfl
-  -- So we have a contradiction.
+  -- So we have a contradiction
   rw [h_img_eq, h_card_idA] at h_card_gfA
   contradiction
 ```

@@ -85,11 +85,9 @@ Next we register a `Category` instance for our algebraic object, defining maps/m
 instance : Category AlgebraicObj where
   Hom X Y := {
     f : X.t ⟶ Y.t //
-    -- maps to codomain
-    (∀ x ∈ X.carrier, f x ∈ Y.carrier)
-    -- respects combining-rules
-    ∧ (∀ x₁ ∈ X.carrier, ∀ x₂ ∈ X.carrier,
-        f (X.oper x₁ x₂) = Y.oper (f x₁) (f x₂))
+        (∀ x ∈ X.carrier, f x ∈ Y.carrier) -- maps to codomain
+        ∧ (∀ x₁ ∈ X.carrier, -- respects combining-rules
+             ∀ x₂ ∈ X.carrier, f (X.oper x₁ x₂) = Y.oper (f x₁) (f x₂))
   }
   id := by
     intro X

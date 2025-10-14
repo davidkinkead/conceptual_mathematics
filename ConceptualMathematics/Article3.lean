@@ -966,7 +966,7 @@ def functorSetWithEndomapToIrreflexiveGraph
   }
 }
 
--- helper function to align to the notation in the book
+-- Helper function to align to the notation in the book
 def I {X Y : SetWithEndomap} (f : X ⟶ Y) :=
   functorSetWithEndomapToIrreflexiveGraph.map f
 
@@ -1010,7 +1010,7 @@ def graph₁ (S : SetWithEndomap) : IrreflexiveGraph := {
 
 variable (f₁ : graph₁ X' ⟶ graph₁ Y')
 
--- align to the notation in the book: fA is f₁.val.1, fD is f₁.val.2
+-- Align to the notation in the book: fA is f₁.val.1, fD is f₁.val.2
 set_option quotPrecheck false
 local notation "fA₁" => f₁.val.1
 local notation "fD₁" => f₁.val.2
@@ -1118,7 +1118,7 @@ def functorSetWithEndomapToSimpleGraph
   }
 }
 
--- helper function to align to the notation in the book
+-- Helper function to align to the notation in the book
 def J {X Y : SetWithEndomap} (f : X ⟶ Y) :=
   functorSetWithEndomapToSimpleGraph.map f
 
@@ -1322,7 +1322,7 @@ $`f` is a morphism in our category of reflexive graphs.
 ```savedLean
 variable (X Y : ReflexiveGraph) (f : X ⟶ Y)
 
--- align to the notation in the book
+-- Align to the notation in the book
 set_option quotPrecheck false
 local notation "fA" => f.val.1
 local notation "fD" => f.val.2
@@ -1923,7 +1923,7 @@ Using `Category IrreflexiveGraph`, we have
 ```savedLean
 variable (XP YQ : IrreflexiveGraph) (f : XP ⟶ YQ)
 
--- align to the notation in the book
+-- Align to the notation in the book
 set_option quotPrecheck false
 local notation "fA" => f.val.1
 local notation "fD" => f.val.2
