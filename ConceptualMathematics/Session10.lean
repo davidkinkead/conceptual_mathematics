@@ -18,6 +18,11 @@ open CategoryTheory
 
 #doc (Manual) "Session 10: Brouwer's theorems" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -36,6 +41,8 @@ open CategoryTheory
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
+
+# 1. Balls, spheres, fixed points, and retractions
 
 :::theoremDirective (theoremTitle := "Brouwer fixed point theorem (1)") (theoremPage := "120")
 Let $`I` be a line segment, including its endpoints ($`I` for Interval) and suppose that $`{f : I \rightarrow I}` is a continuous endomap. Then this map must have a fixed point: a point $`x` in $`I` for which $`{f(x) = x}`.
@@ -73,6 +80,8 @@ Consider the inclusion $`{j : S \rightarrow B}` of the sphere $`S` as boundary o
 
 TODO Brouwer retraction theorem (III)
 
+# 4. Relation between fixed point and retraction theorems
+
 :::question (questionTitle := "Exercise 1") (questionPage := "126")
 Let $`{j : C \rightarrow D}` be, as before, the inclusion of the circle into the disk. Suppose that we have two continuous maps $`{D \xrightarrow{f} D}` \[and\] $`{D \xrightarrow{g} D}`, and that $`g` satisfies $`{g \circ j = j}`. Use the retraction theorem to show that there must be a point $`x` in the disk at which $`{f(x) = g(x)}`. (Hint: The fixed point theorem is the special case $`{g = 1_D}`, so try to generalize the argument we used in that special case.)
 :::
@@ -108,6 +117,8 @@ Exercise 10.3 (p. 126)
 
 TODO Exercise 10.3
 :::
+
+# 5. How to understand a proof: The objectification and 'mapification' of concepts
 
 :::theoremDirective (theoremTitle := "Axiom 1") (theoremPage := "128")
 If $`T` is any object in 𝑪, and $`{T \xrightarrow{a} A}` and $`{T \xrightarrow{s} S}` are maps satisfying $`{h a = j s}`, then $`{p a = s}`.
@@ -179,6 +190,8 @@ Corollary 2 (p. 129)
 ```
 
 TODO Corollary 2
+
+# 7. Using maps to formulate guesses
 
 :::question (questionTitle := "Exercise 4") (questionPage := "132")
 (a) Express the restrictions given above on my travel and yours by equations involving composition of maps, introducing other objects and maps as needed.

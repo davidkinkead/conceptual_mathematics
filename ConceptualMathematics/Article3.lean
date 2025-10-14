@@ -21,6 +21,11 @@ set_option maxHeartbeats 0 -- required for Exercises III.12, III.17, III.24
 
 #doc (Manual) "Article III: Examples of categories" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -40,6 +45,8 @@ open CategoryTheory
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
+
+# 1. The category 𝑺↻ of endomaps of sets
 
 *The category 𝑺↻ of endomaps of sets* is described on pp. 136–137. We implement this category in Lean in a similar way to the category of algebraic objects that we developed in the solution to Session 4, Exercise 1. Our Lean implementation follows closely the definition of _category_ given on p. 21, so we reproduce that definition here, interspersed with our comments (italicised) and the corresponding Lean code.
 
@@ -182,6 +189,8 @@ example {X Y Z : SetWithEndomap} (f : X ⟶ Y) (g : Y ⟶ Z) : X ⟶ Z :=
 ```
 :::
 
+# 3. Two subcategories of 𝑺↻
+
 :::htmlDetails (classDetails := "") (classSummary := "") (summary := "We implement the category 𝑺ᵉ of idempotent endomaps of sets, described on p. 138. We re-use code from our earlier implementation of the category 𝑺↻.")
 ```savedComment
 The (concrete) category 𝑺ᵉ of idempotent endomaps of sets (p. 138)
@@ -235,6 +244,8 @@ instance
   ofHom f := f
 ```
 :::
+
+# 4. Categories of endomaps
 
 *The category 𝑪↻ of endomaps* is described on pp. 138–139. We implement the category 𝑪↻ below (cf. the category 𝑺↻).
 
@@ -748,6 +759,8 @@ end ExIII_9
 ```
 :::
 
+# 5. Irreflexive graphs
+
 :::question (questionTitle := "Exercise 10") (questionPage := "141")
 Complete the specification of the two maps
 $$`{X \xrightarrow{s} P} \quad\text{and}\quad {X \xrightarrow{t} P}`
@@ -916,6 +929,8 @@ end ExIII_11
 ```
 :::
 
+# 6. Endomaps as special graphs
+
 :::question (questionTitle := "Exercise 12") (questionPage := "143")
 If we denote the result of the \[insertion\] process by $`I(f)`, then $`{I(g \circ f) = I(g) \circ I(f)}` so that our insertion $`I` preserves the fundamental operation of categories.
 :::
@@ -1030,6 +1045,8 @@ example : fA₂ = fD₂ := by
 end ExIII_13
 ```
 :::
+
+# 7. The simpler category 𝑺↓: Objects are just maps of sets
 
 *The category 𝑺↓ of simple directed graphs* is described on pp. 144–145. We implement the category 𝑺↓ below.
 
@@ -1167,6 +1184,8 @@ example : fD ⊚ α = β ⊚ fA ∧ fA ≠ fD := by
 end ExIII_14
 ```
 :::
+
+# 8. Reflexive graphs
 
 *The category of reflexive graphs* is described on p. 145. We implement this category below.
 
@@ -1430,6 +1449,8 @@ instance : Category ParentLike where
 end ExIII_17
 ```
 :::
+
+# 10. Retractions and injectivity
 
 :::definition (definitionTerm := "Injective") (definitionPage := "146")
 We say that a map $`{X \xrightarrow{a} Y}` is _injective_ iff for any maps $`{T \xrightarrow{x_1} X}` and $`{T \xrightarrow{x_2} X}` (in the same category) if $`{ax_1 = ax_2}` then $`{x_1 = x_2}` (or, in contrapositive form, 'the map $`a` does not destroy distinctions', i.e. if $`{x_1 \ne x_2}`..., then $`{ax_1 \ne ax_2}` as well).
@@ -2120,6 +2141,8 @@ example (Xα : SetWithEndomap) (Yβ : SetWithInvEndomap)
   exact hf_inj x₁ x₂ h₃
 ```
 :::
+
+# 11. Types of structure
 
 :::question (questionTitle := "Exercise 29") (questionPage := "150")
 Every map $`{X \xrightarrow{f} Y}` in 𝑿 gives rise to a map in the category of 𝑨-structures, by the associative law.

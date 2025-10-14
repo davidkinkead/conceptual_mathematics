@@ -7,6 +7,11 @@ open ConceptualMathematics
 
 #doc (Manual) "Summary/quiz on pairs of 'opposed' maps" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 :::question (questionTitle := "Problem 1") (questionPage := "116")
 Fill in the blanks; when *vs*? occurs, cross out the false alternative.
 :::

@@ -12,6 +12,11 @@ open CategoryTheory
 
 #doc (Manual) "Article II: Isomorphisms" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -24,6 +29,8 @@ open CategoryTheory
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
+
+# 1. Isomorphisms
 
 :::definition (definitionTerm := "Isomorphism, Inverse") (definitionPage := "40")
 A map $`{A \xrightarrow{f} B}` is called an _isomorphism_, or _invertible map_, if there is a map $`{B \xrightarrow{g} A}` for which $`{g \circ f = 1_A}` and $`{f \circ g = 1_B}`.
@@ -398,6 +405,8 @@ $`l` is invertible, with inverse $`{l^{-1}(x) = \dfrac{1}{x} - 1}`, provided tha
 TODO Exercise II.4.5
 :::
 
+# 2. General division problems: Determination and choice
+
 Exercise 5 concerns counting the number of _sections_ and _retractions_ for a map (though those terms aren't formally defined until a short while later on p. 49). Rather than providing an exhaustive list of maps, we introduce here two formulas — what the book later calls _Chad's formula_ and _Danilo's formula_ (p. 117).
 
 The former states that the number of sections for a map $`p` is given by
@@ -512,6 +521,8 @@ Then, by Danilo's formula, we have $`{(\#A)^{(\#X - \#A)} = 2^3 = 8}` different 
 end ExII_5
 ```
 :::
+
+# 3. Retractions, sections, and idempotents
 
 :::definition (definitionTerm := "Retraction, Section") (definitionPage := "49")
 If $`{A \xrightarrow{f} B}`:
@@ -965,6 +976,8 @@ theorem uniqueness_of_inverses {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
     _ = 𝟙 A ⊚ s := by rw [← hr]
     _ = s := Category.comp_id s
 ```
+
+# 4. Isomorphisms and automorphisms
 
 :::definition (definitionTerm := "Isomorphism, Inverse") (definitionPage := "54")
 A map $`{A \xrightarrow{f} B}` is called an _isomorphism_ if there exists another map $`{B \xrightarrow{f^{-1}} A}` which is both a retraction and a section for $`f`:

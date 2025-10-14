@@ -16,6 +16,11 @@ open CategoryTheory
 
 #doc (Manual) "Quiz" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -152,6 +157,8 @@ example : IsIdempotent (q ⊚ p) := {
 end Quiz_2
 ```
 :::
+
+# Optional questions
 
 :::question (questionTitle := "Problem 2*") (questionPage := "108")
 If $`{C \xrightarrow{p} D \xrightarrow{q} C}` satisfy $`{p \circ q \circ p = p}`, use the given maps $`p` and $`q` to devise a map $`q'` satisfying _both_:

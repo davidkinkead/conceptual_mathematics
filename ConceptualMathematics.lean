@@ -52,30 +52,30 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 
 All page references given in this _Companion_ are to Lawvere, F.W. and Schanuel, S.H. (2009) _Conceptual mathematics: a first introduction to categories_. 2nd edn. Cambridge: Cambridge University Press.
 
-{include 1 ConceptualMathematics.Article1}
+{include 2 ConceptualMathematics.Article1}
 
-{include 1 ConceptualMathematics.Session02}
+{include 2 ConceptualMathematics.Session02}
 
-{include 1 ConceptualMathematics.Session03}
+{include 2 ConceptualMathematics.Session03}
 
-{include 1 ConceptualMathematics.Article2}
+{include 2 ConceptualMathematics.Article2}
 
-{include 1 ConceptualMathematics.Session04}
+{include 2 ConceptualMathematics.Session04}
 
-{include 1 ConceptualMathematics.Session05}
+{include 2 ConceptualMathematics.Session05}
 
-{include 1 ConceptualMathematics.Session09}
+{include 2 ConceptualMathematics.Session09}
 
-{include 1 ConceptualMathematics.Quiz}
+{include 2 ConceptualMathematics.Quiz}
 
-{include 1 ConceptualMathematics.SummaryQuiz}
+{include 2 ConceptualMathematics.SummaryQuiz}
 
-{include 1 ConceptualMathematics.Summary}
+{include 2 ConceptualMathematics.Summary}
 
-{include 1 ConceptualMathematics.Review}
+{include 2 ConceptualMathematics.Review}
 
-{include 1 ConceptualMathematics.Test1}
+{include 2 ConceptualMathematics.Test1}
 
-{include 1 ConceptualMathematics.Session10}
+{include 2 ConceptualMathematics.Session10}
 
-{include 1 ConceptualMathematics.Article3}
+{include 2 ConceptualMathematics.Article3}

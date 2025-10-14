@@ -9,6 +9,11 @@ open CategoryTheory
 
 #doc (Manual) "Article I: Sets, maps, composition" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import Mathlib
 open CategoryTheory
@@ -619,6 +624,8 @@ end ExI_9
 
 There are 12 such pairs: $`h(\mathit{eggs})` can take any one of three distinct values in $`A`, leaving $`h(\mathit{coffee})` to take one of the two remaining values, which together gives $`{3 \times 2 = 6}` combinations; and for each combination, $`k` can map the element in $`A` that is not in the image of $`h` to either $`\mathit{eggs}` or $`\mathit{coffee}`.
 :::
+
+# 1. Guide
 
 :::definition (definitionTerm := "Category") (definitionPage := "21")
 A _category_ consists of the DATA:

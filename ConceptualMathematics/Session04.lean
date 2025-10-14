@@ -13,6 +13,11 @@ open CategoryTheory
 
 #doc (Manual) "Session 4: Division of maps: Isomorphisms" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -26,6 +31,8 @@ open CategoryTheory
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
+
+# 2. Inverses versus reciprocals
 
 :::definition (definitionTerm := "Inverse, Isomorphism") (definitionPage := "61")
 If $`{A \xrightarrow{f} B}`, an _inverse for_ $`f` is a map $`{B \xrightarrow{g} A}` satisfying both
@@ -48,6 +55,8 @@ $$`g = 1_A \circ g = (h \circ f) \circ g = h \circ (f \circ g) = h \circ 1_B = h
 :::
 
 See the Lean implementation `uniqueness_of_inverses` under the original presentation of this theorem in Article II.
+
+# 4. A small zoo of isomorphisms in other categories
 
 In some of the Exercises that follow, we start to make use of mathlib's implementation of the `Category` class (see the definition of category at the end of Article I) ahead of our more extensive reliance on it in later Articles and Sessions.
 

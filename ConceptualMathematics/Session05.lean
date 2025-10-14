@@ -14,6 +14,11 @@ open CategoryTheory
 
 #doc (Manual) "Session 5: Division of maps: Sections and retractions" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -28,6 +33,8 @@ open CategoryTheory
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
+
+# 1. Determination problems
 
 :::question (questionTitle := "Exercise 1") (questionPage := "70")
 (a) Show that if there is a map $`g` for which $`{h = g \circ f}`, then for any pair $`a_1`, $`a_2` of points $`{\mathbf{1} \rightarrow A}` of the domain $`A` of $`f` (and of $`h`) we have:
@@ -108,6 +115,8 @@ example {A B C : Type} [Nonempty C] {f : A ⟶ B} {h : A ⟶ C}
 ```
 :::
 
+# 2. A special case: Constant maps
+
 :::definition (definitionTerm := "Constant map") (definitionPage := "71")
 A map that can be factored through $`\mathbf{1}` is called a _constant map_.
 :::
@@ -122,6 +131,8 @@ IsConstantMap
 def IsConstantMap {A C : Type} (h : A ⟶ C) :=
   ∃ (f : A ⟶ One) (g : One ⟶ C), h = g ⊚ f
 ```
+
+# 3. Choice problems
 
 :::question (questionTitle := "Exercise 2") (questionPage := "71")
 (a) Show that if there is an $`f` with $`{g \circ f = h}`, then $`h` and $`g` satisfy: For any $`a` in $`A` there is at least one $`b` in $`B` for which $`{h(a) = g(b)}`.
@@ -160,11 +171,15 @@ example {A B C : Type} {g : B ⟶ C} {h : A ⟶ C}
 ```
 :::
 
+# 4. Two special cases of division: Sections and retractions
+
 :::definition (definitionTerm := "Section") (definitionPage := "72")
 $`{A \xrightarrow{f} B}` is a _section of_ $`{B \xrightarrow{g} A}` if $`{g \circ f = 1_A}`.
 :::
 
 See the original presentation of this definition of section in Article II.
+
+# 5. Stacking or sorting
 
 :::question (questionTitle := "Exercise 3") (questionPage := "75")
 Draw the internal diagrams of all the sections of $`f`.

@@ -15,6 +15,11 @@ open CategoryTheory
 
 #doc (Manual) "Session 9: Retracts and idempotents" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
@@ -30,6 +35,8 @@ open CategoryTheory
 namespace CM
 local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 ```
+
+# 1. Retracts and comparisons
 
 :::question (questionTitle := "Exercise 1") (questionPage := "99")
 (In the category of sets) Show that unless the set $`A` has a point and $`B` has none, then there is at least one map from $`A` to $`B`.
@@ -118,6 +125,8 @@ example (h₁ : Retract A B) (h₂ : Retract B C) : Retract A C := {
 end Ex9_2
 ```
 :::
+
+# 2. Idempotents as records of retracts
 
 :::definition (definitionTerm := "Splitting") (definitionPage := "102")
 (In any category) If $`{B \xrightarrow{e} B}` is an idempotent map, a _splitting of_ $`e` consists of an object $`A` together with two maps $`{A \xrightarrow{s} B \xrightarrow{r} A}` with $`{r s = 1_A}` and $`{s r = e}`.

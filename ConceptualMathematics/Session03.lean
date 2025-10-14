@@ -11,6 +11,11 @@ open CategoryTheory
 
 #doc (Manual) "Session 3: Composing maps and counting maps" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02

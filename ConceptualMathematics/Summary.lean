@@ -16,6 +16,11 @@ open CategoryTheory
 
 #doc (Manual) "Summary: On the equation p ∘ j = 1A" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02

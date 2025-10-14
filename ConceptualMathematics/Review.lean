@@ -17,6 +17,11 @@ open CategoryTheory
 
 #doc (Manual) "Review of 'I-words'" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02

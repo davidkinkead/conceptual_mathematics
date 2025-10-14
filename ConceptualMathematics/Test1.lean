@@ -18,6 +18,11 @@ open CategoryTheory
 
 #doc (Manual) "Test 1" =>
 
+%%%
+htmlSplit := .never
+number := false
+%%%
+
 ```savedImport
 import ConceptualMathematics.Article1
 import ConceptualMathematics.Session02
