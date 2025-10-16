@@ -62,6 +62,35 @@ def savedComment : CodeBlockExpanderOf Unit
 Custom extensions
 -/
 
+/- HTML tag: span -/
+
+inline_extension Inline.htmlSpan («class» : String) where
+  data := .str «class»
+  traverse _ _ _ := pure none
+  toTeX := none
+  toHtml :=
+    open Verso.Output Html in
+    some fun goI _ data contents => do
+      let .str «class» := data
+        | HtmlT.logError "Expected JSON string" *> pure .empty
+      pure {{<span class={{«class»}}>{{← contents.mapM goI}}</span>}}
+
+structure ClassArgs where
+  «class» : String
+
+section
+variable [Monad m] [MonadError m]
+instance : FromArgs ClassArgs m where
+  fromArgs := ClassArgs.mk <$> .named `«class» .string false
+end
+
+@[role]
+def htmlSpan : RoleExpanderOf ClassArgs
+  | {«class»}, stxs => do
+    let contents ← stxs.mapM elabInline
+    ``(Inline.other (Inline.htmlSpan $(quote «class»)) #[$contents,*])
+
+
 /- HTML tag: div -/
 
 block_extension Block.htmlDiv («class» : String) where
@@ -74,15 +103,6 @@ block_extension Block.htmlDiv («class» : String) where
       let .str «class» := data
         | HtmlT.logError "Expected JSON string" *> pure .empty
       pure {{<div class={{«class»}}>{{← contents.mapM goB}}</div>}}
-
-structure ClassArgs where
-  «class» : String
-
-section
-variable [Monad m] [MonadError m]
-instance : FromArgs ClassArgs m where
-  fromArgs := ClassArgs.mk <$> .named `«class» .string false
-end
 
 @[directive]
 def htmlDiv : DirectiveExpanderOf ClassArgs
