@@ -404,7 +404,8 @@ We can prove that the only idempotent which has a retraction is the identity.
 
 ```savedLean
 example {𝒞 : Type*} [Category 𝒞] {A : 𝒞} {α β : A ⟶ A}
-    (h_idem : α ⊚ α = α) (h_retraction : β ⊚ α = 𝟙 A) : α = 𝟙 A := by
+    (h_idem : α ⊚ α = α) (h_retraction
+    : β ⊚ α = 𝟙 A) : α = 𝟙 A := by
   calc
     α = 𝟙 A ⊚ α := by rw [Category.comp_id]
     _ = (β ⊚ α) ⊚ α := by rw [h_retraction]
@@ -893,9 +894,12 @@ variable (X P Y Q Z R : Type)
          (s t : X ⟶ P) (s' t' : Y ⟶ Q) (s'' t'' : Z ⟶ R)
 
 example (fA : X ⟶ Y) (fD : P ⟶ Q) (gA : Y ⟶ Z) (gD : Q ⟶ R)
-    (hfSrc_comm : fD ⊚ s = s' ⊚ fA) (hfTgt_comm : fD ⊚ t = t' ⊚ fA)
-    (hgSrc_comm : gD ⊚ s' = s'' ⊚ gA) (hgTgt_comm : gD ⊚ t' = t'' ⊚ gA)
-    : (gD ⊚ fD) ⊚ s = s'' ⊚ (gA ⊚ fA) ∧ (gD ⊚ fD) ⊚ t = t'' ⊚ (gA ⊚ fA)
+    (hfSrc_comm : fD ⊚ s = s' ⊚ fA)
+    (hfTgt_comm : fD ⊚ t = t' ⊚ fA)
+    (hgSrc_comm : gD ⊚ s' = s'' ⊚ gA)
+    (hgTgt_comm : gD ⊚ t' = t'' ⊚ gA)
+    : (gD ⊚ fD) ⊚ s = s'' ⊚ (gA ⊚ fA)
+        ∧ (gD ⊚ fD) ⊚ t = t'' ⊚ (gA ⊚ fA)
     := by
   constructor
   -- cf. instCategoryIrreflexiveGraph.comp above
@@ -1037,7 +1041,8 @@ set_option quotPrecheck true
 
 example : fA₂ = fD₂ := by
   obtain ⟨_, _ , hfSrc_comm, _⟩ := f₂.property
-  dsimp [graph₂, functorSetWithEndomapToIrreflexiveGraph] at hfSrc_comm
+  dsimp [graph₂, functorSetWithEndomapToIrreflexiveGraph]
+      at hfSrc_comm
   exact hfSrc_comm.symm
 ```
 

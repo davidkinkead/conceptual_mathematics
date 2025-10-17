@@ -22,9 +22,7 @@ open ConceptualMathematics
 open CategoryTheory
 
 
--- FIXME line break in title
--- FIXME missing caption on nav arrow back to intro (title length? underscores in title?)
-#doc (Manual) "A Lean Companion to _Conceptual Mathematics_" =>
+#doc (Manual) "A Lean Companion to Conceptual Mathematics" =>
 
 %%%
 authors := ["David Kinkead"]

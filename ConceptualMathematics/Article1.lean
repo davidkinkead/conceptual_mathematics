@@ -493,7 +493,8 @@ example : ¬(∃ f : Map A B, ∃ g : Map B A, g ∘ f = idA) := by
   -- Assume that g ∘ f = idA for some f, g, and derive a contradiction
   intro f g h_eq
   -- Since the functions g ∘ f and idA are equal, so are their images
-  have h_img_eq : (image g (image f A)).card = (image idA A).card := by
+  have h_img_eq
+      : (image g (image f A)).card = (image idA A).card := by
     rw [image_image, h_eq]
   -- But the image of g(f(A)) has at most 2 elements,
   have h_card_gfA : (image g (image f A)).card ≤ 2 := by

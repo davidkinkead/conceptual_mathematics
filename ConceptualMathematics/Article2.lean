@@ -902,7 +902,8 @@ We show that $`e` is an idempotent.
 example (r : Retraction f) (he : e = f ⊚ r.retraction)
     : IsIdempotent e := {
   idem := by
-    rw [he, Category.assoc, ← Category.assoc f, r.id, Category.id_comp]
+    rw [he, Category.assoc, ← Category.assoc f, r.id,
+        Category.id_comp]
 }
 ```
 

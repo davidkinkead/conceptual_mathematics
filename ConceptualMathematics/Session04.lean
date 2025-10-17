@@ -363,7 +363,7 @@ example {sq : ℝ ⟶ ℝ≥0} (hsq : ∀ x : ℝ, sq x = x ^ 2)
   norm_num at hneg
 ```
 
-(d) is genuine.
+(d) $`m` is genuine.
 
 ```savedLean -show
 namespace Ex4_3_d
