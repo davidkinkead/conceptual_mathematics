@@ -105,16 +105,14 @@ example (hpj : p ⊚ j = 𝟙 A) : ∀ a : A, ∃ x : X, p x = a := by
 
 A morphism with this property in the category `Type` (and also in the category of sets) is a surjective function, defined in mathlib as `Function.Surjective`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Function_Surjective)
 #print Function.Surjective
 ```
 
-```
+```leanOutput out_Function_Surjective
 def Function.Surjective.{u₁, u₂} : {α : Sort u₁} → {β : Sort u₂} → (α → β) → Prop :=
 fun {α} {β} f ↦ ∀ (b : β), ∃ a, f a = b
 ```
-:::
 
 Hence we can restate our proof of (1) above as
 
@@ -160,16 +158,14 @@ example (hpj : p ⊚ j = 𝟙 A) : ∀ a₁ a₂ : A, j a₁ = j a₂ → a₁ =
 
 A morphism with this property in the category `Type` (and also in the category of sets) is an injective function, defined in mathlib as `Function.Injective`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Function_Injective)
 #print Function.Injective
 ```
 
-```
+```leanOutput out_Function_Injective
 def Function.Injective.{u₁, u₂} : {α : Sort u₁} → {β : Sort u₂} → (α → β) → Prop :=
 fun {α} {β} f ↦ ∀ ⦃a₁ a₂ : α⦄, f a₁ = f a₂ → a₁ = a₂
 ```
-:::
 
 Hence we can restate our proof of (2) above as
 

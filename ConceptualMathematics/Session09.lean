@@ -42,11 +42,12 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 (In the category of sets) Show that unless the set $`A` has a point and $`B` has none, then there is at least one map from $`A` to $`B`.
 :::
 
-:::solution (solutionTo := "Exercise 1")
+::::solution (solutionTo := "Exercise 1")
 ```savedComment
 Exercise 9.1 (p. 99)
 ```
 
+:::htmlDiv («class» := "todo")
 TODO Exercise 9.1
 
   cases:
@@ -54,6 +55,7 @@ TODO Exercise 9.1
     A ≠ ∅, B = ∅ => no map
     A ≠ ∅, B ≠ ∅ => at least one map
 :::
+::::
 
 :::definition (definitionTerm := "Retract") (definitionPage := "99")
 $`A` is a _retract of_ $`B` means that there are maps $`{A \xrightarrow{s} B \xrightarrow{r} A}` with $`{r s = 1_A}`.
@@ -61,12 +63,11 @@ $`A` is a _retract of_ $`B` means that there are maps $`{A \xrightarrow{s} B \xr
 
 The corresponding mathlib definition is `Retract`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Retract)
 #print Retract
 ```
 
-```
+```leanOutput out_Retract
 structure CategoryTheory.Retract.{v, u} {C : Type u} [Category.{v, u} C] (X Y : C) : Type v
 number of parameters: 4
 fields:
@@ -78,7 +79,6 @@ constructor:
   CategoryTheory.Retract.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (i : X ⟶ Y) (r : Y ⟶ X)
     (retract : r ⊚ i = 𝟙 X := by cat_disch) : Retract X Y
 ```
-:::
 
 :::question (questionTitle := "Exercise 2") (questionPage := "100")
 (In any category) Show that

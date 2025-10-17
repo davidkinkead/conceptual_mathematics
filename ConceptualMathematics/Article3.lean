@@ -423,7 +423,7 @@ A finite set $`A` has an even number of elements iff (i.e. if and only if) there
 Exercise III.3 (p. 140)
 ```
 
-TODO Exercise III.3
+{htmlSpan (class := "todo")}[TODO Exercise III.3]
 :::
 
 In Exercises 4–7 that follow, we use the type $`\mathbb{Z}` instead of the set $`\mathbb{Z}` (and hence the concrete category `Type` instead of the category 𝑺 of sets).
@@ -2153,7 +2153,7 @@ Every map $`{X \xrightarrow{f} Y}` in 𝑿 gives rise to a map in the category o
 Exercise III.29 (p. 150)
 ```
 
-TODO Exercise III.29
+{htmlSpan (class := "todo")}[TODO Exercise III.29]
 :::
 
 :::question (questionTitle := "Exercise 30") (questionPage := "151")
@@ -2165,7 +2165,7 @@ If $`S`, $`s`, $`t` is a given bipointed object ... in a category 𝒞, then for
 Exercise III.30 (p. 151)
 ```
 
-TODO Exercise III.30
+{htmlSpan (class := "todo")}[TODO Exercise III.30]
 :::
 
 ```savedLean -show

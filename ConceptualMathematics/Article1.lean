@@ -649,12 +649,11 @@ satisfying the following RULES:
 
 We print the mathlib definition of `Category` below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Category)
 #print Category
 ```
 
-```
+```leanOutput out_Category
 class CategoryTheory.Category.{v, u} (obj : Type u) : Type (max u (v + 1))
 number of parameters: 1
 parents:
@@ -678,7 +677,6 @@ constructor:
 field notation resolution order:
   CategoryTheory.Category, CategoryTheory.CategoryStruct, Quiver
 ```
-:::
 
 ```savedLean -show
 end CM

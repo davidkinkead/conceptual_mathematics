@@ -48,37 +48,37 @@ local notation:80 g " ⊚ " f:80 => CategoryStruct.comp f g
 Let $`I` be a line segment, including its endpoints ($`I` for Interval) and suppose that $`{f : I \rightarrow I}` is a continuous endomap. Then this map must have a fixed point: a point $`x` in $`I` for which $`{f(x) = x}`.
 :::
 
-TODO Brouwer fixed point theorem (1)
+{htmlSpan (class := "todo")}[TODO Brouwer fixed point theorem (1)]
 
 :::theoremDirective (theoremTitle := "Brouwer fixed point theorem (2)") (theoremPage := "121")
 Let $`D` be a closed disk (the plane figure consisting of all the points inside or on a circle), and $`f` a continuous endomap of $`D`. Then $`f` has a fixed point.
 :::
 
-TODO Brouwer fixed point theorem (2)
+{htmlSpan (class := "todo")}[TODO Brouwer fixed point theorem (2)]
 
 :::theoremDirective (theoremTitle := "Brouwer fixed point theorem (3)") (theoremPage := "122")
 Any continuous endomap of a solid ball has a fixed point.
 :::
 
-TODO Brouwer fixed point theorem (3)
+{htmlSpan (class := "todo")}[TODO Brouwer fixed point theorem (3)]
 
 :::theoremDirective (theoremTitle := "Brouwer retraction theorem (I)") (theoremPage := "122")
 Consider the inclusion map $`{j : E \rightarrow I}` of the two-point set $`E` as boundary of the interval $`I`. There is no continuous map which is a retraction for $`j`.
 :::
 
-TODO Brouwer retraction theorem (I)
+{htmlSpan (class := "todo")}[TODO Brouwer retraction theorem (I)]
 
 :::theoremDirective (theoremTitle := "Brouwer retraction theorem (II)") (theoremPage := "123")
 Consider the inclusion map $`{j : C \rightarrow D}` of the circle $`C` as boundary of the disk $`D` into the disk. There is no continuous map which is a retraction for $`j`.
 :::
 
-TODO Brouwer retraction theorem (II)
+{htmlSpan (class := "todo")}[TODO Brouwer retraction theorem (II)]
 
 :::theoremDirective (theoremTitle := "Brouwer retraction theorem (III)") (theoremPage := "123")
 Consider the inclusion $`{j : S \rightarrow B}` of the sphere $`S` as boundary of the ball $`B` into the ball. There is no continuous map which is a retraction for $`j`.
 :::
 
-TODO Brouwer retraction theorem (III)
+{htmlSpan (class := "todo")}[TODO Brouwer retraction theorem (III)]
 
 # 4. Relation between fixed point and retraction theorems
 
@@ -91,7 +91,7 @@ Let $`{j : C \rightarrow D}` be, as before, the inclusion of the circle into the
 Exercise 10.1 (p. 126)
 ```
 
-TODO Exercise 10.1
+{htmlSpan (class := "todo")}[TODO Exercise 10.1]
 :::
 
 :::question (questionTitle := "Exercise 2") (questionPage := "126")
@@ -103,7 +103,7 @@ Suppose that $`A` is a 'retract' of $`X`, i.e. there are maps $`{A \xrightarrow{
 Exercise 10.2 (p. 126)
 ```
 
-TODO Exercise 10.2
+{htmlSpan (class := "todo")}[TODO Exercise 10.2]
 :::
 
 :::question (questionTitle := "Exercise 3") (questionPage := "126")
@@ -115,7 +115,7 @@ Use the result of the preceding exercise, and the fact that the antipodal map ha
 Exercise 10.3 (p. 126)
 ```
 
-TODO Exercise 10.3
+{htmlSpan (class := "todo")}[TODO Exercise 10.3]
 :::
 
 # 5. How to understand a proof: The objectification and 'mapification' of concepts
@@ -128,7 +128,7 @@ If $`T` is any object in 𝑪, and $`{T \xrightarrow{a} A}` and $`{T \xrightarro
 Axiom 1 (p. 128)
 ```
 
-TODO Axiom 1
+{htmlSpan (class := "todo")}[TODO Axiom 1]
 
 :::theoremDirective (theoremTitle := "Theorem 1") (theoremPage := "128")
 If $`{B \xrightarrow{\alpha} A}` satisfies $`{h \alpha j = j}`, then $`{p \alpha}` is a retraction for $`j`.
@@ -142,7 +142,7 @@ Put $`{T = S}`, $`{s = 1_S}`, and $`{a = \alpha j}` in Axiom 1.
 Theorem 1 (p. 128)
 ```
 
-TODO Theorem 1
+{htmlSpan (class := "todo")}[TODO Theorem 1]
 
 :::theoremDirective (theoremTitle := "Corollary 1") (theoremPage := "128")
 If $`{h \alpha = 1_B}`, then $`{p \alpha}` is a retraction for $`j`.
@@ -152,7 +152,7 @@ If $`{h \alpha = 1_B}`, then $`{p \alpha}` is a retraction for $`j`.
 Corollary 1 (p. 128)
 ```
 
-TODO Corollary 1
+{htmlSpan (class := "todo")}[TODO Corollary 1]
 
 :::theoremDirective (theoremTitle := "Axiom 2") (theoremPage := "129")
 If $`T` is any object in 𝑪, and $`{T \xrightarrow{f} B}` \[and\] $`{T \xrightarrow{g} B}` are any maps, then either there is a point $`{\mathbf{1} \xrightarrow{t} T}` with $`{f t = g t}`, or there is a map $`{T \xrightarrow{\alpha} A}` with $`{h \alpha = g}`.
@@ -162,7 +162,7 @@ If $`T` is any object in 𝑪, and $`{T \xrightarrow{f} B}` \[and\] $`{T \xright
 Axiom 2 (p. 129)
 ```
 
-TODO Axiom 2
+{htmlSpan (class := "todo")}[TODO Axiom 2]
 
 :::theoremDirective (theoremTitle := "Theorem 2") (theoremPage := "129")
 Suppose we have maps
@@ -179,7 +179,7 @@ Take $`{T = B}` in Axiom 2. We get: either there is a point $`{\mathbf{1} \xrigh
 Theorem 2 (p. 129)
 ```
 
-TODO Theorem 2
+{htmlSpan (class := "todo")}[TODO Theorem 2]
 
 :::theoremDirective (theoremTitle := "Corollary 2") (theoremPage := "129")
 If $`{B \xrightarrow{f} B}`, then either there is a fixed point for $`f` or there is a retraction for $`{S \xrightarrow{j} B}`.
@@ -189,7 +189,7 @@ If $`{B \xrightarrow{f} B}`, then either there is a fixed point for $`f` or ther
 Corollary 2 (p. 129)
 ```
 
-TODO Corollary 2
+{htmlSpan (class := "todo")}[TODO Corollary 2]
 
 # 7. Using maps to formulate guesses
 
@@ -208,7 +208,7 @@ TODO Corollary 2
 Exercise 10.4 (p. 132)
 ```
 
-TODO Exercise 10.4
+{htmlSpan (class := "todo")}[TODO Exercise 10.4]
 :::
 
 ```savedLean -show

@@ -42,12 +42,11 @@ Two objects $`A` and $`B` are said to be _isomorphic_ if there is at least one i
 
 The corresponding mathlib definition for isomorphism is `Iso` (and `IsIso`), which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Iso)
 #print Iso
 ```
 
-```
+```leanOutput out_Iso
 structure CategoryTheory.Iso.{v, u} {C : Type u} [Category.{v, u} C] (X Y : C) : Type v
 number of parameters: 4
 fields:
@@ -61,14 +60,12 @@ constructor:
   CategoryTheory.Iso.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (hom : X ⟶ Y) (inv : Y ⟶ X)
     (hom_inv_id : inv ⊚ hom = 𝟙 X := by cat_disch) (inv_hom_id : hom ⊚ inv = 𝟙 Y := by cat_disch) : X ≅ Y
 ```
-:::
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_IsIso)
 #print IsIso
 ```
 
-```
+```leanOutput out_IsIso
 class CategoryTheory.IsIso.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (f : X ⟶ Y) : Prop
 number of parameters: 5
 fields:
@@ -77,7 +74,6 @@ constructor:
   CategoryTheory.IsIso.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} {f : X ⟶ Y}
     (out : ∃ inv, inv ⊚ f = 𝟙 X ∧ f ⊚ inv = 𝟙 Y) : IsIso f
 ```
-:::
 
 :::excerpt (excerptPage := "41")
 _Reflexive_: $`A` is isomorphic to $`A`.
@@ -89,40 +85,34 @@ _Transitive_: If $`A` is isomorphic to $`B`, and $`B` is isomorphic to $`C`, the
 
 The respective mathlib definitions are `Iso.refl`, `Iso.symm`, and `Iso.trans`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Iso_refl)
 #print Iso.refl
 ```
 
-```
+```leanOutput out_Iso_refl
 def CategoryTheory.Iso.refl.{v, u} : {C : Type u} → [inst : Category.{v, u} C] → (X : C) → X ≅ X :=
 fun {C} [Category.{v, u} C] X ↦ { hom := 𝟙 X, inv := 𝟙 X, hom_inv_id := ⋯, inv_hom_id := ⋯ }
 ```
-:::
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Iso_symm)
 #print Iso.symm
 ```
 
-```
+```leanOutput out_Iso_symm
 def CategoryTheory.Iso.symm.{v, u} : {C : Type u} → [inst : Category.{v, u} C] → {X Y : C} → (X ≅ Y) → (Y ≅ X) :=
 fun {C} [Category.{v, u} C] {X Y} I ↦ { hom := I.inv, inv := I.hom, hom_inv_id := ⋯, inv_hom_id := ⋯ }
 ```
-:::
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Iso_trans)
 #print Iso.trans
 ```
 
-```
+```leanOutput out_Iso_trans
 def CategoryTheory.Iso.trans.{v, u} : {C : Type u} →
   [inst : Category.{v, u} C] → {X Y Z : C} → (X ≅ Y) → (Y ≅ Z) → (X ≅ Z) :=
 fun {C} [Category.{v, u} C] {X Y Z} α β ↦
   { hom := β.hom ⊚ α.hom, inv := α.inv ⊚ β.inv, hom_inv_id := ⋯, inv_hom_id := ⋯ }
 ```
-:::
 
 :::question (questionTitle := "Exercise 1") (questionPage := "41")
 (R) Show that $`{A \xrightarrow{1_A} A}` is an isomorphism. (Hint: find an inverse for $`1_A`.)
@@ -402,7 +392,7 @@ example (k : ℝ → ℝ≥0) (hk : ∀ x : ℝ, k x = x * x)
 
 $`l` is invertible, with inverse $`{l^{-1}(x) = \dfrac{1}{x} - 1}`, provided that we restrict the codomain of $`l` to the interval $`{(0,1]}`.
 
-TODO Exercise II.4.5
+{htmlSpan (class := "todo")}[TODO Exercise II.4.5]
 :::
 
 # 2. General division problems: Determination and choice
@@ -534,12 +524,11 @@ a _section for_ $`f` is a map $`{B \xrightarrow{s} A}` for which $`{f \circ s = 
 
 The mathlib definition corresponding to _retraction_ is `SplitMono` (and `IsSplitMono`), which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_SplitMono)
 #print SplitMono
 ```
 
-```
+```leanOutput out_SplitMono
 structure CategoryTheory.SplitMono.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} (f : X ⟶ Y) : Type v₁
 number of parameters: 5
 fields:
@@ -550,14 +539,12 @@ constructor:
   CategoryTheory.SplitMono.mk.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} {f : X ⟶ Y} (retraction : Y ⟶ X)
     (id : retraction ⊚ f = 𝟙 X := by cat_disch) : SplitMono f
 ```
-:::
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_IsSplitMono)
 #print IsSplitMono
 ```
 
-```
+```leanOutput out_IsSplitMono
 class CategoryTheory.IsSplitMono.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} (f : X ⟶ Y) : Prop
 number of parameters: 5
 fields:
@@ -566,7 +553,6 @@ constructor:
   CategoryTheory.IsSplitMono.mk.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} {f : X ⟶ Y}
     (exists_splitMono : Nonempty (SplitMono f)) : IsSplitMono f
 ```
-:::
 
 We alias `SplitMono` and `IsSplitMono` as `Retraction` and `IsRetraction`, respectively, to remain aligned with the terminology in the book.
 
@@ -583,12 +569,11 @@ abbrev IsRetraction {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) :=
 
 The mathlib definition corresponding to _section_ is `SplitEpi` (and `IsSplitEpi`), which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_SplitEpi)
 #print SplitEpi
 ```
 
-```
+```leanOutput out_SplitEpi
 structure CategoryTheory.SplitEpi.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} (f : X ⟶ Y) : Type v₁
 number of parameters: 5
 fields:
@@ -599,14 +584,12 @@ constructor:
   CategoryTheory.SplitEpi.mk.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} {f : X ⟶ Y} (section_ : Y ⟶ X)
     (id : f ⊚ section_ = 𝟙 Y := by cat_disch) : SplitEpi f
 ```
-:::
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_IsSplitEpi)
 #print IsSplitEpi
 ```
 
-```
+```leanOutput out_IsSplitEpi
 class CategoryTheory.IsSplitEpi.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} (f : X ⟶ Y) : Prop
 number of parameters: 5
 fields:
@@ -615,7 +598,6 @@ constructor:
   CategoryTheory.IsSplitEpi.mk.{v₁, u₁} {C : Type u₁} [Category.{v₁, u₁} C] {X Y : C} {f : X ⟶ Y}
     (exists_splitEpi : Nonempty (SplitEpi f)) : IsSplitEpi f
 ```
-:::
 
 We alias `SplitEpi` and `IsSplitEpi` as `Section` and `IsSection`, respectively, to remain aligned with the terminology in the book.
 
@@ -721,12 +703,11 @@ If $`f` is injective for maps from $`T` for every $`T`, one says that $`f` is _i
 
 The corresponding mathlib definition is `Mono`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Mono)
 #print Mono
 ```
 
-```
+```leanOutput out_Mono
 class CategoryTheory.Mono.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (f : X ⟶ Y) : Prop
 number of parameters: 5
 fields:
@@ -735,7 +716,6 @@ constructor:
   CategoryTheory.Mono.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} {f : X ⟶ Y}
     (right_cancellation : ∀ {Z : C} (g h : Z ⟶ X), f ⊚ g = f ⊚ h → g = h) : Mono f
 ```
-:::
 
 :::question (questionTitle := "Exercise 7") (questionPage := "53")
 Suppose the map $`{A \xrightarrow{f} B}` has a section. Then for any set $`T` and any pair $`{B \xrightarrow{t_1} T}`, $`{B \xrightarrow{t_2} T}` of maps from $`B` to $`T`, if $`{t_1 \circ f = t_2 \circ f}` then $`{t_1 = t_2}`. (This is Proposition 2\*.)
@@ -766,12 +746,11 @@ A map $`f` with this cancellation property (if $`{t_1 \circ f = t_2 \circ f}` th
 
 The corresponding mathlib definition is `Epi`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Epi)
 #print Epi
 ```
 
-```
+```leanOutput out_Epi
 class CategoryTheory.Epi.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (f : X ⟶ Y) : Prop
 number of parameters: 5
 fields:
@@ -780,7 +759,6 @@ constructor:
   CategoryTheory.Epi.mk.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} {f : X ⟶ Y}
     (left_cancellation : ∀ {Z : C} (g h : Y ⟶ Z), g ⊚ f = h ⊚ f → g = h) : Epi f
 ```
-:::
 
 :::excerpt (excerptPage := "53")
 Thus both 'monomorphism' and 'epimorphism' are 'cancellation' properties.
@@ -1020,17 +998,15 @@ example {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
 
 When working with inverse maps in Excercise 10, we make use of mathlib's `CategoryTheory.inv`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_CategoryTheory_inv)
 #print CategoryTheory.inv
 ```
 
-```
+```leanOutput out_CategoryTheory_inv
 def CategoryTheory.inv.{v, u} : {C : Type u} →
   [inst : Category.{v, u} C] → {X Y : C} → (f : X ⟶ Y) → [I : IsIso f] → Y ⟶ X :=
 fun {C} [Category.{v, u} C] {X Y} f [IsIso f] ↦ Classical.choose ⋯
 ```
-:::
 
 :::question (questionTitle := "Exercise 10") (questionPage := "55")
 If $`{A \xrightarrow{f} B \xrightarrow{g} C}` are both isomorphisms, then $`{g \circ f}` is an isomorphism too, and $`{(g \circ f)^{-1} = f^{-1} \circ g^{-1}}`.
@@ -1128,29 +1104,25 @@ A map which is both an endomap and at the same time an isomorphism is usually ca
 
 The corresponding mathlib definition is `Aut`, which we print below for reference.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_Aut)
 #print Aut
 ```
 
-```
+```leanOutput out_Aut
 def CategoryTheory.Aut.{v, u} : {C : Type u} → [Category.{v, u} C] → C → Type v :=
 fun {C} [Category.{v, u} C] X ↦ X ≅ X
 ```
-:::
 
 Compare this to the mathlib definition `End` for endomorphisms of an object in a category.
 
-:::htmlDiv («class» := "print")
-```lean
+```lean (name := out_End)
 #print End
 ```
 
-```
+```leanOutput out_End
 def CategoryTheory.End.{v, u} : {C : Type u} → [CategoryStruct.{v, u} C] → C → Type v :=
 fun {C} [CategoryStruct.{v, u} C] X ↦ X ⟶ X
 ```
-:::
 
 :::question (questionTitle := "Exercise 12") (questionPage := "56")
 How many isomorphisms are there from $`{A = \{\mathit{Fatima}, \mathit{Omer}, \mathit{Alysia}\}}` to $`{B = \{\mathit{coffee}, \mathit{tea}, \mathit{cocoa}\}}`? How many automorphisms of $`A` are there? The answers should be less than 27 — why?
