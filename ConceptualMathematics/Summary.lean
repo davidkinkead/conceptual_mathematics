@@ -110,7 +110,7 @@ A morphism with this property in the category `Type` (and also in the category o
 ```
 
 ```leanOutput out_Function_Surjective
-def Function.Surjective.{u₁, u₂} : {α : Sort u₁} → {β : Sort u₂} → (α → β) → Prop :=
+def Function.Surjective.{u_1, u_2} : {α : Sort u_1} → {β : Sort u_2} → (α → β) → Prop :=
 fun {α} {β} f ↦ ∀ (b : β), ∃ a, f a = b
 ```
 
@@ -163,7 +163,7 @@ A morphism with this property in the category `Type` (and also in the category o
 ```
 
 ```leanOutput out_Function_Injective
-def Function.Injective.{u₁, u₂} : {α : Sort u₁} → {β : Sort u₂} → (α → β) → Prop :=
+def Function.Injective.{u_1, u_2} : {α : Sort u_1} → {β : Sort u_2} → (α → β) → Prop :=
 fun {α} {β} f ↦ ∀ ⦃a₁ a₂ : α⦄, f a₁ = f a₂ → a₁ = a₂
 ```
 
