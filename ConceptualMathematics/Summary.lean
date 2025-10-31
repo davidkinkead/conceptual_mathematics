@@ -51,7 +51,8 @@ namespace AnyCategory
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {A X : 𝒞} {j : A ⟶ X} {p : X ⟶ A}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {A X : 𝒞}
+         {j : A ⟶ X} {p : X ⟶ A}
 ```
 
 :::excerpt (excerptPage := "117")

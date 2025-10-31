@@ -126,7 +126,7 @@ namespace Quiz_2
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {C D : 𝒞}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {C D : 𝒞}
          (p : C ⟶ D) (q : D ⟶ C) (hpq : p ⊚ q ⊚ p = p)
 ```
 
@@ -178,7 +178,7 @@ namespace «Quiz_2*»
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {C D : 𝒞}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {C D : 𝒞}
          (p : C ⟶ D) (q : D ⟶ C) (hpq : p ⊚ q ⊚ p = p)
 ```
 

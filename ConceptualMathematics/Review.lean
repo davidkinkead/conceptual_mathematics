@@ -53,11 +53,12 @@ Involution, IsInvolution
 ```
 
 ```savedLean
-structure Involution {𝒞 : Type*} [Category 𝒞] (A : 𝒞) where
+structure Involution {𝒞 : Type u} [Category.{v, u} 𝒞] (A : 𝒞) where
   f : A ⟶ A
   invol : f ⊚ f = 𝟙 A
 
-class IsInvolution {𝒞 : Type*} [Category 𝒞] {A : 𝒞} (f : A ⟶ A) where
+class IsInvolution {𝒞 : Type u} [Category.{v, u} 𝒞] {A : 𝒞}
+    (f : A ⟶ A) where
   invol : f ⊚ f = 𝟙 A
 ```
 

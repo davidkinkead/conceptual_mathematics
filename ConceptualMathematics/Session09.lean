@@ -100,7 +100,7 @@ namespace Ex9_2
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
 ```
 
 We show that (R) holds.
@@ -139,7 +139,7 @@ Splitting
 ```
 
 ```savedLean
-structure Splitting {𝒞 : Type*} [Category 𝒞] {B : 𝒞}
+structure Splitting {𝒞 : Type u} [Category.{v, u} 𝒞] {B : 𝒞}
     (e : B ⟶ B) [IsIdempotent e] where
   A : 𝒞
   s : A ⟶ B
@@ -160,7 +160,7 @@ Exercise 9.3 (p. 102)
 We construct an isomorphism $`f` as follows:
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {B : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {B : 𝒞}
     {e : B ⟶ B} [IsIdempotent e]
     (hsr : Splitting e) (hsr' : Splitting e)
     : Iso hsr.A hsr'.A := {

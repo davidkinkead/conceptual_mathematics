@@ -132,7 +132,7 @@ namespace ExII_1
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
 ```
 
 (R) $`1_A` is an inverse for itself, so $`1_A` is an isomorphism.
@@ -185,7 +185,7 @@ Exercise II.2 (p. 42)
 The inverse of a map is unique (when it exists).
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B)
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞} (f : A ⟶ B)
     (g : B ⟶ A) (hg : g ⊚ f = 𝟙 A ∧ f ⊚ g = 𝟙 B)
     (k : B ⟶ A) (hk : k ⊚ f = 𝟙 A ∧ f ⊚ k = 𝟙 B)
     : g = k := by
@@ -220,7 +220,7 @@ namespace ExII_3
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
 ```
 
 (a) We show that $`f` is left-cancellative.
@@ -561,9 +561,11 @@ Retraction, IsRetraction
 ```
 
 ```savedLean
-abbrev Retraction {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) :=
+abbrev Retraction {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
+    (f : A ⟶ B) :=
   SplitMono f
-abbrev IsRetraction {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) :=
+abbrev IsRetraction {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
+    (f : A ⟶ B) :=
   IsSplitMono f
 ```
 
@@ -606,9 +608,11 @@ Section, IsSection
 ```
 
 ```savedLean
-abbrev Section {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) :=
+abbrev Section {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
+    (f : A ⟶ B) :=
   SplitEpi f
-abbrev IsSection {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) :=
+abbrev IsSection {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
+    (f : A ⟶ B) :=
   IsSplitEpi f
 ```
 
@@ -631,7 +635,7 @@ Proposition 1 (p. 51)
 ```
 
 ```savedLean
-theorem prop1 {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
+theorem prop1 {𝒞 : Type u} [Category.{v, u} 𝒞] {A B T : 𝒞}
     (f : A ⟶ B) [hf : IsSection f]
     : ∀ y : T ⟶ B, ∃ x : T ⟶ A, f ⊚ x = y := by
   obtain ⟨s, hf⟩ := hf
@@ -654,7 +658,7 @@ Exercise II.6 (Proposition 1*) (p. 52)
 Put $`{t = g \circ r}`.
 
 ```savedLean
-theorem «prop1*» {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
+theorem «prop1*» {𝒞 : Type u} [Category.{v, u} 𝒞] {A B T : 𝒞}
     (f : A ⟶ B) [hf : IsRetraction f]
     : ∀ g : A ⟶ T, ∃ t : B ⟶ T, t ⊚ f = g := by
   obtain ⟨r, hf⟩ := hf
@@ -681,7 +685,7 @@ Proposition 2 (p. 52)
 ```
 
 ```savedLean
-theorem prop2 {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
+theorem prop2 {𝒞 : Type u} [Category.{v, u} 𝒞] {A B T : 𝒞}
     (f : A ⟶ B) [hf : IsRetraction f]
     : ∀ x₁ x₂ : T ⟶ A, f ⊚ x₁ = f ⊚ x₂ → x₁ = x₂ := by
   obtain ⟨r, hf⟩ := hf
@@ -729,7 +733,7 @@ Exercise II.7 (Proposition 2*) (p. 53)
 A proof of Proposition 2\* is given below.
 
 ```savedLean
-theorem «prop2*» {𝒞 : Type*} [Category 𝒞] {A B T : 𝒞}
+theorem «prop2*» {𝒞 : Type u} [Category.{v, u} 𝒞] {A B T : 𝒞}
     (f : A ⟶ B) [hf : IsSection f]
     : ∀ t₁ t₂ : B ⟶ T, t₁ ⊚ f = t₂ ⊚ f → t₁ = t₂ := by
   obtain ⟨s, hf⟩ := hf
@@ -771,11 +775,11 @@ cancel_mono, cancel_epi
 ```
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {X Y Z : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {X Y Z : 𝒞}
     (f : X ⟶ Y) [Mono f] {g h : Z ⟶ X}
     : f ⊚ g = f ⊚ h ↔ g = h := cancel_mono f
 
-example {𝒞 : Type*} [Category 𝒞] {X Y Z : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {X Y Z : 𝒞}
     (f : X ⟶ Y) [Epi f] {g h : Y ⟶ Z}
     : g ⊚ f = h ⊚ f ↔ g = h := cancel_epi f
 ```
@@ -797,7 +801,7 @@ Proposition 3 (p. 53)
 ```
 
 ```savedLean
-theorem prop3 {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+theorem prop3 {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
     (f : A ⟶ B) [hf : IsRetraction f] (g : B ⟶ C) [hg : IsRetraction g]
     : IsRetraction (g ⊚ f) := by
   obtain ⟨r₁, hf⟩ := hf
@@ -817,7 +821,7 @@ instIsSplitMonoComp
 ```
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
     (f : A ⟶ B) [hf : IsRetraction f] (g : B ⟶ C) [hg : IsRetraction g]
     : IsRetraction (g ⊚ f) := instIsSplitMonoComp
 ```
@@ -834,7 +838,7 @@ Exercise II.8 (p. 54)
 The section of the composite is the composite of the sections in the opposite order (cf. Proposition 3).
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
     (f : A ⟶ B) [hf : IsSection f] (g : B ⟶ C) [hg : IsSection g]
     : IsSection (g ⊚ f) := by
   obtain ⟨s₁, hf⟩ := hf
@@ -855,7 +859,7 @@ instIsSplitEpiComp
 ```
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
     (f : A ⟶ B) [hf : IsSection f] (g : B ⟶ C) [hg : IsSection g]
     : IsSection (g ⊚ f) := instIsSplitEpiComp
 ```
@@ -871,11 +875,12 @@ Idempotent, IsIdempotent
 ```
 
 ```savedLean
-structure Idempotent {𝒞 : Type*} [Category 𝒞] (A : 𝒞) where
+structure Idempotent {𝒞 : Type u} [Category.{v, u} 𝒞] (A : 𝒞) where
   e : A ⟶ A
   idem : e ⊚ e = e
 
-class IsIdempotent {𝒞 : Type*} [Category 𝒞] {A : 𝒞} (e : A ⟶ A) where
+class IsIdempotent {𝒞 : Type u} [Category.{v, u} 𝒞] {A : 𝒞}
+    (e : A ⟶ A) where
   idem : e ⊚ e = e
 ```
 
@@ -893,7 +898,8 @@ namespace ExII_9
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {A B : 𝒞} (f : A ⟶ B) (e : B ⟶ B)
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
+         (f : A ⟶ B) (e : B ⟶ B)
 ```
 
 We show that $`e` is an idempotent.
@@ -942,8 +948,8 @@ Theorem (uniqueness of inverses) (p. 54)
 ```
 
 ```savedLean
-theorem uniqueness_of_inverses {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
-    (f : A ⟶ B) (r : Retraction f) (s : Section f)
+theorem uniqueness_of_inverses {𝒞 : Type u} [Category.{v, u} 𝒞]
+    {A B : 𝒞} (f : A ⟶ B) (r : Retraction f) (s : Section f)
     : r.retraction = s.section_ := by
   obtain ⟨r, hr⟩ := r
   obtain ⟨s, hs⟩ := s
@@ -972,7 +978,7 @@ Equivalency of two definitions of isomorphism (pp. 54 & 40)
 ```
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A B : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A B : 𝒞}
     (f : A ⟶ B) (r : Retraction f) (s : Section f)
     : r.retraction = s.section_ ↔ IsIso f := by
   constructor
@@ -1022,7 +1028,7 @@ The inverse of the composite is the composite of the inverses in the opposite or
 
 ```savedLean
 open CategoryTheory in
-example {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
     (f : A ⟶ B) [hf : IsIso f] (g : B ⟶ C) [hg : IsIso g]
     : IsIso (g ⊚ f) ∧ inv (g ⊚ f) = inv f ⊚ inv g := by
   constructor

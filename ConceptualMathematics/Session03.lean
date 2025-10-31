@@ -47,7 +47,7 @@ namespace Ex3_1
 ```
 
 ```savedLean
-variable {𝒞 : Type*} [Category 𝒞] {A B C : 𝒞}
+variable {𝒞 : Type u} [Category.{v, u} 𝒞] {A B C : 𝒞}
          (f : A ⟶ B) (g : B ⟶ A) (h : A ⟶ C) (k : C ⟶ B)
 ```
 

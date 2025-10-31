@@ -403,9 +403,9 @@ Exercise III.2 (p. 139)
 We can prove that the only idempotent which has a retraction is the identity.
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A : 𝒞} {α β : A ⟶ A}
-    (h_idem : α ⊚ α = α) (h_retraction
-    : β ⊚ α = 𝟙 A) : α = 𝟙 A := by
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A : 𝒞} {α β : A ⟶ A}
+    (h_idem : α ⊚ α = α) (h_retraction : β ⊚ α = 𝟙 A)
+    : α = 𝟙 A := by
   calc
     α = 𝟙 A ⊚ α := by rw [Category.comp_id]
     _ = (β ⊚ α) ⊚ α := by rw [h_retraction]
@@ -679,7 +679,7 @@ example {α : IdemEndomap}
 Or, more generally, that an idempotent will satisfy $`{\alpha^3 = \alpha}`.
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A : 𝒞}
     (α : A ⟶ A) [IsIdempotent α] : α ⊚ α ⊚ α = α := by
   repeat rw [IsIdempotent.idem]
 ```
@@ -695,7 +695,7 @@ example {α : InvolEndomap}
 Or, more generally, that an involution will satisfy $`{\alpha^3 = \alpha}`.
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {A : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {A : 𝒞}
     (α : A ⟶ A) [IsInvolution α] : α ⊚ α ⊚ α = α := by
   rw [IsInvolution.invol, Category.id_comp]
 ```
@@ -1475,7 +1475,7 @@ Exercise III.18 (p. 146)
 cf. `mono_iff_injective`.
 
 ```savedLean
-example {𝒞 : Type*} [Category 𝒞] {X Y T : 𝒞}
+example {𝒞 : Type u} [Category.{v, u} 𝒞] {X Y T : 𝒞}
     {a : X ⟶ Y} {p : Y ⟶ X} {x₁ x₂ : T ⟶ X}
     (h₁ : p ⊚ a = 𝟙 X) (h₂ : a ⊚ x₁ = a ⊚ x₂)
     : x₁ = x₂ := by
