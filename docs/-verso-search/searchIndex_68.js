@@ -1,0 +1,1 @@
+window.docContents[68].resolve({"/Working/#A-Lean-Companion-to-Conceptual-Mathematics--Working":{"contents":"\n\n\n\n\n\n","context":"A Lean Companion to Conceptual Mathematics","header":"Working","id":"/Working/#A-Lean-Companion-to-Conceptual-Mathematics--Working"}});

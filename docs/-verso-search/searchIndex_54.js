@@ -1,0 +1,1 @@
+window.docContents[54].resolve({"/Article-II___-Isomorphisms/#A-Lean-Companion-to-Conceptual-Mathematics--Article-II___-Isomorphisms":{"contents":"\n\n\n\n\n\n\n\n\n\n\n\n","context":"A Lean Companion to Conceptual Mathematics","header":"Article II: Isomorphisms","id":"/Article-II___-Isomorphisms/#A-Lean-Companion-to-Conceptual-Mathematics--Article-II___-Isomorphisms"}});
