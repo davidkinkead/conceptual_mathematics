@@ -42,16 +42,16 @@ namespace ExI_1
 ```
 
 ```savedLean
-inductive A where
+inductive A
   | a₁ | a₂ | a₃
 
-inductive B where
+inductive B
   | b₁ | b₂ | b₃ | b₄
 
-inductive C where
+inductive C
   | c₁ | c₂ | c₃ | c₄ | c₅
 
-inductive D where
+inductive D
   | d₁ | d₂ | d₃ | d₄ | d₅ | d₆
 
 def f : A → B

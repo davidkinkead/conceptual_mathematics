@@ -197,11 +197,11 @@ namespace Ex5_3
 We label the elements in the first column of $`A` as $`a_{11}`, $`a_{12}`, $`a_{13}`, $`a_{14}` and the elements in the second column of $`A` as $`a_{21}`, $`a_{22}`; we label the element in the first column of $`B` as $`b_1` and the element in the second column of $`B` as $`b_2`.
 
 ```savedLean
-inductive A where
+inductive A
   | a₁₁ | a₁₂ | a₁₃ | a₁₄ | a₂₁ | a₂₂
   deriving Fintype
 
-inductive B where
+inductive B
   | b₁ | b₂
   deriving Fintype
 

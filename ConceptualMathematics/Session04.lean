@@ -89,17 +89,15 @@ instance : Category AlgebraicObj where
         ∧ (∀ x₁ ∈ X.carrier, -- respects combining-rules
              ∀ x₂ ∈ X.carrier, f (X.oper x₁ x₂) = Y.oper (f x₁) (f x₂))
   }
-  id := by
-    intro X
-    exact ⟨
-      𝟙 X.t,
-      by
-        constructor
-        · intro _ hx
-          exact hx
-        · intros
-          rfl
-    ⟩
+  id X := ⟨
+    𝟙 X.t,
+    by
+      constructor
+      · intro _ hx
+        exact hx
+      · intros
+        rfl
+  ⟩
   comp := by
     rintro _ _ _ ⟨f, hf⟩ ⟨g, hg⟩
     exact ⟨
@@ -202,7 +200,7 @@ namespace Ex4_2
 Define addition for parity and multiplication for sign, and allow use of `+` and `*` notation.
 
 ```savedLean
-inductive Parity where
+inductive Parity
   | odd | even
 
 def add : Parity → Parity → Parity
@@ -214,7 +212,7 @@ def add : Parity → Parity → Parity
 instance : Add Parity where
   add := add
 
-inductive Sign where
+inductive Sign
   | pos | neg
 
 def mul : Sign → Sign → Sign

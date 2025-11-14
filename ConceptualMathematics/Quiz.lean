@@ -62,11 +62,11 @@ namespace Quiz_1
 We give explicit types $`A` and $`B` and an explicit map $`f`.
 
 ```savedLean
-inductive A where
+inductive A
   | a
   deriving Fintype
 
-inductive B where
+inductive B
   | b₁ | b₂
   deriving Fintype
 

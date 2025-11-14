@@ -459,7 +459,7 @@ namespace ExII_5
 ```
 
 ```savedLean
-inductive XElems where
+inductive XElems
   | b | p | q | r | s
   deriving Fintype
 
@@ -1067,11 +1067,11 @@ namespace ExII_11
 For convenience, we use finite types here instead of finite sets.
 
 ```savedLean
-inductive A where
+inductive A
   | Fatima | Omer | Alysia
   deriving Fintype
 
-inductive B where
+inductive B
   | coffee | tea | cocoa
   deriving Fintype
 ```

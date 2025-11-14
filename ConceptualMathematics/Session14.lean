@@ -116,7 +116,7 @@ example (x₁ x₂ : X) (y₁ y₂ : Y)
 If instead we know that
 $$`{x_2 = \alpha^5(x_1) \text{ in } X}`
 (i.e. that starting from state $`x_1`, five pushes of the button $`\alpha` will bring $`X` to the state $`x_2`), show that the 'same' statement is true of the states $`y_1` and $`y_2` in $`Y^{↻\beta}`; i.e.
-$$`{y_2 = \beta^5}(y_1) \text{ in } Y`
+$$`{y_2 = \beta^5(y_1) \text{ in } Y}`
 :::
 
 :::solution (solutionTo := "Exercise 2")

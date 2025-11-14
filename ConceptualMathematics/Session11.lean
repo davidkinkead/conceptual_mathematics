@@ -67,10 +67,10 @@ namespace Ex11_1
 Label the elements in the three-element set $`A` as $`a_1`, $`a_2`, $`a_3` (clockwise starting with any element); label the elements in the set $`X` as $`x_1` for the element forming the one-element loop and $`x_2`, $`x_3`, $`x_4` (anticlockwise starting with any element) for the elements forming the three-element cycle, ignoring all other elements.
 
 ```savedLean
-inductive A where
+inductive A
   | a₁ | a₂ | a₃
 
-inductive X where
+inductive X
   | x₁ | x₂ | x₃ | x₄
 
 def A' : SetWithEndomap := {
@@ -176,7 +176,7 @@ namespace Ex11_2
 ```
 
 ```savedLean
-inductive X where
+inductive X
   | a | b | c
 
 def α : X ⟶ X
@@ -191,7 +191,7 @@ def Xα : SetWithEndomap := {
   toEnd_mem := fun _ ↦ Set.mem_univ _
 }
 
-inductive Y where
+inductive Y
   | p | q | r
 
 def β : Y ⟶ Y
@@ -362,7 +362,7 @@ Prove that there is no isomorphism (in 𝑺↻)
 from
 
 ```savedLean
-inductive X where
+inductive X
   | x₁ | x₂ | x₃ | x₄
 
 def α : X ⟶ X
@@ -382,7 +382,7 @@ def Xα : SetWithEndomap := {
 to
 
 ```savedLean
-inductive Y where
+inductive Y
   | y₁ | y₂ | y₃ | y₄
 
 def β : Y ⟶ Y
@@ -631,14 +631,14 @@ namespace Ex11_6
 We label the arrows in each graph from top to bottom.
 
 ```savedLean
-inductive A where
+inductive A
   | a₁ | a₂ | a₃
 ```
 
 We label the dots in each graph from left to right.
 
 ```savedLean
-inductive D where
+inductive D
   | d₁ | d₂ | d₃
 ```
 
@@ -958,14 +958,14 @@ namespace Ex11_7
 We label the arrows in each graph starting with the arrow at the bottom left and moving clockwise through the four outer arrows ($`a_1` to $`a_4`) and then vertically upwards through the two inner arrows ($`a_5` and $`a_6`).
 
 ```savedLean
-inductive A where
+inductive A
   | a₁ | a₂ | a₃ | a₄ | a₅ | a₆
 ```
 
 We label the dots in each graph starting with the bottom dot and moving clockwise through the four outer dots ($`d_1` to $`d_4`) and then finishing with the centre dot ($`d_5`).
 
 ```savedLean
-inductive D where
+inductive D
   | d₁ | d₂ | d₃ | d₄ | d₅
 ```
 
@@ -1110,7 +1110,7 @@ namespace Ex11_8
 (Impossible journeys) $`J` is the graph
 
 ```savedLean
-inductive A where
+inductive A
   | a₁ | a₂ | a₃
 
 abbrev D := Fin 2

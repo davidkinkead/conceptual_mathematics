@@ -103,7 +103,7 @@ namespace Ex12_2
 The automaton modelling the behaviour of a light bulb that can only be lit four times before burning out may be represented as follows:
 
 ```savedLean
-inductive BulbState where
+inductive BulbState
   | off₀ | on₁ | off₁ | on₂ | off₂ | on₃ | off₃ | on₄ | burntOut
   deriving Fintype, DecidableEq
 

@@ -54,7 +54,7 @@ namespace Test1_1
 Throughout this problem
 
 ```savedLean
-inductive A where
+inductive A
   | Mara | Aurelio | Andrea
   deriving Fintype
 ```
@@ -111,7 +111,7 @@ instance : IsIdempotent e := {
 For part (c), we give a set $`B` and maps $`r` and $`s`, and we show that they satisfy the required properties.
 
 ```savedLean
-inductive B where
+inductive B
   | b
   deriving Fintype
 

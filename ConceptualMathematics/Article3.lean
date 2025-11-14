@@ -713,7 +713,7 @@ namespace ExIII_9
 In \[the category `Type`\], consider the endomap $`\alpha` of a three-element \[type $`A`\] defined by...
 
 ```savedLean
-inductive A where
+inductive A
   | a₁ | a₂ | a₃
 
 def α : A ⟶ A
@@ -780,10 +780,10 @@ namespace ExIII_10
 The full specification of the two maps $`s` and $`t` is as follows:
 
 ```savedLean
-inductive X where
+inductive X
   | a | b | c | d | e
 
-inductive P where
+inductive P
   | k | m | n | p | q | r
 
 def s : X ⟶ P
@@ -846,13 +846,11 @@ instance instCategoryIrreflexiveGraph : Category IrreflexiveGraph where
         ∧ f.2 ⊚ X.toSrc = Y.toSrc ⊚ f.1 -- source commutes
         ∧ f.2 ⊚ X.toTgt = Y.toTgt ⊚ f.1 -- target commutes
   }
-  id := by
-    intro X
-    exact ⟨
-      (𝟙 X.tA, 𝟙 X.tD),
-      by
-        split_ands <;> first | exact fun _ hx ↦ hx | rfl
-    ⟩
+  id X := ⟨
+    (𝟙 X.tA, 𝟙 X.tD),
+    by
+      split_ands <;> first | exact fun _ hx ↦ hx | rfl
+  ⟩
   comp := by
     rintro _ _ _ ⟨f, hf⟩ ⟨g, hg⟩
     exact ⟨
@@ -1075,13 +1073,11 @@ instance : Category SimpleGraph where
         ∧ (∀ x ∈ X.carrierD, f.2 x ∈ Y.carrierD) -- fD maps to codomain
         ∧ f.2 ⊚ X.toFun = Y.toFun ⊚ f.1 -- commutes
   }
-  id := by
-    intro X
-    exact ⟨
-      (𝟙 X.tA, 𝟙 X.tD),
-      by
-        split_ands <;> first | exact fun _ hx ↦ hx | rfl
-    ⟩
+  id X := ⟨
+    (𝟙 X.tA, 𝟙 X.tD),
+    by
+      split_ands <;> first | exact fun _ hx ↦ hx | rfl
+  ⟩
   comp := by
     rintro _ _ _ ⟨f, hf⟩ ⟨g, hg⟩
     exact ⟨
@@ -1149,10 +1145,10 @@ namespace ExIII_14
 We give $`X`, $`Y`, $`\alpha`, $`\beta`, $`f_A`, $`f_D` as follows:
 
 ```savedLean
-inductive X where
+inductive X
   | x₁ | x₂
 
-inductive Y where
+inductive Y
   | y₁ | y₂
 
 def α : X ⟶ X
@@ -1214,13 +1210,11 @@ instance : Category ReflexiveGraph where
         ∧ f.2 ⊚ X.toTgt = Y.toTgt ⊚ f.1 -- target commutes
         ∧ f.1 ⊚ X.toCommonSection = Y.toCommonSection ⊚ f.2
   }
-  id := by
-    intro X
-    exact ⟨
-      (𝟙 X.tA, 𝟙 X.tD),
-      by
-        split_ands <;> first | exact fun _ hx ↦ hx | rfl
-    ⟩
+  id X := ⟨
+    (𝟙 X.tA, 𝟙 X.tD),
+    by
+      split_ands <;> first | exact fun _ hx ↦ hx | rfl
+  ⟩
   comp := by
     rintro _ _ _ ⟨f, hf⟩ ⟨g, hg⟩
     exact ⟨
@@ -1418,13 +1412,11 @@ This map between structures makes them into a category.
 ```savedLean
 instance : Category ParentLike where
   Hom := ParentLikeHom -- our map between ParentLike structures
-  id := by
-    intro X
-    exact ⟨
-      (𝟙 X.tM, 𝟙 X.tF),
-      by
-        split_ands <;> first | exact fun _ hx ↦ hx | rfl
-    ⟩
+  id X := ⟨
+    (𝟙 X.tM, 𝟙 X.tF),
+    by
+      split_ands <;> first | exact fun _ hx ↦ hx | rfl
+  ⟩
   comp := by
     rintro _ _ _ ⟨f, hf⟩ ⟨g, hg⟩
     exact ⟨
@@ -1497,11 +1489,11 @@ namespace ExIII_19_24
 ```
 
 ```savedLean
-inductive X where
+inductive X
   | x₀ | x₁
   deriving Fintype
 
-inductive Y where
+inductive Y
   | y₀ | y₁ | y₂
   deriving Fintype
 
@@ -2064,7 +2056,7 @@ namespace ExIII_27
 Consider our standard idempotent
 
 ```savedLean
-inductive X where
+inductive X
   | x₀ | x₁
 
 def α : X ⟶ X
