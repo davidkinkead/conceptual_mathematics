@@ -8,4 +8,4 @@ Files containing just the unannotated Lean code for each Article and Session hav
 
 This _Companion_ is the result of a project I undertook to learn both Lean and some elementary category theory at the same time (and ultimately a decent amount about Verso too). It remains a work in progress[^1]. It will contain plenty of opportunities for improvement and more than a few errors! I welcome any comments, suggestions, corrections, or contributions. Please feel free to open an issue or a pull request.
 
-[^1]: At the present time, it is mostly complete through Session 15, so currently covers just over half of the book.
+[^1]: At the present time, it is mostly complete through Session 16, so currently covers just over half of the book.
