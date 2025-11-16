@@ -1,3 +1,3 @@
 /.lake/
 /_out/*
-# !/_out/cm-code/
+!/_out/cm-code/
