@@ -224,9 +224,9 @@ namespace Ex12_3
 inductive Gender
   | female | male
 
-def m₁ : Gender ⟶ Gender := fun _ => Gender.female
+def m₁ : Gender ⟶ Gender := fun _ ↦ Gender.female
 
-def f₁ : Gender ⟶ Gender := fun _ => Gender.male
+def f₁ : Gender ⟶ Gender := fun _ ↦ Gender.male
 
 def G : SetWithTwoEndomaps := {
   t := Gender
@@ -244,7 +244,7 @@ def G : SetWithTwoEndomaps := {
 inductive Clan
   | wolf | bear
 
-def m₂ : Clan ⟶ Clan := fun c => c
+def m₂ : Clan ⟶ Clan := fun c ↦ c
 
 def f₂ : Clan ⟶ Clan
   | Clan.wolf => Clan.bear
@@ -277,9 +277,9 @@ structure Person₁ where
 We next define the `mother` and `father` endomaps on `Person`, which ignore their input (as irrelevant) and simply return a `Person` of the appropriate `ParentType`.
 
 ```savedLean
-def mother₁ : Person₁ ⟶ Person₁ := fun _ => ⟨ParentType.isMother⟩
+def mother₁ : Person₁ ⟶ Person₁ := fun _ ↦ ⟨ParentType.isMother⟩
 
-def father₁ : Person₁ ⟶ Person₁ := fun _ => ⟨ParentType.isFather⟩
+def father₁ : Person₁ ⟶ Person₁ := fun _ ↦ ⟨ParentType.isFather⟩
 ```
 
 Now we can define the object $`\mathbf{P}`.
@@ -332,7 +332,7 @@ inductive ParentClan
 structure Person₂ where
   parentClan : ParentClan
 
-def mother₂ : Person₂ ⟶ Person₂ := fun p => ⟨p.parentClan⟩
+def mother₂ : Person₂ ⟶ Person₂ := fun p ↦ ⟨p.parentClan⟩
 
 def father₂ : Person₂ ⟶ Person₂
   | ⟨ParentClan.isWolf⟩ => ⟨ParentClan.isBear⟩
@@ -374,7 +374,7 @@ structure Person₃ where
   parentClan : ParentClan
 
 def mother₃ : Person₃ ⟶ Person₃ :=
-  fun p => ⟨ParentType.isMother, p.parentClan⟩
+  fun p ↦ ⟨ParentType.isMother, p.parentClan⟩
 
 def father₃ : Person₃ ⟶ Person₃
   | ⟨_, ParentClan.isWolf⟩ => ⟨ParentType.isFather, ParentClan.isBear⟩
@@ -394,7 +394,7 @@ As required, we define appropriate 'mother' and 'father' maps (`m` and `f`, resp
 
 ```savedLean
 def m₃ : (Gender × Clan) ⟶ (Gender × Clan) :=
-  fun (_, c) => (Gender.female, c)
+  fun (_, c) ↦ (Gender.female, c)
 
 def f₃ : (Gender × Clan) ⟶ (Gender × Clan)
   | (_, Clan.wolf) => (Gender.male, Clan.bear)

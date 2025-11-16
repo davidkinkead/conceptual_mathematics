@@ -413,7 +413,7 @@ example : ¬(∃ f : Xα ⟶ Yβ, IsIso f) := by
   -- but β ⊚ β ⊚ β has no fixed points in Y
   have h₂ : ∀ y : Y, (Yβ.toEnd ⊚ Yβ.toEnd ⊚ Yβ.toEnd) y ≠ y := by
     intro y
-    cases y <;> exact fun h => by contradiction
+    cases y <;> exact fun h ↦ by contradiction
   -- Since f ⊚ (α ⊚ α ⊚ α) = (β ⊚ β ⊚ β) ⊚ f, we can derive a
   -- contradiction
   have h_contra : f.val ((Xα.toEnd ⊚ Xα.toEnd ⊚ Xα.toEnd) X.x₂) =
