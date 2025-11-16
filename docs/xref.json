@@ -35,6 +35,28 @@
         "Article III: Examples of categories",
         "4. Categories of endomaps"]}},
      "address": "/Article-III___-Examples-of-categories/"}],
+   "CM.ℕσ":
+   [{"id": "CM_________",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM_________":
+      {"display": "ℕσ",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.σ":
+   [{"id": "CM______",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM______":
+      {"display": "σ",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
    "CM.«prop2*»":
    [{"id": "CM____FLQQ_prop2____FLQQ_",
      "data":
@@ -145,6 +167,28 @@
         "Article II: Isomorphisms",
         "4. Isomorphisms and automorphisms"]}},
      "address": "/Article-II___-Isomorphisms/"}],
+   "CM.period_four_of_period_two":
+   [{"id": "CM___period_four_of_period_two",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___period_four_of_period_two":
+      {"display": "period_four_of_period_two",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "1. Structure-preserving maps from a cycle to another endomap"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.period_four_of_period_one":
+   [{"id": "CM___period_four_of_period_one",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___period_four_of_period_one":
+      {"display": "period_four_of_period_one",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "1. Structure-preserving maps from a cycle to another endomap"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
    "CM.isoCount":
    [{"id": "CM___isoCount",
      "data":
@@ -2817,6 +2861,844 @@
         "Session 4: Division of maps: Isomorphisms",
         "4. A small zoo of isomorphisms in other categories"]}},
      "address": "/Session-4___-Division-of-maps___-Isomorphisms/"}],
+   "CM.Ex15_7.β":
+   [{"id": "CM___Ex15_7______-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7______-next":
+      {"display": "β",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.α":
+   [{"id": "CM___Ex15_7______",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7______":
+      {"display": "α",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₉'":
+   [{"id": "CM___Ex15_7___f______-next-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next-next-next-next":
+      {"display": "f₉'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₉":
+   [{"id": "CM___Ex15_7___f___-next-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next-next-next-next-next-next-next":
+      {"display": "f₉",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₈'":
+   [{"id": "CM___Ex15_7___f______-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next-next-next":
+      {"display": "f₈'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₈":
+   [{"id": "CM___Ex15_7___f___-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next-next-next-next-next-next":
+      {"display": "f₈",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₇'":
+   [{"id": "CM___Ex15_7___f______-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next-next":
+      {"display": "f₇'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₇":
+   [{"id": "CM___Ex15_7___f___-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next-next-next-next-next":
+      {"display": "f₇",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₆'":
+   [{"id": "CM___Ex15_7___f______-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next":
+      {"display": "f₆'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₆":
+   [{"id": "CM___Ex15_7___f___-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next-next-next-next":
+      {"display": "f₆",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₅'":
+   [{"id": "CM___Ex15_7___f______-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next":
+      {"display": "f₅'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₅":
+   [{"id": "CM___Ex15_7___f___-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next-next-next":
+      {"display": "f₅",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₄'":
+   [{"id": "CM___Ex15_7___f______-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next":
+      {"display": "f₄'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₄":
+   [{"id": "CM___Ex15_7___f___-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next-next":
+      {"display": "f₄",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₃'":
+   [{"id": "CM___Ex15_7___f______-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next":
+      {"display": "f₃'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₃":
+   [{"id": "CM___Ex15_7___f___-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next-next":
+      {"display": "f₃",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₂'":
+   [{"id": "CM___Ex15_7___f______-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next":
+      {"display": "f₂'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₂":
+   [{"id": "CM___Ex15_7___f___-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___-next":
+      {"display": "f₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁₂'":
+   [{"id": "CM___Ex15_7___f_________-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f_________-next-next":
+      {"display": "f₁₂'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁₂":
+   [{"id":
+     "CM___Ex15_7___f______-next-next-next-next-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next-next-next-next-next-next-next":
+      {"display": "f₁₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁₁'":
+   [{"id": "CM___Ex15_7___f_________-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f_________-next":
+      {"display": "f₁₁'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁₁":
+   [{"id":
+     "CM___Ex15_7___f______-next-next-next-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next-next-next-next-next-next":
+      {"display": "f₁₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁₀'":
+   [{"id": "CM___Ex15_7___f_________",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f_________":
+      {"display": "f₁₀'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁₀":
+   [{"id": "CM___Ex15_7___f______-next-next-next-next-next-next-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______-next-next-next-next-next-next-next-next-next":
+      {"display": "f₁₀",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁'":
+   [{"id": "CM___Ex15_7___f______",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f______":
+      {"display": "f₁'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.f₁":
+   [{"id": "CM___Ex15_7___f___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___f___":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Yβ":
+   [{"id": "CM___Ex15_7___Y___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___":
+      {"display": "Yβ",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.z":
+   [{"id": "CM___Ex15_7___Y___z",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___z":
+      {"display": "z",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.y":
+   [{"id": "CM___Ex15_7___Y___y",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___y":
+      {"display": "y",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.x":
+   [{"id": "CM___Ex15_7___Y___x",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___x":
+      {"display": "x",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.w":
+   [{"id": "CM___Ex15_7___Y___w",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___w":
+      {"display": "w",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.v":
+   [{"id": "CM___Ex15_7___Y___v",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___v":
+      {"display": "v",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.u":
+   [{"id": "CM___Ex15_7___Y___u",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___u":
+      {"display": "u",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.t":
+   [{"id": "CM___Ex15_7___Y___t",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___t":
+      {"display": "t",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.s":
+   [{"id": "CM___Ex15_7___Y___s",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___s":
+      {"display": "s",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.r":
+   [{"id": "CM___Ex15_7___Y___r",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___r":
+      {"display": "r",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.q":
+   [{"id": "CM___Ex15_7___Y___q",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___q":
+      {"display": "q",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.p":
+   [{"id": "CM___Ex15_7___Y___p",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___p":
+      {"display": "p",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.m":
+   [{"id": "CM___Ex15_7___Y___m",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___m":
+      {"display": "m",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y.l":
+   [{"id": "CM___Ex15_7___Y___l",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y___l":
+      {"display": "l",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Y":
+   [{"id": "CM___Ex15_7___Y",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___Y":
+      {"display": "Y",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.Xα":
+   [{"id": "CM___Ex15_7___X___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___":
+      {"display": "Xα",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.d₁":
+   [{"id": "CM___Ex15_7___X___d___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___d___":
+      {"display": "d₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.d":
+   [{"id": "CM___Ex15_7___X___d",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___d":
+      {"display": "d",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.c":
+   [{"id": "CM___Ex15_7___X___c",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___c":
+      {"display": "c",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.b":
+   [{"id": "CM___Ex15_7___X___b",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___b":
+      {"display": "b",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.a₄":
+   [{"id": "CM___Ex15_7___X___a___-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___a___-next-next-next":
+      {"display": "a₄",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.a₃":
+   [{"id": "CM___Ex15_7___X___a___-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___a___-next-next":
+      {"display": "a₃",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.a₂":
+   [{"id": "CM___Ex15_7___X___a___-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___a___-next":
+      {"display": "a₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.a₁":
+   [{"id": "CM___Ex15_7___X___a___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___a___":
+      {"display": "a₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X.a":
+   [{"id": "CM___Ex15_7___X___a",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X___a":
+      {"display": "a",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_7.X":
+   [{"id": "CM___Ex15_7___X",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_7___X":
+      {"display": "X",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "5. Presentations of dynamical systems"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.β":
+   [{"id": "CM___Ex15_6______",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6______":
+      {"display": "β",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.m":
+   [{"id": "CM___Ex15_6___m",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___m":
+      {"display": "m",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.g'":
+   [{"id": "CM___Ex15_6___g___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___g___":
+      {"display": "g'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.g":
+   [{"id": "CM___Ex15_6___g",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___g":
+      {"display": "g",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.Xm":
+   [{"id": "CM___Ex15_6___Xm",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___Xm":
+      {"display": "Xm",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.Person.parentType":
+   [{"id": "CM___Ex15_6___Person___parentType",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___Person___parentType":
+      {"display": "parentType",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.Person":
+   [{"id": "CM___Ex15_6___Person",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___Person":
+      {"display": "Person",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.ParentType.isMother":
+   [{"id": "CM___Ex15_6___ParentType___isMother",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___ParentType___isMother":
+      {"display": "isMother",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.ParentType":
+   [{"id": "CM___Ex15_6___ParentType",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___ParentType":
+      {"display": "ParentType",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.Bβ":
+   [{"id": "CM___Ex15_6___B___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___B___":
+      {"display": "Bβ",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.B.male":
+   [{"id": "CM___Ex15_6___B___male",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___B___male":
+      {"display": "male",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.B.female":
+   [{"id": "CM___Ex15_6___B___female",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___B___female":
+      {"display": "female",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_6.B":
+   [{"id": "CM___Ex15_6___B",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_6___B":
+      {"display": "B",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "4. The philosophical role of  N"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_4.Xα":
+   [{"id": "CM___Ex15_4___X___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_4___X___":
+      {"display": "Xα",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.ς":
+   [{"id": "CM___Ex15_2______",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2______":
+      {"display": "ς",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₃'":
+   [{"id": "CM___Ex15_2___f______-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f______-next-next-next":
+      {"display": "f₃'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₃":
+   [{"id": "CM___Ex15_2___f___-next-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f___-next-next-next":
+      {"display": "f₃",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₂'":
+   [{"id": "CM___Ex15_2___f______-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f______-next-next":
+      {"display": "f₂'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₂":
+   [{"id": "CM___Ex15_2___f___-next-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f___-next-next":
+      {"display": "f₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₁'":
+   [{"id": "CM___Ex15_2___f______-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f______-next":
+      {"display": "f₁'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₁":
+   [{"id": "CM___Ex15_2___f___-next",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f___-next":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₀'":
+   [{"id": "CM___Ex15_2___f______",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f______":
+      {"display": "f₀'",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.f₀":
+   [{"id": "CM___Ex15_2___f___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___f___":
+      {"display": "f₀",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
+   "CM.Ex15_2.C₄":
+   [{"id": "CM___Ex15_2___C___",
+     "data":
+     {"/Session-15___-Objectification-of-properties-in-dynamical-systems/#CM___Ex15_2___C___":
+      {"display": "C₄",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 15: Objectification of properties in dynamical systems",
+        "3. Naming arbitrary elements"]}},
+     "address":
+     "/Session-15___-Objectification-of-properties-in-dynamical-systems/"}],
    "CM.Ex14_5.β":
    [{"id": "CM___Ex14_5______-next",
      "data":
