@@ -36,7 +36,7 @@ This _Companion_, which shamelessly steals its title and a fair bit of its appro
 
 When formalising the definitions in the book, I have tried to use the corresponding definitions in mathlib where I was able to find them, rather than reinventing too many wheels. For the exercises, I have generally stayed faithful to the wording in the book, but I have taken some small liberties where I felt doing so would allow a solution to reflect more clearly the core concerns of the question (for instance, by a frequent use of types instead of sets). I have flagged any such deviations in the comments.
 
-I have attempted to strike a balance throughout between ease of reading and optimised, idiomatic Lean code, but wherever needed have erred (I hope!) on the side of readability.
+I have attempted to strike a balance throughout between ease of reading and optimised, idiomatic Lean code, but wherever needed have erred (I hope!) on the side of readability. In particular, I have largely avoided the use of the `simp` tactic and other automation, in order to make the logical steps in the proofs as explicit as possible.
 
 This _Companion_ is the result of a project I undertook to learn both Lean and some elementary category theory at the same time (and ultimately a decent amount about Verso too). It remains a work in progress. It will contain plenty of opportunities for improvement and more than a few errors! I welcome any comments, suggestions, corrections, or contributions. Please feel free to open an issue or a pull request on the [GitHub repository](https://github.com/davidkinkead/conceptual_mathematics).
 
