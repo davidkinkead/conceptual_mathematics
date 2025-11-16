@@ -5,6 +5,10 @@ def cmCss : Array (String × String) := #[("cm.css", r#"
   color: red;
 }
 
+.vspace-above {
+  margin-top: 1rem;
+}
+
 code.hl.lean.block {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
@@ -15,6 +19,11 @@ code.hl.lean.block {
 
 pre.hl.lean.lean-output.information {
   margin: 0 0 2rem 0;
+}
+
+div.compact p {
+  margin: 0;
+  padding: 0;
 }
 
 div.definition, div.excerpt, div.proof, div.question {
