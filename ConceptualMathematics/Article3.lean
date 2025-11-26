@@ -1,15 +1,7 @@
 import VersoManual
 import ConceptualMathematics.Meta.Lean
-import ConceptualMathematics.Article1
-import ConceptualMathematics.Session02
-import ConceptualMathematics.Session03
 import ConceptualMathematics.Article2
-import ConceptualMathematics.Session04
-import ConceptualMathematics.Session05
-import ConceptualMathematics.Session09
-import ConceptualMathematics.Summary
 import ConceptualMathematics.Review
-import ConceptualMathematics.Session10
 import Mathlib
 
 open Verso.Genre Manual InlineLean
@@ -27,16 +19,8 @@ number := false
 %%%
 
 ```savedImport
-import ConceptualMathematics.Article1
-import ConceptualMathematics.Session02
-import ConceptualMathematics.Session03
 import ConceptualMathematics.Article2
-import ConceptualMathematics.Session04
-import ConceptualMathematics.Session05
-import ConceptualMathematics.Session09
-import ConceptualMathematics.Summary
 import ConceptualMathematics.Review
-import ConceptualMathematics.Session10
 import Mathlib
 open CategoryTheory
 ```

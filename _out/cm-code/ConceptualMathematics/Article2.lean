@@ -1,6 +1,3 @@
-import ConceptualMathematics.Article1
-import ConceptualMathematics.Session02
-import ConceptualMathematics.Session03
 import Mathlib
 open CategoryTheory
 namespace CM

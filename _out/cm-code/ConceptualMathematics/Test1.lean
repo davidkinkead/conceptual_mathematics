@@ -1,12 +1,4 @@
-import ConceptualMathematics.Article1
-import ConceptualMathematics.Session02
-import ConceptualMathematics.Session03
 import ConceptualMathematics.Article2
-import ConceptualMathematics.Session04
-import ConceptualMathematics.Session05
-import ConceptualMathematics.Session09
-import ConceptualMathematics.Summary
-import ConceptualMathematics.Review
 import Mathlib
 open CategoryTheory
 namespace CM
