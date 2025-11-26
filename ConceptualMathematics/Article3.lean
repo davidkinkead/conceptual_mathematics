@@ -8,8 +8,6 @@ open Verso.Genre Manual InlineLean
 open ConceptualMathematics
 open CategoryTheory
 
-set_option maxHeartbeats 0 -- required for Exercises III.12, III.17, III.24
-
 
 #doc (Manual) "Article III: Examples of categories" =>
 

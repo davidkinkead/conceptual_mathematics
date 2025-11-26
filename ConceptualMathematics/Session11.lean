@@ -7,9 +7,6 @@ open Verso.Genre Manual InlineLean
 open ConceptualMathematics
 open CategoryTheory
 
-set_option maxHeartbeats 0 -- required for Exercises 11.2, 11.5, 11.6, 11.7
-set_option maxRecDepth 15000 -- required for Exercise 11.5
-
 
 #doc (Manual) "Session 11: Ascending to categories of richer structures" =>
 
