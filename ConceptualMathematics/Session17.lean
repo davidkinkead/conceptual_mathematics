@@ -158,13 +158,12 @@ example : HasTerminal (Paths Dot) := by
     apply Subsingleton.intro
     intro f g
     cases x
-    all_goals (
+    all_goals
       repeat first
       | (rcases f with _ | ⟨f, _, _⟩) -- deconstruct f
       | (rcases g with _ | ⟨g, _, _⟩) -- deconstruct g
       | contradiction
       | rfl
-    )
   have h_all_nonempty
       : ∀ (x : Paths Dot), Nonempty (x ⟶ Dot.x₄) := by
     intro x

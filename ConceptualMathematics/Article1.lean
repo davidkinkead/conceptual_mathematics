@@ -177,10 +177,9 @@ def f : Map A B := {
     repeat rw [Finset.mem_insert] at *
     rw [Finset.mem_singleton] at *
     rcases ha with ha | ha | ha
-    all_goals (
+    all_goals
       subst ha
       first | exact Or.inl rfl | exact Or.inr rfl
-    )
 }
 
 def eggs : Point B := {
@@ -232,10 +231,9 @@ def f : Map A B := {
     repeat rw [Set.mem_insert_iff] at *
     rw [Set.mem_singleton_iff] at *
     rcases ha with ha | ha | ha
-    all_goals (
+    all_goals
       subst ha
       first | exact Or.inl rfl | exact Or.inr rfl
-    )
 }
 
 def eggs : Point B := {
@@ -477,13 +475,12 @@ def idA : Map A A := {
     repeat rw [Finset.mem_insert] at *
     rw [Finset.mem_singleton] at *
     rcases ha with ha | ha | ha
-    all_goals (
+    all_goals
       subst ha
       first
       | exact Or.inl rfl
       | exact Or.inr (Or.inl rfl)
       | exact Or.inr (Or.inr rfl)
-    )
 }
 
 open Finset in
@@ -546,10 +543,9 @@ def h : Map B A := {
     repeat rw [Finset.mem_insert] at *
     rw [Finset.mem_singleton] at *
     rcases hb with hb | hb
-    all_goals (
+    all_goals
       subst hb
       first | exact Or.inl rfl | exact Or.inr (Or.inl rfl)
-    )
 }
 
 def k : Map A B := {
@@ -562,10 +558,9 @@ def k : Map A B := {
     repeat rw [Finset.mem_insert] at *
     rw [Finset.mem_singleton] at *
     rcases ha with ha | ha | ha
-    all_goals (
+    all_goals
       subst ha
       first | exact Or.inl rfl | exact Or.inr rfl
-    )
 }
 ```
 
@@ -581,10 +576,9 @@ def idB : Map B B := {
     dsimp [B] at *
     rw [Finset.mem_insert, Finset.mem_singleton] at *
     rcases hb with hb | hb
-    all_goals (
+    all_goals
       subst hb
       first | exact Or.inl rfl | exact Or.inr rfl
-    )
 }
 ```
 

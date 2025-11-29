@@ -215,12 +215,11 @@ def clan' : P₂ ⟶ C := ⟨
     constructor
     · exact fun _ _ ↦ Set.mem_univ _
     · constructor
-      all_goals (
+      all_goals
         funext p
         match p with
         | ⟨ParentClan.isWolf⟩ => rfl
         | ⟨ParentClan.isBear⟩ => rfl
-      )
 ⟩
 
 structure Person₃ where
@@ -275,14 +274,13 @@ def gender_and_clan' : P₃ ⟶ GC := ⟨
     constructor
     · exact fun _ _ ↦ Set.mem_univ _
     · constructor
-      all_goals (
+      all_goals
         funext p
         match p with
         | ⟨ParentType.isMother, ParentClan.isWolf⟩ => rfl
         | ⟨ParentType.isMother, ParentClan.isBear⟩ => rfl
         | ⟨ParentType.isFather, ParentClan.isWolf⟩ => rfl
         | ⟨ParentType.isFather, ParentClan.isBear⟩ => rfl
-      )
 ⟩
 
 end Ex12_3

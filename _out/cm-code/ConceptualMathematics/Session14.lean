@@ -187,17 +187,15 @@ example (x : X) (y : Y) (hy : y = f x)
   · by_contra h
     change (α ⊚ α) x = x at h
     cases x
-    all_goals (
+    all_goals
       dsimp [α] at h
       contradiction
-    )
   · cases y <;> rfl
   · by_contra h
     cases y
-    all_goals (
+    all_goals
       dsimp [β] at h
       contradiction
-    )
 
 end Ex14_5
 

@@ -139,9 +139,9 @@ instance
 
 :::question (questionTitle := "Exercise 1") (questionPage := "137")
 Show that if both
-$$`{X^{↻\alpha} \xrightarrow{f} Y^{↻\beta}}`
+$$`X^{↻\alpha} \xrightarrow{f} Y^{↻\beta}`
 ...and also
-$$`{Y^{↻\beta} \xrightarrow{g} Z^{↻\gamma}}`
+$$`Y^{↻\beta} \xrightarrow{g} Z^{↻\gamma}`
 are maps in 𝑺↻, then the composite $`{g \circ f}` in 𝑺 actually defines another map in 𝑺↻. Hint: What should the domain and the codomain (in the sense of 𝑺↻) of this third map be? Transfer the definition (given for the case $`f`) to the cases $`g` and $`{g \circ f}`; then calculate that the equations satisfied by $`g` and $`f` imply the desired equation for $`{g \circ f}`.
 :::
 
@@ -591,11 +591,10 @@ example : IsIso α := by
     out := by
       use αinv
       constructor
-      all_goals (
+      all_goals
         funext
         dsimp [CategoryStruct.comp, α, αinv]
         ring
-      )
   }
 ```
 
@@ -746,7 +745,7 @@ end ExIII_9
 
 :::question (questionTitle := "Exercise 10") (questionPage := "141")
 Complete the specification of the two maps
-$$`{X \xrightarrow{s} P} \quad\text{and}\quad {X \xrightarrow{t} P}`
+$$`X \xrightarrow{s} P \quad\text{and}\quad X \xrightarrow{t} P`
 which express the source and target relations of the \[given graph\]. Is there any element of $`X` at which $`s` and $`t` take the same value in $`P`? Is there any element to which $`t` assigns the value $`k`?
 :::
 
@@ -854,9 +853,9 @@ instance instCategoryIrreflexiveGraph : Category IrreflexiveGraph where
 
 :::question (questionTitle := "Exercise 11") (questionPage := "142")
 If $`f` is \[the map of graphs\]
-$$`{X \xrightarrow{f_A} Y},\; {P \xrightarrow{f_D} Q}`
+$$`X \xrightarrow{f_A} Y,\; P \xrightarrow{f_D} Q`
 and if
-$$`{Y \xrightarrow{g_A} Z},\; {Q \xrightarrow{g_D} R}`
+$$`Y \xrightarrow{g_A} Z,\; Q \xrightarrow{g_D} R`
 is another map of graphs, show that the pair $`{g_A \circ f_A,\; g_D \circ f_D}` of 𝑺-composites is also an 𝑺⇊-map.
 :::
 
@@ -961,7 +960,7 @@ example {X Y Z : SetWithEndomap}
 
 :::question (questionTitle := "Exercise 13") (questionPage := "144")
 (Fullness) Show that if we are given any 𝑺⇊-morphism
-$$`{X \xrightarrow{f_A} Y},\; {X \xrightarrow{f_D} Y}`
+$$`X \xrightarrow{f_A} Y,\; X \xrightarrow{f_D} Y`
 between the special graphs that come via $`I` from endomaps of sets, then it follows that $`{f_A = f_D}`, so that the map itself comes via $`I` from a map in 𝑺↻.
 :::
 
@@ -1111,7 +1110,7 @@ example {X Y Z : SetWithEndomap}
 
 :::question (questionTitle := "Exercise 14") (questionPage := "144")
 Give an example of 𝑺 of two endomaps and two maps as in
-$$`{X \xrightarrow{f_A} Y},\; {X \xrightarrow{f_D} Y},\; {X \xrightarrow{\alpha} X},\; {Y \xrightarrow{\beta} Y}`
+$$`X \xrightarrow{f_A} Y,\; X \xrightarrow{f_D} Y,\; X \xrightarrow{\alpha} X,\; Y \xrightarrow{\beta} Y`
 which satisfy the equation $`{f_D \circ \alpha = \beta \circ f_A}`, but for which $`{f_A \ne f_D}`.
 :::
 
@@ -1344,7 +1343,7 @@ end ExIII_16
 
 :::question (questionTitle := "Exercise 17") (questionPage := "145")
 Consider a structure involving two sets and four maps as in
-$$`{M \xrightarrow{\varphi} M},\; {F \xrightarrow{\varphi'} M},\; {F \xrightarrow{\mu} F},\; {M \xrightarrow{\mu'} F} \quad\text{(no equations required)}`
+$$`M \xrightarrow{\varphi} M,\; F \xrightarrow{\varphi'} M,\; F \xrightarrow{\mu} F,\; M \xrightarrow{\mu'} F \quad\text{(no equations required)}`
 (for example $`{M = \mathit{males}}`, $`{F = \mathit{females}}`, $`\varphi` and $`\varphi'` are $`\mathit{father}`, and $`\mu` and $`\mu'` are $`\mathit{mother}`). Devise a rational definition of _map_ between such structures in order to make them into a category.
 :::
 
@@ -1654,7 +1653,7 @@ Since, by Exercise 21, $`p_1` and $`p_2` are the only retractions of $`a` in �
 
 :::question (questionTitle := "Exercise 23") (questionPage := "147")
 How many of the eight 𝑺-maps $`{Y \rightarrow X}` (if any) are actually 𝑺↻-maps?
-$$`{Y^{↻\beta} \rightarrow X^{↻\alpha}}`
+$$`Y^{↻\beta} \rightarrow X^{↻\alpha}`
 :::
 
 :::solution (solutionTo := "Exercise 23")
@@ -1866,7 +1865,7 @@ end ExIII_19_24
 
 :::question (questionTitle := "Exercise 25") (questionPage := "148")
 Show that for any two graphs and any 𝑺⇊-map between them
-$$`{X \xrightarrow{f_A} Y},\; {P \xrightarrow{f_D} Q},\; {X \xrightarrow{s} P},\; {X \xrightarrow{t} P},\; {Y \xrightarrow{s'} Q},\; {Y \xrightarrow{t'} Q}`
+$$`X \xrightarrow{f_A} Y,\; P \xrightarrow{f_D} Q,\; X \xrightarrow{s} P,\; X \xrightarrow{t} P,\; Y \xrightarrow{s'} Q,\; Y \xrightarrow{t'} Q`
 the equation $`{f_D \circ s = f_D \circ t}` can only be true when $`f_A` maps every arrow in $`X` to a _loop_ (relative to $`s'`, $`t'`) in $`Y`.
 :::
 

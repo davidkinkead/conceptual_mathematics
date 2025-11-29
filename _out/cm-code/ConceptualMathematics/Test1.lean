@@ -27,10 +27,9 @@ example : IsIso f := {
   out := by
     use finv
     constructor
-    all_goals (
+    all_goals
       funext x
       fin_cases x <;> dsimp [f, finv]
-    )
 }
 
 def e : A ⟶ A

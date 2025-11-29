@@ -335,11 +335,10 @@ example : IsIso α := by
     out := by
       use αinv
       constructor
-      all_goals (
+      all_goals
         funext
         dsimp [CategoryStruct.comp, α, αinv]
         ring
-      )
   }
 
 end ExIII_6

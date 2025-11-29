@@ -37,9 +37,9 @@ variable (X Y : Type) (α : End X) (β : End Y)
 
 :::question (questionTitle := "Exercise 1") (questionPage := "170")
 Let $`x_1` and $`x_2` be two points of $`X` and define $`{y_1 = f(x_1)}` and $`{y_2 = f(x_2)}`. If
-$$`{\alpha(x_1) = \alpha(x_2) \text{ in } X}`
+$$`\alpha(x_1) = \alpha(x_2) \text{ in } X`
 (i.e. pushing the button $`\alpha` we arrive at the same state whether the initial state was $`x_1` or $`x_2`) then show that
-$$`{\beta(y_1) = \beta(y_2) \text{ in } Y}`
+$$`\beta(y_1) = \beta(y_2) \text{ in } Y`
 (the 'same' statement with button $`\beta` on the machine $`Y^{↻\beta}` with regard to its two states $`y_1` and $`y_2`).
 :::
 
@@ -86,9 +86,9 @@ example (x₁ x₂ : X) (y₁ y₂ : Y)
 
 :::question (questionTitle := "Exercise 2") (questionPage := "170")
 If instead we know that
-$$`{x_2 = \alpha^5(x_1) \text{ in } X}`
+$$`x_2 = \alpha^5(x_1) \text{ in } X`
 (i.e. that starting from state $`x_1`, five pushes of the button $`\alpha` will bring $`X` to the state $`x_2`), show that the 'same' statement is true of the states $`y_1` and $`y_2` in $`Y^{↻\beta}`; i.e.
-$$`{y_2 = \beta^5(y_1) \text{ in } Y}`
+$$`y_2 = \beta^5(y_1) \text{ in } Y`
 :::
 
 :::solution (solutionTo := "Exercise 2")
@@ -302,17 +302,15 @@ example (x : X) (y : Y) (hy : y = f x)
   · by_contra h
     change (α ⊚ α) x = x at h
     cases x
-    all_goals (
+    all_goals
       dsimp [α] at h
       contradiction
-    )
   · cases y <;> rfl
   · by_contra h
     cases y
-    all_goals (
+    all_goals
       dsimp [β] at h
       contradiction
-    )
 ```
 
 ```savedLean -show

@@ -453,13 +453,12 @@ example (f : ℤα ⟶ ℤβ) : ¬(IsIso f) := by
       interval_cases k : f.val a % 3 using hf_lbound, hf_ubound <;>
         (rw [← hfa]; bound)
     · rintro (hb | hb | hb)
-      all_goals (
+      all_goals
         obtain ⟨a, hfa⟩ := hf_surj b
         use a
         dsimp
         rw [hfa, hb]
         norm_num
-      )
   -- Since we have found that the image of f.val can have at most two
   -- distinct elements and must also have exactly three distinct
   -- elements, we have a contradiction
@@ -599,10 +598,9 @@ def f₁ : graph_a ⟶ graph_d := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 def finv₁ : graph_d ⟶ graph_a := {
@@ -618,10 +616,9 @@ def finv₁ : graph_d ⟶ graph_a := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 example : graph_a ≅ graph_d := {
@@ -658,10 +655,9 @@ def f₂ : graph_b ⟶ graph_e := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 def finv₂ : graph_e ⟶ graph_b := {
@@ -677,10 +673,9 @@ def finv₂ : graph_e ⟶ graph_b := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 example : graph_b ≅ graph_e := {
@@ -717,10 +712,9 @@ def f₃ : graph_c ⟶ graph_f := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 def finv₃ : graph_f ⟶ graph_c := {
@@ -736,10 +730,9 @@ def finv₃ : graph_f ⟶ graph_c := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 example : graph_c ≅ graph_f := {
@@ -841,10 +834,9 @@ def f : graph_L ⟶ graph_R := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 def finv : graph_R ⟶ graph_L := {
@@ -865,10 +857,9 @@ def finv : graph_R ⟶ graph_L := {
   )
   property := by
     split_ands
-    all_goals (
+    all_goals
       first | exact fun _ _ ↦ Set.mem_univ _
             | funext x; cases x <;> rfl
-    )
 }
 
 example : graph_L ≅ graph_R := {
