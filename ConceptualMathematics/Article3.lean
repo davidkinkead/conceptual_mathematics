@@ -437,7 +437,7 @@ example : ¬(IsIdempotent α) := by
   by_contra h
   have h_contra : (α ⊚ α) 1 = α 1 := congrFun h.idem 1
   dsimp [α] at h_contra
-  norm_num at h_contra
+  contradiction
 ```
 
 $`\alpha` is an involution.
@@ -524,7 +524,7 @@ example : ¬(IsInvolution α) := by
   by_contra h
   have h_contra : (α ⊚ α) (-1) = (𝟙 ℤ) (-1) := congrFun h.invol (-1)
   dsimp [α] at h_contra
-  norm_num at h_contra
+  contradiction
 ```
 
 The fixed points of $`\alpha` are all the points greater than or equal to 0.
@@ -632,7 +632,7 @@ example : ¬(IsIso α) := by
   have h_contra₂ : (5 : ℤ) ∣ 1 := by
     use αinv 1
     exact h_contra₁.symm
-  norm_num at h_contra₂
+  contradiction
 ```
 
 ```savedLean -show

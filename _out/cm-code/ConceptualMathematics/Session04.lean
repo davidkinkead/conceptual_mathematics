@@ -189,7 +189,7 @@ example {p : ℝ ⟶ ℝ} (hp : ∀ x : ℝ, p x = x + 1)
   push_neg
   use 0, 0
   rw [add_zero, ne_eq, left_eq_add, hp]
-  norm_num
+  linarith
 
 example {sq : ℝ ⟶ ℝ} (hsq : ∀ x : ℝ, sq x = x ^ 2)
     : ¬(∃ r : ℝ → ℝ, (∀ x : ℝ, r (sq x) = x)) := by
@@ -199,7 +199,7 @@ example {sq : ℝ ⟶ ℝ} (hsq : ∀ x : ℝ, sq x = x ^ 2)
   have hneg : r (sq (-1)) = -1 := h (-1)
   rw [hsq] at hpos hneg
   rw [neg_sq, hpos] at hneg
-  norm_num at hneg
+  linarith
 
 open NNReal in
 example {sq : ℝ ⟶ ℝ≥0} (hsq : ∀ x : ℝ, sq x = x ^ 2)
@@ -210,7 +210,7 @@ example {sq : ℝ ⟶ ℝ≥0} (hsq : ∀ x : ℝ, sq x = x ^ 2)
   have hneg : r (sq (-1)) = -1 := h (-1)
   rw [hsq] at hpos hneg
   rw [neg_sq, hpos] at hneg
-  norm_num at hneg
+  linarith
 
 namespace Ex4_3_d
 
@@ -249,7 +249,7 @@ example {m : ℝ ⟶ ℝ} (hm : ∀ x : ℝ, m x = -x)
   push_neg
   use 1, 1
   rw [mul_one, ne_eq, hm]
-  norm_num
+  linarith
 
 namespace Ex4_3_f
 

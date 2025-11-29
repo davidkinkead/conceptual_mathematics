@@ -573,7 +573,7 @@ example (f : ℤα ⟶ ℤβ) : ¬(IsIso f) := by
         use a
         dsimp
         rw [hfa, hb]
-        norm_num
+        norm_num1
   -- Since we have found that the image of f.val can have at most two
   -- distinct elements and must also have exactly three distinct
   -- elements, we have a contradiction

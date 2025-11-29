@@ -119,11 +119,11 @@ example : ¬(IsSection f) := by
   | zero =>
       rw [types_comp_apply, hx] at h_false
       dsimp [f] at h_false
-      norm_num at h_false
+      linarith
   | succ n =>
       rw [types_comp_apply, hx] at h_false
       dsimp [f] at h_false
-      have h_ge_1 : (1 : B) ≤ n + 1 := by norm_num
+      have h_ge_1 : (1 : B) ≤ n + 1 := by linarith
       linarith
 
 end «Quiz_1*»

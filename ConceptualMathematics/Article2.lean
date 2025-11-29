@@ -281,7 +281,7 @@ example : ¬(h ⊚ f = f ⊚ k → h = k) := by
     have h₁ : h 0 = 1 := rfl
     have h₂ : k 0 = 0 := rfl
     rw [← h₀, h₁] at h₂
-    norm_num at h₂
+    contradiction
 ```
 
 ```savedLean -show
@@ -346,10 +346,10 @@ example (h : ℝ → ℝ) (hh : ∀ x : ℝ, h x = x * x)
   intro hinv h_inv_left _
   have h₁ : h 1 = 1 := by
     rw [hh 1]
-    norm_num
+    norm_num1
   have h₂ : h (-1) = 1 := by
     rw [hh (-1)]
-    norm_num
+    norm_num1
   have h₃ : (hinv ∘ h) 1 = 1:= by
     rw [h_inv_left, id_eq]
   have h₄ : (hinv ∘ h) (-1) = -1 := by
@@ -370,10 +370,10 @@ example (k : ℝ → ℝ≥0) (hk : ∀ x : ℝ, k x = x * x)
   intro kinv h_inv_left _
   have h₁ : k 1 = 1 := by
     rw [← coe_eq_one, hk 1]
-    norm_num
+    norm_num1
   have h₂ : k (-1) = 1 := by
     rw [← coe_eq_one, hk (-1)]
-    norm_num
+    norm_num1
   have h₃ : (kinv ∘ k) 1 = 1:= by
     rw [h_inv_left, id_eq]
   have h₄ : (kinv ∘ k) (-1) = -1 := by

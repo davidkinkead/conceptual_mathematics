@@ -251,7 +251,7 @@ example : ¬(IsIdempotent α) := by
   by_contra h
   have h_contra : (α ⊚ α) 1 = α 1 := congrFun h.idem 1
   dsimp [α] at h_contra
-  norm_num at h_contra
+  contradiction
 
 example : IsInvolution α := {
   invol := by
@@ -299,7 +299,7 @@ example : ¬(IsInvolution α) := by
   by_contra h
   have h_contra : (α ⊚ α) (-1) = (𝟙 ℤ) (-1) := congrFun h.invol (-1)
   dsimp [α] at h_contra
-  norm_num at h_contra
+  contradiction
 
 example {x : ℤ} : Function.IsFixedPt α x ↔ 0 ≤ x := by
   dsimp [Function.IsFixedPt, α]
@@ -357,7 +357,7 @@ example : ¬(IsIso α) := by
   have h_contra₂ : (5 : ℤ) ∣ 1 := by
     use αinv 1
     exact h_contra₁.symm
-  norm_num at h_contra₂
+  contradiction
 
 end ExIII_7
 
