@@ -2861,6 +2861,876 @@
         "Session 4: Division of maps: Isomorphisms",
         "4. A small zoo of isomorphisms in other categories"]}},
      "address": "/Session-4___-Division-of-maps___-Isomorphisms/"}],
+   "CM.Ex17_4_c.Vertex.C":
+   [{"id": "CM___Ex17_4_c___Vertex___C",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Vertex___C":
+      {"display": "C",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Vertex.B":
+   [{"id": "CM___Ex17_4_c___Vertex___B",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Vertex___B":
+      {"display": "B",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Vertex.A":
+   [{"id": "CM___Ex17_4_c___Vertex___A",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Vertex___A":
+      {"display": "A",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Vertex":
+   [{"id": "CM___Ex17_4_c___Vertex",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Vertex":
+      {"display": "Vertex",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Edge.j":
+   [{"id": "CM___Ex17_4_c___Edge___j",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Edge___j":
+      {"display": "j",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Edge.i":
+   [{"id": "CM___Ex17_4_c___Edge___i",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Edge___i":
+      {"display": "i",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Edge.h":
+   [{"id": "CM___Ex17_4_c___Edge___h",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Edge___h":
+      {"display": "h",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Edge.g":
+   [{"id": "CM___Ex17_4_c___Edge___g",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Edge___g":
+      {"display": "g",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Edge.f":
+   [{"id": "CM___Ex17_4_c___Edge___f",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Edge___f":
+      {"display": "f",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_c.Edge":
+   [{"id": "CM___Ex17_4_c___Edge",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_c___Edge":
+      {"display": "Edge",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Vertex.C":
+   [{"id": "CM___Ex17_4_b___Vertex___C",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Vertex___C":
+      {"display": "C",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Vertex.B":
+   [{"id": "CM___Ex17_4_b___Vertex___B",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Vertex___B":
+      {"display": "B",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Vertex.A":
+   [{"id": "CM___Ex17_4_b___Vertex___A",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Vertex___A":
+      {"display": "A",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Vertex":
+   [{"id": "CM___Ex17_4_b___Vertex",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Vertex":
+      {"display": "Vertex",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Edge.h":
+   [{"id": "CM___Ex17_4_b___Edge___h",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Edge___h":
+      {"display": "h",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Edge.g":
+   [{"id": "CM___Ex17_4_b___Edge___g",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Edge___g":
+      {"display": "g",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Edge.f":
+   [{"id": "CM___Ex17_4_b___Edge___f",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Edge___f":
+      {"display": "f",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_b.Edge":
+   [{"id": "CM___Ex17_4_b___Edge",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_b___Edge":
+      {"display": "Edge",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Vertex.B":
+   [{"id": "CM___Ex17_4_a___Vertex___B",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Vertex___B":
+      {"display": "B",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Vertex.A":
+   [{"id": "CM___Ex17_4_a___Vertex___A",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Vertex___A":
+      {"display": "A",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Vertex":
+   [{"id": "CM___Ex17_4_a___Vertex",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Vertex":
+      {"display": "Vertex",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Edge.h":
+   [{"id": "CM___Ex17_4_a___Edge___h",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Edge___h":
+      {"display": "h",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Edge.g":
+   [{"id": "CM___Ex17_4_a___Edge___g",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Edge___g":
+      {"display": "g",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Edge.f":
+   [{"id": "CM___Ex17_4_a___Edge___f",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Edge___f":
+      {"display": "f",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_4_a.Edge":
+   [{"id": "CM___Ex17_4_a___Edge",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_4_a___Edge":
+      {"display": "Edge",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.H":
+   [{"id": "CM___Ex17_3___Vertex___H",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___H":
+      {"display": "H",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.G":
+   [{"id": "CM___Ex17_3___Vertex___G",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___G":
+      {"display": "G",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.F":
+   [{"id": "CM___Ex17_3___Vertex___F",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___F":
+      {"display": "F",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.E":
+   [{"id": "CM___Ex17_3___Vertex___E",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___E":
+      {"display": "E",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.D":
+   [{"id": "CM___Ex17_3___Vertex___D",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___D":
+      {"display": "D",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.C":
+   [{"id": "CM___Ex17_3___Vertex___C",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___C":
+      {"display": "C",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.B":
+   [{"id": "CM___Ex17_3___Vertex___B",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___B":
+      {"display": "B",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex.A":
+   [{"id": "CM___Ex17_3___Vertex___A",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex___A":
+      {"display": "A",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Vertex":
+   [{"id": "CM___Ex17_3___Vertex",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Vertex":
+      {"display": "Vertex",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.p":
+   [{"id": "CM___Ex17_3___Edge___p",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___p":
+      {"display": "p",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.n":
+   [{"id": "CM___Ex17_3___Edge___n",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___n":
+      {"display": "n",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.m":
+   [{"id": "CM___Ex17_3___Edge___m",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___m":
+      {"display": "m",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.l":
+   [{"id": "CM___Ex17_3___Edge___l",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___l":
+      {"display": "l",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.k":
+   [{"id": "CM___Ex17_3___Edge___k",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___k":
+      {"display": "k",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.j":
+   [{"id": "CM___Ex17_3___Edge___j",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___j":
+      {"display": "j",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.i":
+   [{"id": "CM___Ex17_3___Edge___i",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___i":
+      {"display": "i",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.h":
+   [{"id": "CM___Ex17_3___Edge___h",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___h":
+      {"display": "h",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.g":
+   [{"id": "CM___Ex17_3___Edge___g",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___g":
+      {"display": "g",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge.f":
+   [{"id": "CM___Ex17_3___Edge___f",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge___f":
+      {"display": "f",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_3.Edge":
+   [{"id": "CM___Ex17_3___Edge",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_3___Edge":
+      {"display": "Edge",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_2.Dot.x₂":
+   [{"id": "CM___Ex17_2___Dot___x___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_2___Dot___x___-next":
+      {"display": "x₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_2.Dot.x₁":
+   [{"id": "CM___Ex17_2___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_2___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_2.Dot":
+   [{"id": "CM___Ex17_2___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_2___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_2.Arrow.g":
+   [{"id": "CM___Ex17_2___Arrow___g",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_2___Arrow___g":
+      {"display": "g",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_2.Arrow.f":
+   [{"id": "CM___Ex17_2___Arrow___f",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_2___Arrow___f":
+      {"display": "f",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_2.Arrow":
+   [{"id": "CM___Ex17_2___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_2___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "3. Commuting diagrams"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_f.Dot.x₃":
+   [{"id": "CM___Ex17_1_f___Dot___x___-next-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_f___Dot___x___-next-next":
+      {"display": "x₃",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_f.Dot.x₂":
+   [{"id": "CM___Ex17_1_f___Dot___x___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_f___Dot___x___-next":
+      {"display": "x₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_f.Dot.x₁":
+   [{"id": "CM___Ex17_1_f___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_f___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_f.Dot":
+   [{"id": "CM___Ex17_1_f___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_f___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_f.Arrow.f₁":
+   [{"id": "CM___Ex17_1_f___Arrow___f___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_f___Arrow___f___":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_f.Arrow":
+   [{"id": "CM___Ex17_1_f___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_f___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_e.Dot.x₂":
+   [{"id": "CM___Ex17_1_e___Dot___x___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_e___Dot___x___-next":
+      {"display": "x₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_e.Dot.x₁":
+   [{"id": "CM___Ex17_1_e___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_e___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_e.Dot":
+   [{"id": "CM___Ex17_1_e___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_e___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_e.Arrow.f₂":
+   [{"id": "CM___Ex17_1_e___Arrow___f___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_e___Arrow___f___-next":
+      {"display": "f₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_e.Arrow.f₁":
+   [{"id": "CM___Ex17_1_e___Arrow___f___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_e___Arrow___f___":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_e.Arrow":
+   [{"id": "CM___Ex17_1_e___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_e___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_d.Dot.x₂":
+   [{"id": "CM___Ex17_1_d___Dot___x___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_d___Dot___x___-next":
+      {"display": "x₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_d.Dot.x₁":
+   [{"id": "CM___Ex17_1_d___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_d___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_d.Dot":
+   [{"id": "CM___Ex17_1_d___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_d___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_d.Arrow.f₂":
+   [{"id": "CM___Ex17_1_d___Arrow___f___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_d___Arrow___f___-next":
+      {"display": "f₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_d.Arrow.f₁":
+   [{"id": "CM___Ex17_1_d___Arrow___f___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_d___Arrow___f___":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_d.Arrow":
+   [{"id": "CM___Ex17_1_d___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_d___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Dot.x₅":
+   [{"id": "CM___Ex17_1_c___Dot___x___-next-next-next-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Dot___x___-next-next-next-next":
+      {"display": "x₅",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Dot.x₄":
+   [{"id": "CM___Ex17_1_c___Dot___x___-next-next-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Dot___x___-next-next-next":
+      {"display": "x₄",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Dot.x₃":
+   [{"id": "CM___Ex17_1_c___Dot___x___-next-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Dot___x___-next-next":
+      {"display": "x₃",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Dot.x₂":
+   [{"id": "CM___Ex17_1_c___Dot___x___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Dot___x___-next":
+      {"display": "x₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Dot.x₁":
+   [{"id": "CM___Ex17_1_c___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Dot":
+   [{"id": "CM___Ex17_1_c___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Arrow.f₅":
+   [{"id": "CM___Ex17_1_c___Arrow___f___-next-next-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Arrow___f___-next-next-next":
+      {"display": "f₅",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Arrow.f₃":
+   [{"id": "CM___Ex17_1_c___Arrow___f___-next-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Arrow___f___-next-next":
+      {"display": "f₃",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Arrow.f₂":
+   [{"id": "CM___Ex17_1_c___Arrow___f___-next",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Arrow___f___-next":
+      {"display": "f₂",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Arrow.f₁":
+   [{"id": "CM___Ex17_1_c___Arrow___f___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Arrow___f___":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_c.Arrow":
+   [{"id": "CM___Ex17_1_c___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_c___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_b.Dot.x₁":
+   [{"id": "CM___Ex17_1_b___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_b___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_b.Dot":
+   [{"id": "CM___Ex17_1_b___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_b___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_b.Arrow":
+   [{"id": "CM___Ex17_1_b___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_b___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_a.Dot.x₁":
+   [{"id": "CM___Ex17_1_a___Dot___x___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_a___Dot___x___":
+      {"display": "x₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_a.Dot":
+   [{"id": "CM___Ex17_1_a___Dot",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_a___Dot":
+      {"display": "Dot",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_a.Arrow.f₁":
+   [{"id": "CM___Ex17_1_a___Arrow___f___",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_a___Arrow___f___":
+      {"display": "f₁",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
+   "CM.Ex17_1_a.Arrow":
+   [{"id": "CM___Ex17_1_a___Arrow",
+     "data":
+     {"/Session-17___-Some-uses-of-graphs/#CM___Ex17_1_a___Arrow":
+      {"display": "Arrow",
+       "context":
+       ["A Lean Companion to Conceptual Mathematics",
+        "Session 17: Some uses of graphs",
+        "1. Paths"]}},
+     "address": "/Session-17___-Some-uses-of-graphs/"}],
    "CM.Ex15_7.β":
    [{"id": "CM___Ex15_7______-next",
      "data":
