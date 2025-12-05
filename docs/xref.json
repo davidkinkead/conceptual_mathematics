@@ -328,6 +328,174 @@
         "Article II: Isomorphisms",
         "4. Isomorphisms and automorphisms"]}},
      "address": "/Article-II___-Isomorphisms/"}],
+   "CM.Test2_3.α":
+   [{"id": "CM___Test2_3______",
+     "data":
+     {"/Test-2/#CM___Test2_3______":
+      {"display": "α",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_3.X.x₃":
+   [{"id": "CM___Test2_3___X___x___-next-next",
+     "data":
+     {"/Test-2/#CM___Test2_3___X___x___-next-next":
+      {"display": "x₃",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_3.X.x₂":
+   [{"id": "CM___Test2_3___X___x___-next",
+     "data":
+     {"/Test-2/#CM___Test2_3___X___x___-next":
+      {"display": "x₂",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_3.X.x₁":
+   [{"id": "CM___Test2_3___X___x___",
+     "data":
+     {"/Test-2/#CM___Test2_3___X___x___":
+      {"display": "x₁",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_3.X":
+   [{"id": "CM___Test2_3___X",
+     "data":
+     {"/Test-2/#CM___Test2_3___X":
+      {"display": "X",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.f₄":
+   [{"id": "CM___Test2_2___f___-next-next-next",
+     "data":
+     {"/Test-2/#CM___Test2_2___f___-next-next-next":
+      {"display": "f₄",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.f₃":
+   [{"id": "CM___Test2_2___f___-next-next",
+     "data":
+     {"/Test-2/#CM___Test2_2___f___-next-next":
+      {"display": "f₃",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.f₂":
+   [{"id": "CM___Test2_2___f___-next",
+     "data":
+     {"/Test-2/#CM___Test2_2___f___-next":
+      {"display": "f₂",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.f₁":
+   [{"id": "CM___Test2_2___f___",
+     "data":
+     {"/Test-2/#CM___Test2_2___f___":
+      {"display": "f₁",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.G₂":
+   [{"id": "CM___Test2_2___G___-next",
+     "data":
+     {"/Test-2/#CM___Test2_2___G___-next":
+      {"display": "G₂",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.G₁":
+   [{"id": "CM___Test2_2___G___",
+     "data":
+     {"/Test-2/#CM___Test2_2___G___":
+      {"display": "G₁",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₂.w":
+   [{"id": "CM___Test2_2___D______w",
+     "data":
+     {"/Test-2/#CM___Test2_2___D______w":
+      {"display": "w",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₂.v":
+   [{"id": "CM___Test2_2___D______v",
+     "data":
+     {"/Test-2/#CM___Test2_2___D______v":
+      {"display": "v",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₂":
+   [{"id": "CM___Test2_2___D___-next",
+     "data":
+     {"/Test-2/#CM___Test2_2___D___-next":
+      {"display": "D₂",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₁.r":
+   [{"id": "CM___Test2_2___D______r",
+     "data":
+     {"/Test-2/#CM___Test2_2___D______r":
+      {"display": "r",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₁.q":
+   [{"id": "CM___Test2_2___D______q",
+     "data":
+     {"/Test-2/#CM___Test2_2___D______q":
+      {"display": "q",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₁.p":
+   [{"id": "CM___Test2_2___D______p",
+     "data":
+     {"/Test-2/#CM___Test2_2___D______p":
+      {"display": "p",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.D₁":
+   [{"id": "CM___Test2_2___D___",
+     "data":
+     {"/Test-2/#CM___Test2_2___D___":
+      {"display": "D₁",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.A₂.d":
+   [{"id": "CM___Test2_2___A______d",
+     "data":
+     {"/Test-2/#CM___Test2_2___A______d":
+      {"display": "d",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.A₂.c":
+   [{"id": "CM___Test2_2___A______c",
+     "data":
+     {"/Test-2/#CM___Test2_2___A______c":
+      {"display": "c",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.A₂":
+   [{"id": "CM___Test2_2___A___-next",
+     "data":
+     {"/Test-2/#CM___Test2_2___A___-next":
+      {"display": "A₂",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.A₁.b":
+   [{"id": "CM___Test2_2___A______b",
+     "data":
+     {"/Test-2/#CM___Test2_2___A______b":
+      {"display": "b",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.A₁.a":
+   [{"id": "CM___Test2_2___A______a",
+     "data":
+     {"/Test-2/#CM___Test2_2___A______a":
+      {"display": "a",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
+   "CM.Test2_2.A₁":
+   [{"id": "CM___Test2_2___A___",
+     "data":
+     {"/Test-2/#CM___Test2_2___A___":
+      {"display": "A₁",
+       "context": ["A Lean Companion to Conceptual Mathematics", "Test 2"]}},
+     "address": "/Test-2/"}],
    "CM.Test1_1.s":
    [{"id": "CM___Test1_1___s",
      "data":

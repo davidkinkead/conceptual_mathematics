@@ -1170,16 +1170,78 @@
  "244":
  "<code>CategoryTheory.Iso.inv_hom_id.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (self : X ≅ Y) :\n  self.hom ⊚ self.inv = 𝟙 Y</code><span class=\"sep\"></span><code class=\"docstring\">Composition of the two directions of an isomorphism in reverse order\nis the identity on the target. </code>",
  "243": "<code>X ≅ Y</code>",
+ "2426": "<code>X.x₂ = X.x₃</code>",
+ "2425": "<code>CM.Test2_3.X.x₃ : CM.Test2_3.X</code>",
+ "2424": "<code>(α ^ 2) X.x₁ = X.x₃</code>",
+ "2423": "<code>CM.Test2_3.X.x₂ : CM.Test2_3.X</code>",
+ "2422": "<code>α X.x₁ = X.x₂</code>",
+ "2421": "<code>CM.Test2_3.α : End CM.Test2_3.X</code>",
+ "2420": "<code>CM.Test2_3.X.x₁ : CM.Test2_3.X</code>",
  "242":
  "<code>CategoryTheory.Iso.hom_inv_id.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (self : X ≅ Y) :\n  self.inv ⊚ self.hom = 𝟙 X</code><span class=\"sep\"></span><code class=\"docstring\">Composition of the two directions of an isomorphism is the identity on the source. </code>",
+ "2419": "<code>α X.x₁ = (α ^ 2) X.x₁</code>",
+ "2418": "<code>α = α ^ 2</code>",
+ "2417": "<code>CM.Test2_3.α : End X</code>",
+ "2416": "<code>CM.Test2_3.X.x₃ : X</code>",
+ "2415": "<code>CM.Test2_3.X.x₂ : X</code>",
+ "2414": "<code>CM.Test2_3.X.x₁ : X</code>",
+ "2413": "<code>CM.Test2_3.X : Type</code>",
+ "2412":
+ "<code>(∀ x ∈ G₁.carrierA,\n    (fun x ↦\n            match x with\n            | A₁.a =&gt; A₂.d\n            | A₁.b =&gt; A₂.c,\n            fun x ↦\n            match x with\n            | D₁.p =&gt; D₂.v\n            | D₁.q =&gt; D₂.w\n            | D₁.r =&gt; D₂.w).1\n        x ∈\n      G₂.carrierA) ∧\n  (∀ x ∈ G₁.carrierD,\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).2\n          x ∈\n        G₂.carrierD) ∧\n    (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toSrc =\n        G₂.toSrc ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).1 ∧\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toTgt =\n        G₂.toTgt ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).1</code><span class=\"sep\"></span><code class=\"docstring\">The proof that `val` satisfies the predicate `p`.\n</code>",
+ "2411": "<code>CM.Test2_2.f₄ : G₁ ⟶ G₂</code>",
+ "2410":
+ "<code>(∀ x ∈ G₁.carrierA,\n    (fun x ↦\n            match x with\n            | A₁.a =&gt; A₂.c\n            | A₁.b =&gt; A₂.d,\n            fun x ↦\n            match x with\n            | D₁.p =&gt; D₂.w\n            | D₁.q =&gt; D₂.v\n            | D₁.r =&gt; D₂.w).1\n        x ∈\n      G₂.carrierA) ∧\n  (∀ x ∈ G₁.carrierD,\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).2\n          x ∈\n        G₂.carrierD) ∧\n    (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toSrc =\n        G₂.toSrc ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).1 ∧\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toTgt =\n        G₂.toTgt ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).1</code><span class=\"sep\"></span><code class=\"docstring\">The proof that `val` satisfies the predicate `p`.\n</code>",
  "241":
  "<code>CategoryTheory.Iso.inv.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (self : X ≅ Y) : Y ⟶ X</code><span class=\"sep\"></span><code class=\"docstring\">The backwards direction of an isomorphism. </code>",
+ "2409": "<code>CM.Test2_2.f₃ : G₁ ⟶ G₂</code>",
+ "2408":
+ "<code>(∀ x ∈ G₁.carrierA,\n    (fun x ↦\n            match x with\n            | A₁.a =&gt; A₂.c\n            | A₁.b =&gt; A₂.c,\n            fun x ↦\n            match x with\n            | D₁.p =&gt; D₂.w\n            | D₁.q =&gt; D₂.w\n            | D₁.r =&gt; D₂.w).1\n        x ∈\n      G₂.carrierA) ∧\n  (∀ x ∈ G₁.carrierD,\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).2\n          x ∈\n        G₂.carrierD) ∧\n    (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toSrc =\n        G₂.toSrc ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).1 ∧\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toTgt =\n        G₂.toTgt ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.c\n              | A₁.b =&gt; A₂.c,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.w\n              | D₁.q =&gt; D₂.w\n              | D₁.r =&gt; D₂.w).1</code><span class=\"sep\"></span><code class=\"docstring\">The proof that `val` satisfies the predicate `p`.\n</code>",
+ "2407": "<code>CM.Test2_2.f₂ : G₁ ⟶ G₂</code>",
+ "2406": "<code>G₁.tD</code>",
+ "2405": "<code>G₁.tA</code>",
+ "2404":
+ "<code>(∀ x ∈ G₁.carrierA,\n    (fun x ↦\n            match x with\n            | A₁.a =&gt; A₂.d\n            | A₁.b =&gt; A₂.d,\n            fun x ↦\n            match x with\n            | D₁.p =&gt; D₂.v\n            | D₁.q =&gt; D₂.v\n            | D₁.r =&gt; D₂.w).1\n        x ∈\n      G₂.carrierA) ∧\n  (∀ x ∈ G₁.carrierD,\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).2\n          x ∈\n        G₂.carrierD) ∧\n    (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toSrc =\n        G₂.toSrc ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).1 ∧\n      (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).2 ⊚\n          G₁.toTgt =\n        G₂.toTgt ⊚\n          (fun x ↦\n              match x with\n              | A₁.a =&gt; A₂.d\n              | A₁.b =&gt; A₂.d,\n              fun x ↦\n              match x with\n              | D₁.p =&gt; D₂.v\n              | D₁.q =&gt; D₂.v\n              | D₁.r =&gt; D₂.w).1</code><span class=\"sep\"></span><code class=\"docstring\">The proof that `val` satisfies the predicate `p`.\n</code>",
+ "2403":
+ "<code>(G₁.tA ⟶ G₂.tA) × (G₁.tD ⟶ G₂.tD)</code><span class=\"sep\"></span><code class=\"docstring\">The value in the underlying type that satisfies the predicate.\n</code>",
+ "2402": "<code>CM.Test2_2.f₁ : G₁ ⟶ G₂</code>",
+ "2401":
+ "<code>∀ {a : A₂},\n  a ∈ Set.univ →\n    (match a with\n      | A₂.c =&gt; D₂.w\n      | A₂.d =&gt; D₂.w) ∈\n      Set.univ</code>",
+ "2400":
+ "<code>∀ {a : A₂},\n  a ∈ Set.univ →\n    (match a with\n      | A₂.c =&gt; D₂.w\n      | A₂.d =&gt; D₂.v) ∈\n      Set.univ</code>",
  "240":
  "<code>CategoryTheory.Iso.hom.{v, u} {C : Type u} [Category.{v, u} C] {X Y : C} (self : X ≅ Y) : X ⟶ Y</code><span class=\"sep\"></span><code class=\"docstring\">The forward direction of an isomorphism. </code>",
  "24": "<code>CM.ExI_1.D.d₅ : D</code>",
+ "2399": "<code>A₂ → D₂</code>",
+ "2398": "<code>Set D₂</code>",
+ "2397": "<code>Set A₂</code>",
+ "2396": "<code>CM.Test2_2.G₂ : IrreflexiveGraph</code>",
+ "2395": "<code>CM.Test2_2.D₂.w : D₂</code>",
+ "2394": "<code>CM.Test2_2.D₂.v : D₂</code>",
+ "2393": "<code>CM.Test2_2.D₂ : Type</code>",
+ "2392": "<code>CM.Test2_2.A₂.d : A₂</code>",
+ "2391": "<code>CM.Test2_2.A₂.c : A₂</code>",
+ "2390": "<code>CM.Test2_2.A₂ : Type</code>",
  "239": "<code>C</code>",
+ "2389":
+ "<code>∀ {a : A₁},\n  a ∈ Set.univ →\n    (match a with\n      | A₁.a =&gt; D₁.r\n      | A₁.b =&gt; D₁.r) ∈\n      Set.univ</code>",
+ "2388":
+ "<code>∀ {a : A₁},\n  a ∈ Set.univ →\n    (match a with\n      | A₁.a =&gt; D₁.p\n      | A₁.b =&gt; D₁.q) ∈\n      Set.univ</code>",
+ "2387": "<code>A₁ → D₁</code>",
+ "2386": "<code>Set D₁</code>",
+ "2385": "<code>Set A₁</code>",
+ "2384": "<code>CM.Test2_2.G₁ : IrreflexiveGraph</code>",
+ "2383": "<code>CM.Test2_2.D₁.r : D₁</code>",
+ "2382": "<code>CM.Test2_2.D₁.q : D₁</code>",
+ "2381": "<code>CM.Test2_2.D₁.p : D₁</code>",
+ "2380": "<code>CM.Test2_2.D₁ : Type</code>",
  "238":
  "<code>CategoryTheory.Iso.{v, u} {C : Type u} [Category.{v, u} C] (X Y : C) : Type v</code><span class=\"sep\"></span><code class=\"docstring\">An isomorphism (a.k.a. an invertible morphism) between two objects of a category.\nThe inverse morphism is bundled.\n\nSee also `CategoryTheory.Core` for the category with the same objects and isomorphisms playing\nthe role of morphisms. </code>",
+ "2379": "<code>CM.Test2_2.A₁.b : A₁</code>",
+ "2378": "<code>CM.Test2_2.A₁.a : A₁</code>",
+ "2377": "<code>CM.Test2_2.A₁ : Type</code>",
+ "2376": "<code>X.toEnd x = x</code>",
+ "2375": "<code>f ⊚ X.toEnd = Y.toEnd ⊚ f</code>",
+ "2374": "<code>∀ x ∈ X.carrier, f x ∈ Y.carrier</code>",
  "2373":
  "<code>F.map p =\n  match Vertex.C, Vertex.C, p with\n  | Vertex.A, Vertex.A, p =&gt; 𝟙 A'\n  | Vertex.B, Vertex.B, p =&gt; 𝟙 B'\n  | Vertex.C, Vertex.C, p =&gt; 𝟙 C'\n  | Vertex.A, Vertex.B, p =&gt; g'\n  | Vertex.B, Vertex.C, p =&gt; h'\n  | Vertex.C, Vertex.A, p =&gt; j'\n  | Vertex.A, Vertex.C, p =&gt; h' ⊚ g'\n  | Vertex.B, Vertex.A, p =&gt; j' ⊚ h'\n  | Vertex.C, Vertex.B, p =&gt; g' ⊚ j'</code>",
  "2372":
